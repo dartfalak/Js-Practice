@@ -28,3 +28,17 @@ if (number%3==15) {
 
 }
 
+let game="football";
+let player="Ronaldo";
+
+if (game=== "football")
+{player="Ronaldo";
+} else if (game ==="cricket") {
+    player="Sachin";
+} else if (game ==="hockey") {
+    player="Dhyan"
+} else {
+    player="Unknown";
+}
+
+console.log("The player is", player);
