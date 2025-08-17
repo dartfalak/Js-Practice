@@ -5,25 +5,25 @@ let c = a + b;
 console.log("a+b=", a+b);
 
 
-let age=26
+// let age=26
 
-if (age >= 18) {
-    console.log("You are an adult.");
-} else {
-    console.log("You are a minor.");
-} 
+// if (age >= 18) {
+//     console.log("You are an adult.");
+// } else {
+//     console.log("You are a minor.");
+// } 
 
 let num=20;
 
-if (hum%2==0) {
-    console.log ("The number is even.");
+if (num%2==0) {
+    console.log (num,"The number is even.");
 } else {
     console.log ("The number is odd.")
 }
 
 
 let number=20;
-if (humber%15==3) {
+if (number%15==3) {
     console.log ("the nmuber is odd");
 
 }
