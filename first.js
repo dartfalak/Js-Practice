@@ -14,3 +14,17 @@ if (age >= 18) {
 } 
 
 let num=20;
+
+if (hum%2==0) {
+    console.log ("The number is even.");
+} else {
+    console.log ("The number is odd.")
+}
+
+
+let number=30;
+if (humber%15==3) {
+    console.log ("the nmuber is odd");
+
+}
+
