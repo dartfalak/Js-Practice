@@ -22,7 +22,7 @@ if (hum%2==0) {
 }
 
 
-let number=30;
+let number=20;
 if (humber%15==3) {
     console.log ("the nmuber is odd");
 
