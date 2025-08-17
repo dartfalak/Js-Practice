@@ -12,6 +12,5 @@ if (age >= 18) {
 } else {
     console.log("You are a minor.");
 } 
-else {
-    console.log("This will never execute.");
-}
+
+let num=20;
