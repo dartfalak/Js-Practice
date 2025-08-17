@@ -1,8 +1,8 @@
 
-let a = 5;
-let b = 2;
-let c = a + b;
-console.log("a+b=", a+b);
+// let a = 5;
+// let b = 2;
+// let c = a + b;
+// console.log("a+b=", a+b);
 
 
 // let age=26
@@ -13,17 +13,17 @@ console.log("a+b=", a+b);
 //     console.log("You are a minor.");
 // } 
 
-let num=20;
+// let num=20;
 
-if (num%2==0) {
-    console.log (num,"The number is even.");
-} else {
-    console.log ("The number is odd.")
-}
+// if (num%2==0) {
+//     console.log (num,"The number is even.");
+// } else {
+//     console.log ("The number is odd.")
+// }
 
 
-let number=20;
-if (number%15==3) {
+let number=30;
+if (number%3==15) {
     console.log ("the nmuber is odd");
 
 }
