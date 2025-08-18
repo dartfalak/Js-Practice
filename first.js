@@ -28,7 +28,7 @@ if (number%3==15) {
 
 }
 
-let game="cricket";
+let game="tennis";
 let player="Ronaldo";
 
 if (game=== "football")
