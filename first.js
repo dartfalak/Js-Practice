@@ -38,7 +38,7 @@ if (game=== "football")
 } else if (game ==="hockey") {
     player="Dhyan"
 } else {
-    player="Unknown";
+    player="Undefined";
 }
 
 console.log("The player is", player);
