@@ -28,17 +28,20 @@ if (number%3==15) {
 
 }
 
-let game="football";
-let player="Ronaldo";
+// let game="football";
+// let player="Ronaldo";
 
-if (game=== "football")
-{player="Ronaldo";
-} else if (game ==="cricket") {
-    player="Sachin";
-} else if (game ==="hockey") {
-    player="Dhyan"
-} else {
-    player="Undefined";
-}
+// if (game=== "football")
+// {player="Ronaldo";
+// } else if (game ==="cricket") {
+//     player="Sachin";
+// } else if (game ==="hockey") {
+//     player="Dhyan"
+// } else {
+//     player="Undefined";
+// }
 
-console.log("The player is", player);
+// console.log("The player is", player);
+
+let age=25;
+age >= 18 ? console.log ("Adult.") : console.log ("Minor.");
