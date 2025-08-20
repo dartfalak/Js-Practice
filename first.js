@@ -34,7 +34,7 @@ if (number%3==15) {
 // if (game=== "football")
 // {player="Ronaldo";
 // } else if (game ==="cricket") {
-//     player="Sachin";
+//     player="Sachin"; 
 // } else if (game ==="hockey") {
 //     player="Dhyan"
 // } else {
@@ -43,5 +43,5 @@ if (number%3==15) {
 
 // console.log("The player is", player);
 
-let age=25;
+let age=22;
 age >= 18 ? console.log ("Adult.") : console.log ("Minor.");
