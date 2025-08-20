@@ -43,5 +43,5 @@ if (number%3==15) {
 
 // console.log("The player is", player);
 
-let age=20;
+let age=18;
 age >= 18 ? console.log ("Adult.") : console.log ("Minor.");
