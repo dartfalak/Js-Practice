@@ -50,3 +50,5 @@ for (let i=1; i <=3; i++) {
     console.log ("loops");
 
 }
+
+console.log ("loop has ended");
