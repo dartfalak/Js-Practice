@@ -52,4 +52,5 @@ for (let i=1; i <=3; i++) {
 
 }
 
+console.log ("sum = " , sum);
 console.log ("loop has ended");
