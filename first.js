@@ -52,5 +52,5 @@ for (let i=1; i <=100; i++) {
 
 }
 
-console.log ("sum = " , sum);
+console.log ("i = " , i);
 console.log ("loop has ended");
