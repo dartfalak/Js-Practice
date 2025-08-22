@@ -47,7 +47,7 @@ let age=18;
 age >= 18 ? console.log ("Adult.") : console.log ("Minor.");
 
 
-for (let i=1; i <=100; i++) {
+for (let i=1; i <=10; i++) {
     console.log ("i = " , i);
     
 
