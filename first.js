@@ -49,9 +49,13 @@ age >= 18 ? console.log ("Adult.") : console.log ("Minor.");
 
 for (let i=1; i <=10; i++) {
     console.log ("i = " , i);
-    
-
 }
 
-
+  
 console.log ("loop has ended");
+
+let i=3;
+while(i<=8) {
+    console.log ("i = ", i)
+    i++;
+}
