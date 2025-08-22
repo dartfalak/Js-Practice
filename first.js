@@ -46,9 +46,9 @@ if (number%3==15) {
 let age=18;
 age >= 18 ? console.log ("Adult.") : console.log ("Minor.");
 
-let sum=1;
+
 for (let i=1; i <=100; i++) {
-    sum = sum + i;
+    
 
 }
 
