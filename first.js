@@ -60,7 +60,7 @@ console.log ("loop has ended");
 //     i++;
 // } while (i <=10)
 
-let str="Hello"
+let str="Hello World";
 for (let i of str) {
     console.log("i=",i);
 }
