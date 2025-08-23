@@ -55,7 +55,7 @@ for (let i=1; i <=10; i++) {
 console.log ("loop has ended");
 
 let i=1;
-while(i<=8) {
+do {
     console.log ("i = ", i)
     i++;
-}
+} while (i <=10)
