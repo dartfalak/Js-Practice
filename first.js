@@ -71,3 +71,14 @@ for (let num=0; num <= 100 ; num++) {
     }
     
 }
+
+
+
+
+let gameNum = 25;
+
+ let userNum=prompt ("Guess the number :");
+
+ while (userNum != gameNum);
+
+ console.log ("You have guessed the correct number.");
