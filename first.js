@@ -79,7 +79,7 @@ let gameNum = 20;
 
  let userNum=prompt ("Guess the number :");
 
- while (userNum != gameNum) {
+ while (userNum !== gameNum) {
     userNum=prompt ("Wrong guess. Try again :");
  }
 
