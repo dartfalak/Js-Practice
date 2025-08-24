@@ -75,16 +75,16 @@ for (let num=0; num <= 100 ; num++) {
 
 
 
-let gameNum = 20;
+// let gameNum = 20;
 
- let userNum=prompt ("Guess the number :");
+//  let userNum=prompt ("Guess the number :");
 
- while (userNum != gameNum) {
-    userNum=prompt ("Wrong guess. Try again :");
- }
+//  while (userNum != gameNum) {
+//     userNum=prompt ("Wrong guess. Try again :");
+//  }
 
- console.log ("You have guessed the correct number.");
+//  console.log ("You have guessed the correct number.");
 
- let str="Hello World!";
+ let str = "Hello World!";
 
  console.log (str.length);
