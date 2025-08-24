@@ -79,6 +79,8 @@ let gameNum = 25;
 
  let userNum=prompt ("Guess the number :");
 
- while (userNum != gameNum);
+ while (userNum != gameNum) {
+    userNum=prompt ("Wrong guess. Try again :");
+ }
 
  console.log ("You have guessed the correct number.");
