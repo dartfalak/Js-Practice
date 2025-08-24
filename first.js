@@ -84,3 +84,7 @@ let gameNum = 20;
  }
 
  console.log ("You have guessed the correct number.");
+
+ let str="Hello World!";
+
+ console.log (str.length);
