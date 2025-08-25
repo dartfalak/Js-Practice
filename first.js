@@ -87,3 +87,5 @@ for (let num=0; num <= 100 ; num++) {
 
  let str1 = "Hello World!";
  let str2 = "hello world!";
+
+ console.log (str1[8]);
