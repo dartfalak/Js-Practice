@@ -85,6 +85,5 @@ for (let num=0; num <= 100 ; num++) {
 
 //  console.log ("You have guessed the correct number.");
 
- let str = "Hello World!";
-
- console.log (str.length);
+ let str1 = "Hello World!";
+ let str2 = "hello world!";
