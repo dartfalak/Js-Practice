@@ -85,7 +85,7 @@ for (let num=0; num <= 100 ; num++) {
 
 //  console.log ("You have guessed the correct number.");
 
- let str1 = "Hello World!";
+ let str1 = "algorithm";
  let str2 = "hello world!";
 
  console.log (str1[2]);
