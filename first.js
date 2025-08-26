@@ -88,4 +88,4 @@ for (let num=0; num <= 100 ; num++) {
  let str1 = "algorithm";
  let str2 = "hello world!";
 
- console.log (str2[2]);
+ console.log (str2[8]);
