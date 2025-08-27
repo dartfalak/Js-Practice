@@ -74,7 +74,7 @@ for (let num=0; num <= 100 ; num++) {
 
 
 
- let gameNum = 30;
+ let gameNum = 50;
 
   let userNum=prompt ("Guess the number :");
 
@@ -87,5 +87,3 @@ for (let num=0; num <= 100 ; num++) {
  let str2 = "hello world!";
 
  console.log (str2[6]);
-
-
