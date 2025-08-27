@@ -74,7 +74,7 @@ for (let num=0; num <= 100 ; num++) {
 
 
 
- let gameNum = 50;
+ let gameNum = 100;
 
   let userNum=prompt ("Guess the number :");
 
