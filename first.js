@@ -60,30 +60,38 @@ console.log ("loop has ended");
 //     i++;
 // } while (i <=10)
 
-let str="Hello World!";
-for (let i of str) {
-    console.log("i=",i);
-}
+// let str="Hello World!";
+// for (let i of str) {
+//     console.log("i=",i);
+// }
 
-for (let num=0; num <= 100 ; num++) {
-    if (num%2!==0) {
-        console.log (num, "is odd.");
-    }
+// for (let num=0; num <= 100 ; num++) {
+//     if (num%2!==0) {
+//         console.log (num, "is odd.");
+//     }
     
-}
+// }
 
 
 
- let gameNum = 100;
+//  let gameNum = 100;
 
-  let userNum=prompt ("Guess the number :");
+//   let userNum=prompt ("Guess the number :");
 
- while (userNum != gameNum) {
-    userNum=prompt ("Wrong guess. Try again :");  }
+//  while (userNum != gameNum) {
+//     userNum=prompt ("Wrong guess. Try again :");  }
 
- console.log ("You have guessed the correct number.");
+//  console.log ("You have guessed the correct number.");
 
- let str1 = "algorithm";
- let str2 = "hello world!";
+//  let str1 = "algorithm";
+//  let str2 = "hello world!";
 
- console.log (str2[6]);
+//  console.log (str2[6]);
+
+
+ let i = 1;
+
+do {
+  console.log(i);
+  i++;
+} while (i <= 5);
