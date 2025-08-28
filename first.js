@@ -95,3 +95,21 @@ do {
   console.log(i);
   i++;
 } while (i <= 5);
+
+
+const laptop = {
+  brand: "Dell",
+  model: "XPS 13",
+  year: 2023,
+  price: 1299
+};
+
+const summary = `
+Laptop Details:
+Brand: ${laptop.brand}
+Model: ${laptop.model}
+Year: ${laptop.year}
+Price: $${laptop.price}
+`;
+
+console.log(summary);
