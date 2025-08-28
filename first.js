@@ -101,7 +101,7 @@ const laptop = {
   brand: "Dell",
   model: "XPS 13",
   year: 2023,
-  price: 1299
+  price: 1290
 };
 
 const summary = `
