@@ -100,7 +100,7 @@ do {
 const laptop = {
   brand: "Dell",
   model: "XPS 13",
-  year: 2023,
+  year: 2021,
   price: 1299
 };
 
