@@ -117,7 +117,7 @@ console.log(summary);
 
 
 
-const name = "Levi";
+const name = "Chloe";
 const age = 25;
 
 const message = `Hello, my name is ${name} and I am ${age} years old.`;
