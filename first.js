@@ -43,16 +43,16 @@ if (number%3==15) {
 
 // console.log("The player is", player);
 
-let age=18;
-age >= 18 ? console.log ("Adult.") : console.log ("Minor.");
+// let age=18;
+// age >= 18 ? console.log ("Adult.") : console.log ("Minor.");
 
 
-for (let i=1; i <=10; i++) {
-    console.log ("i = " , i);
-}
+// for (let i=1; i <=10; i++) {
+//     console.log ("i = " , i);
+// }
 
   
-console.log ("loop has ended");
+// console.log ("loop has ended");
 
 // let i=1;
 // do {
@@ -113,3 +113,14 @@ Price: $${laptop.price}
 `;
 
 console.log(summary);
+
+
+
+
+const name = "Alice";
+const age = 25;
+
+const message = `Hello, my name is ${name} and I am ${age} years old.`;
+
+console.log(message);
+
