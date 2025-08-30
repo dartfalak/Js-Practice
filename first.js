@@ -115,12 +115,8 @@ Price: $${laptop.price}
 console.log(summary);
 
 
+const a = 5;
+const b = 7;
 
-
-const name = "Alice";
-const age = 25;
-
-const message = `Hello, my name is ${name} and I am ${age} years old.`;
-
-console.log(message);
-
+const result = `The sum of ${a} and ${b} is ${a + b}.`;
+console.log(result);
