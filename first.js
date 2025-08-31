@@ -120,3 +120,10 @@ const b = 9;
 
 const result = `The sum of ${a} and ${b} is ${a + b}.`;
 console.log(result);
+
+const str = "Hello, world!";
+
+
+console.log(str.toUpperCase());
+
+
