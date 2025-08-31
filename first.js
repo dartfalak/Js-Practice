@@ -126,7 +126,8 @@ const str = "Hello, world!";
 
 console.log(str.toUpperCase());
 
-
 console.log(str.toLowerCase()); 
 
 console.log(str.slice(0, 5));
+
+console.log(str.replace("world", "JavaScript")); 
