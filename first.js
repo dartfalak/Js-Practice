@@ -130,7 +130,9 @@ console.log(str.toLowerCase());
 
 console.log(str.slice(0, 4));
 
-
 console.log(str.replace("world", "JavaScript")); 
 
 console.log(str.includes("world")); 
+
+console.log("  hello  ".trim()); 
+
