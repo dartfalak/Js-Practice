@@ -136,3 +136,5 @@ console.log(str.includes("world"));
 
 console.log("  hello  ".trim()); 
 
+
+console.log (str.charAt(7));
