@@ -143,4 +143,9 @@ console.log(str[0])
 
 
 let fullName = prompt("Enter your full name: ");
+
+let username= "@" +fulllName
 console.log(fullName);
+
+
+
