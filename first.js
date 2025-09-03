@@ -142,10 +142,11 @@ console.log(str[0])
 
 
 
-let fullName = prompt("Enter your full name: ");
+// let fullName = prompt("Enter your full name: ");
 
-let username = "@" + fullName + fullName.length;
-console.log(username);
+// let username = "@" + fullName + fullName.length;
+// console.log(username);
 
 
 let numbers = [10, 20, 30, 40, 50];
+console.log(numbers);
