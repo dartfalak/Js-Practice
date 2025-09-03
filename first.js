@@ -148,4 +148,4 @@ let username = "@" + fullName + fullName.length;
 console.log(username);
 
 
-
+let numbers = [10, 20, 30, 40, 50];
