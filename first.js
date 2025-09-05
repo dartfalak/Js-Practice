@@ -147,10 +147,9 @@ console.log(str[0])
 // let username = "@" + fullName + fullName.length;
 // console.log(username);
 
+let characters = [ethan, bob, orion, sam, kai];
+console.log(characters);
 
-let numbers = [10, 20, 30, 40, 50];
-console.log(numbers);
-
-for (let idx=0; idx<numbers.length; ){
-  console.log(numbers[idx]);
+for (let idx=0; idx<characters.length; ){
+  console.log(characters[idx]);
 }
