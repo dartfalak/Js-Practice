@@ -148,13 +148,13 @@ console.log(str[0])
 // console.log(username);
 
 
-// let characters = ["ethan", "bob" , "orion", "sam", "kai"];
+ let characters = ["ethan", "bob" , "orion", "sam", "kai"];
 // console.log(characters);
 
 // for (let i=0; i<characters.length; ){
 //   console.log(characters[i]);
 // }
 
-for (let idx in characters) {
+for (let character of  characters) {
   console.log(characters)
 }
