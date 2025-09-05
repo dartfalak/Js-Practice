@@ -166,5 +166,5 @@ let marks = [85, 92, 78, 90, 88];
 let sum = 0;
 
 for (let val of marks) {
-  console.log(val);
+  sum += val;
 }
