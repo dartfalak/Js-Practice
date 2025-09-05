@@ -148,9 +148,13 @@ console.log(str[0])
 // console.log(username);
 
 
-let characters = ["ethan", "bob" , "orion", "sam", "kai"];
-console.log(characters);
+// let characters = ["ethan", "bob" , "orion", "sam", "kai"];
+// console.log(characters);
 
-for (let idx=0; idx<characters.length; ){
-  console.log(characters[idx]);
+// for (let i=0; i<characters.length; ){
+//   console.log(characters[i]);
+// }
+
+for (let idx in characters) {
+  console.log(characters)
 }
