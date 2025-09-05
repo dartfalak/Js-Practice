@@ -156,5 +156,5 @@ console.log(str[0])
 // }
 
 for (let character of  characters) {
-  console.log(characters.toUpprCase)
+  console.log(characters.toUpperCase)
 }
