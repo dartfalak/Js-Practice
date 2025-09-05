@@ -147,7 +147,8 @@ console.log(str[0])
 // let username = "@" + fullName + fullName.length;
 // console.log(username);
 
-let characters = [ethan, bob, orion, sam, kai];
+
+let characters = ["ethan", "bob" , "orion", "sam", "kai"];
 console.log(characters);
 
 for (let idx=0; idx<characters.length; ){
