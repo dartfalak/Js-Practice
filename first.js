@@ -168,3 +168,6 @@ let sum = 0;
 for (let val of marks) {
   sum += val;
 }
+
+let avg = sum / marks.length;
+console.log("Average marks:", avg);
