@@ -151,4 +151,6 @@ console.log(str[0])
 let numbers = [10, 20, 30, 40, 50];
 console.log(numbers);
 
-for (let idx=0; idx<numbers.length; );
+for (let idx=0; idx<numbers.length; ){
+  console/log(numbers[idx]);
+}
