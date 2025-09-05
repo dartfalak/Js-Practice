@@ -152,5 +152,5 @@ let numbers = [10, 20, 30, 40, 50];
 console.log(numbers);
 
 for (let idx=0; idx<numbers.length; ){
-  console/log(numbers[idx]);
+  console.log(numbers[idx]);
 }
