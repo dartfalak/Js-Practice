@@ -174,8 +174,9 @@ console.log("Average marks:", avg);
 
 let items = [130, 200, 150, 300, 250];
 
-let idx=0;
+let i=0;
 
 for (let val of items) {
   console.log("Item", idx, "costs", val);
+  i++;
 }
