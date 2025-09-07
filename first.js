@@ -89,7 +89,7 @@ if (number%3==15) {
 //  console.log (str2[6]);
 
 
- let i = 1;
+//  let i = 1;
 
 do {
   console.log(i);
@@ -174,9 +174,9 @@ console.log("Average marks:", avg);
 
 let items = [130, 200, 150, 300, 250];
 
-let i=0;
+let i = 0;
 
 for (let val of items) {
-  console.log("Item", idx, "costs", val);
+  console.log("Item", i, "costs", val);
   i++;
 }
