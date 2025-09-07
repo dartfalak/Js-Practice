@@ -178,5 +178,8 @@ let i = 0;
 
 for (let val of items) {
   console.log("Item", i, "costs", val);
+  let offer = val/10;
+  items[i= items[i] - offer];
+  console.log("After 10% discount, Item", i, "costs", items[i]);
   i++;
 }
