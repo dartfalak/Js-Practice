@@ -183,3 +183,5 @@ for (let val of items) {
   console.log("After 10% discount, Item", i, "costs", items[i]);
   i++;
 }
+
+let colors = ["red", "green", "blue", "yellow"];
