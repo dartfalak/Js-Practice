@@ -198,3 +198,5 @@ console.log(numbers);
 
 oddNumbers.shift(1);
 console.log(oddNumbers);
+
+console.log(oddNumbers.slice(1,3));
