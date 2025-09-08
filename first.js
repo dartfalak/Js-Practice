@@ -190,4 +190,5 @@ let colors = ["red", "green", "blue", "yellow"];
 console.log(colors);
 console.log(colors.toString());
 
-
+let oddNumbers = [1,3,5,7,9];
+let multiplesOfFive = [5,10,15,20,25];
