@@ -185,4 +185,7 @@ for (let val of items) {
 }
 
 let colors = ["red", "green", "blue", "yellow"];
+
+colors.pop()
+
 console.log(colors);
