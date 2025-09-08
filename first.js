@@ -201,4 +201,4 @@ console.log(oddNumbers);
 
 console.log(oddNumbers.slice(1,3));
 
-oddNumbers.splice
+oddNumbers.splice(1,2,11,13);
