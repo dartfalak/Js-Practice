@@ -196,5 +196,5 @@ let multiplesOfFive = [5,10,15,20,25];
 let numbers = oddNumbers.concat(multiplesOfFive);
 console.log(numbers);
 
-oddNumbers.unshift(11);
+oddNumbers.shift(1);
 console.log(oddNumbers);
