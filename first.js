@@ -91,10 +91,10 @@ if (number%3==15) {
 
 //  let i = 1;
 
-do {
-  console.log(i);
-  i++;
-} while (i <= 5);
+// do {
+//   console.log(i);
+//   i++;
+// } while (i <= 5);
 
 
 const laptop = {
@@ -185,3 +185,4 @@ for (let val of items) {
 }
 
 let colors = ["red", "green", "blue", "yellow"];
+console.log(colors);
