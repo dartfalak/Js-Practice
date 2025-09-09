@@ -229,3 +229,5 @@ function countVowels (str) {
 
 
 }
+
+const arrowCountVowels = (str) => {
