@@ -163,7 +163,7 @@ for (let character of  characters) {
 
 let marks = [85, 92, 78, 90, 88];
 
-let sum = 0;
+// let sum = 0;
 
 for (let val of marks) {
   sum += val;
@@ -202,3 +202,8 @@ console.log(oddNumbers);
 console.log(oddNumbers.slice(1,3));
 
 oddNumbers.splice(1,2,11,13);
+
+
+function sum(a,b) {
+  console.log(a+b);
+}
