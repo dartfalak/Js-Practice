@@ -206,5 +206,5 @@ oddNumbers.splice(1,2,11,13);
 
 function sum(a,b) {
   s = a + b;
-  return s
+  return s;
 }
