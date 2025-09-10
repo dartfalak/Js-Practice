@@ -253,3 +253,5 @@ num.forEach (function printVal (val) {
   console.log(val);
 
 });
+
+let numbers = [1,2,3,4,5,6];
