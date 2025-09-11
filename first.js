@@ -272,4 +272,6 @@ console.log(evenNum);
 
 const output = numbers.reduce((res,current) =>{
   return res + current;
-})
+});
+
+console.log(output);
