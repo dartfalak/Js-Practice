@@ -264,6 +264,8 @@ numbers.map ((val) => {
   console.log(val);
 })
 
-numbers.filter ((val) => {
+ let evenNum = numbers.filter ((val) => {
   return val % 2 === 0;
 });
+
+console.log(evenNum);
