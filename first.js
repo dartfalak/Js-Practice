@@ -266,4 +266,4 @@ numbers.map ((val) => {
 
 numbers.filter ((val) => {
   return val % 2 === 0;
-}
+})
