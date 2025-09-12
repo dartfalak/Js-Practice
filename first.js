@@ -276,7 +276,7 @@ const output = numbers.reduce((res,current) =>{
 
 console.log(output);
 
-let n= prompt ("Enter a number :");
+let n= prompt ("enter a number :");
 
 let arr = [];
 
@@ -285,3 +285,15 @@ for ( let i=1; i <= n; i++) {
 }
 
 console.log(arr);
+
+
+
+
+
+
+
+
+
+
+
+
