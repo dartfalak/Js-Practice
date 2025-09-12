@@ -287,8 +287,9 @@ for ( let i=1; i <= n; i++) {
 console.log(arr);
 
 
-
-
+function countVowels (str) {
+  let count = 0;
+let vowels = "aeiouAEIOU";
 
 
 
