@@ -298,7 +298,7 @@ for (let i=0; i < str.length; i++) {
 
 return count;
 }
-console.log(countVowels("hello"));
+// console.log(countVowels("hello"));
 
 
 
