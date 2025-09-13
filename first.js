@@ -305,6 +305,6 @@ let heading = document.getElementById("heading");
 console.log(heading);
 
 
-
+document.getElementsByClassName("heading");
 
 
