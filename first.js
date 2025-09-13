@@ -301,8 +301,8 @@ return count;
 // console.log(countVowels("hello"));
 
 
-// `let heading = document.getElementById("heading");
-// console.log(heading);
+let heading = document.getElementById("heading");
+ console.log(heading);
 
 
 let headings = document.getElementsByClassName("heading");
