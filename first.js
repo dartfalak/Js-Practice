@@ -304,8 +304,6 @@ return count;
 let heading = document.getElementById("heading");
  console.log(heading);
 
-let head = document.getElementsByTagName("h1")
-
 let headings = document.getElementsByClassName("heading");
 console.dir(headings);
 console.log(headings);
