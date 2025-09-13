@@ -309,5 +309,5 @@ let headings = document.getElementsByClassName("heading");
 console.dir(headings);
 console.log(headings);
 
-let para = document.getElementsByTagName("p");
+let para = document.querySelector("p");
 console.dir(para);
