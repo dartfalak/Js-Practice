@@ -312,4 +312,4 @@ return count;
 // console.dir(para);
 
 let div = document.querySelectorAll("div");
-console.log(div);
+console.dir(div);
