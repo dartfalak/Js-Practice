@@ -311,4 +311,5 @@ console.log(headings);
 let para = document.querySelector("p");
 console.dir(para);
 
-;et div = document.querySelectorAll("div");
+let div = document.querySelectorAll("div");
+console.log(div);
