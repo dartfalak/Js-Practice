@@ -304,12 +304,12 @@ return count;
 // let heading = document.getElementById("heading");
 //  console.log(heading);
 
-let headings = document.getElementsByClassName("heading");
-console.dir(headings);
-console.log(headings);
+// let headings = document.getElementsByClassName("heading");
+// console.dir(headings);
+// console.log(headings);
 
-let para = document.querySelector("p");
-console.dir(para);
+// let para = document.querySelector("p");
+// console.dir(para);
 
 let div = document.querySelectorAll("div");
 console.log(div);
