@@ -313,3 +313,6 @@ return count;
 
 let div = document.querySelectorAll("div");
 console.dir(div);
+
+
+console.dir(document.body.firstChild);
