@@ -274,17 +274,17 @@ const output = numbers.reduce((res,current) =>{
   return res + current;
 });
 
-console.log(output);
+// console.log(output);
 
-let n= prompt ("enter a number :");
+// let n= prompt ("enter a number :");
 
-let arr = [];
+// let arr = [];
 
-for ( let i=1; i <= n; i++) {
-  arr[i-1] = i;
-}
+// for ( let i=1; i <= n; i++) {
+//   arr[i-1] = i;
+// }
 
-console.log(arr);
+// console.log(arr);
 
 
 function countVowels (str) {
