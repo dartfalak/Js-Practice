@@ -311,8 +311,8 @@ return count;
 // let para = document.querySelector("p");
 // console.dir(para);
 
-let div = document.querySelectorAll("div");
-console.dir(div);
+// let div = document.querySelectorAll("div");
+// console.dir(div);
 
 
 console.dir(document.body.firstChild);
