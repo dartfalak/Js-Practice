@@ -318,4 +318,4 @@ return count;
 console.dir(document.body.firstChild);
 
 let h1 = document.querySelector("h1");
-console.dir(h1);
+console.dir(h1.innerText);
