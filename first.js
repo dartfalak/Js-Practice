@@ -336,3 +336,4 @@ newHeading.innerHTML = "<i>This is a new heading</i>";
 document.querySelector("body").prepend(newHeading);
 
 let para = document.querySelector("p");
+para.remove();
