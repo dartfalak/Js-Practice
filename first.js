@@ -327,5 +327,5 @@ newBtn.innerText = "Click Me";
 console.log(newBtn);
 
 let div = document.querySelector("div");
-div.prepend(newBtn);
+div.before(newBtn);
 
