@@ -284,7 +284,7 @@ const output = numbers.reduce((res,current) =>{
 //   arr[i-1] = i;
 // }
 
-// console.log(arr);
+//  
 
 
 function countVowels (str) {
@@ -317,7 +317,10 @@ return count;
 
  
 
-let h1 = document.querySelector("h1");
-console.dir(h1.innerText);
+// let h1 = document.querySelector("h1");
+// console.dir(h1.innerText);
 
-h1.innerText = h1.innerText + " and everyone";
+// h1.innerText = h1.innerText + " and everyone";
+
+let newBtn = document.createElement("button");
+console.log(newBtn);
