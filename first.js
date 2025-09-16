@@ -323,4 +323,5 @@ return count;
 // h1.innerText = h1.innerText + " and everyone";
 
 let newBtn = document.createElement("button");
+newBtn.innerText = "Click Me";
 console.log(newBtn);
