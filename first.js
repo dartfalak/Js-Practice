@@ -329,3 +329,10 @@ console.log(newBtn);
 let div = document.querySelector("div");
 div.after(newBtn);
 
+
+let newHeading = document.createElement("h2");
+newHeading.innerHTML = "<i>This is a new heading</i>";
+
+document.querySelector("body").prepend(newHeading);
+
+let para = document.querySelector("p");
