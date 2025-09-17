@@ -350,3 +350,5 @@ return count;
 // btn.addEventListener("click", () => {
 //  console.log("Button clicked"); 
 // });
+
+let modeBtn = document.querySelector("#mode");
