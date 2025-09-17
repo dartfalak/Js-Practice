@@ -322,18 +322,18 @@ return count;
 
 // h1.innerText = h1.innerText + " and everyone";
 
-let newBtn = document.createElement("button");
-newBtn.innerText = "Click Me";
-console.log(newBtn);
+// let newBtn = document.createElement("button");
+// newBtn.innerText = "Click Me";
+// console.log(newBtn);
 
-let div = document.querySelector("div");
-div.after(newBtn);
+// let div = document.querySelector("div");
+// div.after(newBtn);
 
 
-let newHeading = document.createElement("h2");
-newHeading.innerHTML = "<i>This is a new heading</i>";
+// let newHeading = document.createElement("h2");
+// newHeading.innerHTML = "<i>This is a new heading</i>";
 
-document.querySelector("body").prepend(newHeading);
+// document.querySelector("body").prepend(newHeading);
 
- let para = document.querySelector("p");
-para.remove();
+//  let para = document.querySelector("p");
+// para.remove(); 
