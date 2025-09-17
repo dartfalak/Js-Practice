@@ -340,9 +340,9 @@ return count;
 
 let btn = document.querySelector("#btn");
 
-btn.onclick = () => {
+btn.onclick = (evt) => {
   console.log("Button clicked");
-  let y = 6;
-   y++;
-console.log(y);
+ 
 }
+
+
