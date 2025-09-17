@@ -338,12 +338,15 @@ return count;
 //  let para = document.querySelector("p");
 // para.remove(); 
 
-let btn = document.querySelector("#btn");
+// let btn = document.querySelector("#btn");
 
-btn.onclick = (evt) => {
-  console.log(evt);
-  console.log(evt.type);
+// btn.onclick = (evt) => {
+//   console.log(evt);
+//   console.log(evt.type);
  
-};
+// };
 
-
+ 
+btn.addEventListener("click", () => {
+ console.log("Button clicked"); 
+});
