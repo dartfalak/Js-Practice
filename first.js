@@ -341,8 +341,9 @@ return count;
 let btn = document.querySelector("#btn");
 
 btn.onclick = (evt) => {
-  console.log("Button clicked");
+  console.log(evt);
+  console.log(evt.type);
  
-}
+};
 
 
