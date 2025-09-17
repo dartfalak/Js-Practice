@@ -342,7 +342,7 @@ let btn = document.querySelector("#btn");
 
 btn.onclick = () => {
   console.log("Button clicked");
-let y = 6;
-y++;
+  let y = 6;
+   y++;
 console.log(y);
 }
