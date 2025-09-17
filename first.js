@@ -352,3 +352,14 @@ return count;
 // });
 
 let modeBtn = document.querySelector("#mode");
+let currentMode = "light";
+
+
+
+modeBtn.addEventListener("click", () => {
+  if(currentMode === "light") {
+    currentMode = "dark";
+
+  }
+});
+
