@@ -12,3 +12,9 @@ hoverBox.addEventListener("mouseover", function () {
     hoverBox.innerText = "Mouse is over me";
 });
 
+
+hoverBox.addEventListener("mouseout", function () (
+    hoverBox.style.backgroundColor = "gray";
+    hoverBox.innerText = "Hover over me";
+    
+})
