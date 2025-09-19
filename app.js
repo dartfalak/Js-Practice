@@ -1,4 +1,5 @@
 
+
 document.addEventListener("DOMContent", function () {
     
     document.getElementById("mode").addEventListener)("click", function () {
@@ -17,4 +18,6 @@ hoverBox.addEventListener("mouseout", function () (
     hoverBox.style.backgroundColor = "gray";
     hoverBox.innerText = "Hover over me";
     
-})
+});
+
+});
