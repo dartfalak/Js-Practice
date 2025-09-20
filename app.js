@@ -24,6 +24,6 @@ const hoverText = document.getElementById("hoverText");
 const msg = document.getElementById("msg");
 
 hoverText.addEventListener("mouseout", () => {
-    msg.innerText = "Mouse is out of the text";
+    msg.style.transform = "scale(1)";
 });
 
