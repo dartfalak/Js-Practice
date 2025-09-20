@@ -32,3 +32,7 @@ const fadeText = document.getElementById("fadeText");
 fadeText.addEventListener("mouseover", () => {
     fadeText.style.opacity = "0.5";
 });
+
+fadeText.addEventListener("mouseout", () => {
+    fadeText.style.opacity = "1";
+});
