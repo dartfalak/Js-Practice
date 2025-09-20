@@ -16,8 +16,8 @@
 
 const box = document.getElementById("box");
 
-box.addEventListener("mouseout", function () {
-    box.style.backgroundColor = "red";
+box.addEventListener("mouseover", function () {
+    box.style.transform = "scale(1.3)";
 });
 
 const hoverText = document.getElementById("hoverText");
@@ -26,3 +26,4 @@ const msg = document.getElementById("msg");
 hoverText.addEventListener("mouseout", () => {
     msg.innerText = "Mouse is out of the text";
 });
+
