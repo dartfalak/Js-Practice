@@ -27,3 +27,8 @@ hoverText.addEventListener("mouseout", () => {
     msg.style.transform = "scale(1)";
 });
 
+const fadeText = document.getElementById("fadeText");
+
+fadeText.addEventListener("mouseover", () => {
+    fadeText.style.opacity = "0.5";
+});
