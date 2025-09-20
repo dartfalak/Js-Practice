@@ -17,7 +17,6 @@ hoverBox.addEventListener("mouseover", function () {
 hoverBox.addEventListener("mouseout", function () (
     hoverBox.style.backgroundColor = "gray";
     hoverBox.innerText = "Hover over me";
-    
 });
 
-});
+    });
