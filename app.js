@@ -20,3 +20,6 @@ box.addEventListener("mouseout", function () {
     box.style.backgroundColor = "red";
 });
 
+const hoverText = document.getElementById("hoverText");
+const msg = document.getElementById("msg");
+
