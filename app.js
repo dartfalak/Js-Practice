@@ -23,3 +23,6 @@ box.addEventListener("mouseout", function () {
 const hoverText = document.getElementById("hoverText");
 const msg = document.getElementById("msg");
 
+hoverText.addEventListener("mouseout", () => {
+    msg.innerText = "Mouse is out of the text";
+});
