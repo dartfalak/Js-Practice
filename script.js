@@ -55,7 +55,10 @@ class User {
     constructor(id, name, isActive, role=
          "User")  {
         this.id = id;
-        
+        this.name = name;
+        this.isActive = isActive;
+        this.role = role;
+
 
     }
 }
