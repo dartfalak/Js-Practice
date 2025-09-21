@@ -61,4 +61,6 @@ class User {
 
 
     }
-}
+};
+
+const user3 = new User (1, "Bob", true);
