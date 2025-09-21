@@ -37,14 +37,16 @@
 //     fadeText.style.opacity = "1";
 // });
 
-const user = {
+const user1 = {
     name: "John",
     role: "admin",
     isActive: true
 };
 
-const producr = {
-    id: "p-1002",
-    name: "airpods",
-    inStock: true
+const user2 = {
+    name: "Alice",
+    role: "admin",
+    isActive: true
 };
+
+user1.__proto__ = user2;
