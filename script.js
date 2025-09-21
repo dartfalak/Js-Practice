@@ -1,38 +1,50 @@
 
 
-// document.addEventListener("DOMContent", function () {
+// // document.addEventListener("DOMContent", function () {
     
-//     document.getElementById("mode").addEventListener)("click", function () {
-//         alert("Button clicked");
-//     });
+// //     document.getElementById("mode").addEventListener)("click", function () {
+// //         alert("Button clicked");
+// //     });
 
-// const hoverBox  = document.getElementById("hoverBox");
+// // const hoverBox  = document.getElementById("hoverBox");
 
-// hoverBox.addEventListener("mouseover", function () {
-//     hoverBox.style.backgroundColor = "blue";
-//     hoverBox.innerText = "Mouse is over me";
+// // hoverBox.addEventListener("mouseover", function () {
+// //     hoverBox.style.backgroundColor = "blue";
+// //     hoverBox.innerText = "Mouse is over me";
+// // });
+
+
+// const box = document.getElementById("box");
+
+// box.addEventListener("mouseover", function () {
+//     box.style.transform = "scale(1.3)";
 // });
 
+// const hoverText = document.getElementById("hoverText");
+// const msg = document.getElementById("msg");
 
-const box = document.getElementById("box");
+// hoverText.addEventListener("mouseout", () => {
+//     msg.style.transform = "scale(1)";
+// });
 
-box.addEventListener("mouseover", function () {
-    box.style.transform = "scale(1.3)";
-});
+// const fadeText = document.getElementById("fadeText");
 
-const hoverText = document.getElementById("hoverText");
-const msg = document.getElementById("msg");
+// fadeText.addEventListener("mouseover", () => {
+//     fadeText.style.opacity = "0.5";
+// });
 
-hoverText.addEventListener("mouseout", () => {
-    msg.style.transform = "scale(1)";
-});
+// fadeText.addEventListener("mouseout", () => {
+//     fadeText.style.opacity = "1";
+// });
 
-const fadeText = document.getElementById("fadeText");
+const user = {
+    name: "John",
+    role: "admin",
+    isActive: true
+};
 
-fadeText.addEventListener("mouseover", () => {
-    fadeText.style.opacity = "0.5";
-});
-
-fadeText.addEventListener("mouseout", () => {
-    fadeText.style.opacity = "1";
-});
+const producr = {
+    id: "p-1002",
+    name: "airpods",
+    inStock: true
+};
