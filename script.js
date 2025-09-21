@@ -50,3 +50,12 @@ const user2 = {
 };
 
 user1.__proto__ = user2;
+
+class User {
+    constructor(id, name, isActive, role=
+         "User")  {
+        this.id = id;
+        
+
+    }
+}
