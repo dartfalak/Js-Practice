@@ -79,8 +79,9 @@ class Person {
 };
 
 class Developer extends Person {
-    code() {
-        console.log("Coding...");
+    constructor(branch) {
+        super();
+        this.branch = branch;
     }
 }
 
