@@ -78,9 +78,11 @@ class Person {
     }
 };
 
-class Developer {
+class Developer extends Person {
     code() {
         console.log("Coding...");
+    }
 }
 
 
+let falakObj = new Developer();
