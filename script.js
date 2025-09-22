@@ -68,3 +68,19 @@ const user3 = new User (1, "Bob", true);
 class Admin extends User {}
 
 let admin1 = new Admin (2, "Charlie", true, "Admin");
+
+class Person {
+    eat() {
+        console.log("Eating...");
+}
+    sleep() {
+        console.log("Sleeping...");
+    }
+};
+
+class Developer {
+    code() {
+        console.log("Coding...");
+}
+
+
