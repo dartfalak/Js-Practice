@@ -70,8 +70,8 @@ class Admin extends User {}
 let admin1 = new Admin (2, "Charlie", true, "Admin");
 
 class Person {
-    eat() {
-        console.log("Eating...");
+    constructor() {
+        this.eat = "Eating...";
 }
     sleep() {
         console.log("Sleeping...");
