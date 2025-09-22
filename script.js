@@ -63,4 +63,8 @@ class User {
     }
 };
 
-const user3 = new User (1, "Bob", true);
+const user3 = new User (1, "Bob", true); 
+
+class Admin extends User {}
+
+let admin1 = new Admin (2, "Charlie", true, "Admin");
