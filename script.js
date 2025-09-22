@@ -85,5 +85,4 @@ class Developer extends Person {
     }
 }
 
-
-let falakObj = new Developer();
+let developerObj = new Developer("frontend");
