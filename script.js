@@ -43,13 +43,13 @@ const user1 = {
     isActive: true
 };
 
-const user2 = {
-    name: "Alice",
-    role: "admin",
-    isActive: true
-};
+// const user2 = {
+//     name: "Alice",
+//     role: "admin",
+//     isActive: true
+// };
 
-user1.__proto__ = user2;
+// user1.__proto__ = user2;
 
 class User {
     constructor(id, name, isActive, role=
@@ -87,6 +87,9 @@ class Developer extends Person {
 
 let developerObj = new Developer("frontend");
 
+
+let info = "Developer Branch"
+
 class User {
     constructor(name, age) {
         this.name = name;
@@ -97,3 +100,15 @@ viewDetails() {
     console.log(`Name: ${this.name}, Age: ${this.age}`);
     }
 }
+
+class Member extends User {
+    editDetails(name, age) {
+        info = "Member Branch"
+    }
+}
+
+
+
+
+let user2 = new User("David", 30);
+
