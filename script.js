@@ -86,3 +86,14 @@ class Developer extends Person {
 }
 
 let developerObj = new Developer("frontend");
+
+class User {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+}
+
+viewDetails() {
+    console.log(`Name: ${this.name}, Age: ${this.age}`);
+    }
+}
