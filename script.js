@@ -88,32 +88,40 @@ class Developer extends Person {
 let developerObj = new Developer("frontend");
 
 
-let info = "Developer Branch"
+// let info = "Developer Branch"
+
+// class User {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+// }
+
+// viewDetails() {
+//     console.log(`Name: ${this.name}, Age: ${this.age}`);
+//     }
+// }
+
+// class Member extends User {
+//     constructor(name, age) {
+//         super(name, age);
+    
+//     }
+//     editDetails() {
+//             info = "Member Branch";
+//   }
+// }
+
+
+
+// let user2 = new User("David", 30);
+
 
 class User {
-    constructor(name, age) {
+    constructor(name) {
         this.name = name;
-        this.age = age;
-}
-
-viewDetails() {
-    console.log(`Name: ${this.name}, Age: ${this.age}`);
     }
-}
 
-class Member extends User {
-    constructor(name, age) {
-        super(name, age);
-    
-    }
-    editDetails() {
-            info = "Member Branch";
+    sayHello() {
+        console.log(`Hello, ${this.name}`);
   }
 }
-
-
-
-
-
-let user2 = new User("David", 30);
-
