@@ -125,3 +125,14 @@ class User {
         console.log(`Hello, ${this.name}`);
   }
 }
+
+class Member extends User {
+    constructor(name, memberId) {
+        super(name);
+        this.memberId = memberId;
+    }
+
+    displayInfo() {
+        console.log(`Name: ${this.name}, Member ID: ${this.memberId}`);
+    }
+}
