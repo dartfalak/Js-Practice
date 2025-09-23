@@ -102,10 +102,15 @@ viewDetails() {
 }
 
 class Member extends User {
-    editDetails(name, age) {
-        info = "Member Branch"
+    constructor(name, age) {
+        super(name, age);
+    
     }
+    editDetails() {
+            info = "Member Branch";
+  }
 }
+
 
 
 
