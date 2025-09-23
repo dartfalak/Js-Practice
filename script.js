@@ -136,3 +136,5 @@ class Member extends User {
         console.log(`Name: ${this.name}, Member ID: ${this.memberId}`);
     }
 }
+
+let member1 = new Member("Eve", 101);
