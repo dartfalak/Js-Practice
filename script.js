@@ -142,7 +142,9 @@ let developerObj = new Developer("frontend");
 function getInput (inputId,getNextId) {
     setTimeout(() => {
     console.log("inputId:", inputId)
-    getNextId();
+    if(getNextId) {
+        getNextId();
+    }
  }, 1000);
 
 
