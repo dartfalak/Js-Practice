@@ -116,25 +116,29 @@ let developerObj = new Developer("frontend");
 // let user2 = new User("David", 30);
 
 
-class User {
-    constructor(name) {
-        this.name = name;
-    }
+// class User {
+//     constructor(name) {
+//         this.name = name;
+//     }
 
-    sayHello() {
-        console.log(`Hello, ${this.name}`);
-  }
+//     sayHello() {
+//         console.log(`Hello, ${this.name}`);
+//   }
+// }
+
+// class Member extends User {
+//     constructor(name, memberId) {
+//         super(name);
+//         this.memberId = memberId;
+//     }
+
+//     displayInfo() {
+//         console.log(`Name: ${this.name}, Member ID: ${this.memberId}`);
+//     }
+// }
+
+// let member1 = new Member("Eve", 101);
+
+function getInput (inputId) {
+    console.log("inputId:", inputId)
 }
-
-class Member extends User {
-    constructor(name, memberId) {
-        super(name);
-        this.memberId = memberId;
-    }
-
-    displayInfo() {
-        console.log(`Name: ${this.name}, Member ID: ${this.memberId}`);
-    }
-}
-
-let member1 = new Member("Eve", 101);
