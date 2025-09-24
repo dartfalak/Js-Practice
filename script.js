@@ -140,5 +140,9 @@ let developerObj = new Developer("frontend");
 // let member1 = new Member("Eve", 101);
 
 function getInput (inputId) {
+    setTimeout(() => {
     console.log("inputId:", inputId)
+ }, 1000);
+ 
 }
+
