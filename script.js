@@ -148,7 +148,10 @@ function getInput (inputId,getNextId) {
 
 }
 
-getInput(1);
-getInput(2);
-getInput(3);
+getInput(1,() => {
+    getInput(2);
+});
+
+// getInput(2);
+// getInput(3);
 
