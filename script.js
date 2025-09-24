@@ -139,10 +139,16 @@ let developerObj = new Developer("frontend");
 
 // let member1 = new Member("Eve", 101);
 
-function getInput (inputId) {
+function getInput (inputId,getNextId) {
     setTimeout(() => {
     console.log("inputId:", inputId)
+    getNextId();
  }, 1000);
- 
+
+
 }
+
+getInput(1);
+getInput(2);
+getInput(3);
 
