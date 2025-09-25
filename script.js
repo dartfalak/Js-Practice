@@ -156,14 +156,14 @@ function getInput (inputId,getNextId) {
 // });
 
 
- const promise1 = () => {
+ const getPromise = () => {
   return new Promise((resolve, reject) => {
     console.log("promise started");
     resolve("promise resolved");
   });
  }
 
-let promiseResult = promise1();
-promise1.then (() => {
+ let promiseResult = getPromise();
+ promise.then (() => {
     console.log("promiseResult:", promiseResult);
 });
