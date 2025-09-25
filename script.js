@@ -157,7 +157,7 @@ function getInput (inputId,getNextId) {
 
 
  const promise1 = () => {
-new Promise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     console.log("promise started");
     resolve("promise resolved");
   });
