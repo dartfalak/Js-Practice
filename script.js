@@ -164,10 +164,10 @@ function getInput (inputId,getNextId) {
  }
 
  let promiseResult = getPromise();
- promise.then (() => {
+ promise.then ((res) => {
     console.log("promiseResult:", promiseResult);
 });
 
-promise.catch(() => {
+promise.catch((error) => {
     console.log("Error")
 });
