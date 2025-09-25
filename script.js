@@ -164,3 +164,6 @@ new Promise((resolve, reject) => {
  }
 
 let promiseResult = promise1();
+promise1.then (() => {
+    console.log("promiseResult:", promiseResult);
+});
