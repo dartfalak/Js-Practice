@@ -162,3 +162,5 @@ new Promise((resolve, reject) => {
     resolve("promise resolved");
   });
  }
+
+let promiseResult = promise1();
