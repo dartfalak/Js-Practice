@@ -142,7 +142,7 @@
 function getInput (inputId,getNextId) { 
     return new Promise((resolve, reject) => {
      setTimeout(() => {
-    console.log("inputId:", inputId)
+    console.log("inputId:", inputId) 
     if(getNextId) {
         getNextId();
     }
@@ -155,7 +155,10 @@ function getInput (inputId,getNextId) {
 //     getInput(2);
 // });
 
-let promise = new Promise((resolve, reject) => {
+
+ const promise1 = () => {
+new Promise((resolve, reject) => {
     console.log("promise started");
     resolve("promise resolved");
-});
+  });
+ }
