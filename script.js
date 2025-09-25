@@ -167,3 +167,7 @@ function getInput (inputId,getNextId) {
  promise.then (() => {
     console.log("promiseResult:", promiseResult);
 });
+
+promise.catch(() => {
+    console.log("Error")
+});
