@@ -139,21 +139,23 @@
 
 // // let member1 = new Member("Eve", 101);
 
-// function getInput (inputId,getNextId) {
-//     setTimeout(() => {
-//     console.log("inputId:", inputId)
-//     if(getNextId) {
-//         getNextId();
-//     }
-//  }, 1000);
+function getInput (inputId,getNextId) { 
+    return new Promise((resolve, reject) => {
+     setTimeout(() => {
+    console.log("inputId:", inputId)
+    if(getNextId) {
+        getNextId();
+    }
+ }, 1000);
 
-
-// }
+    });
+}
 
 // getInput(1,() => {
 //     getInput(2);
 // });
 
 let promise = new Promise((resolve, reject) => {
-    console.log("Promise started");
+    console.log("promise started");
+    resolve("promise resolved");
 });
