@@ -171,3 +171,8 @@ function getInput (inputId,getNextId) {
 promise.catch((error) => {
     console.log("Error")
 });
+
+let promise = new Promise ((resolve, reject) => {
+    console.log("Promise started");
+reject("Promise rejected");
+}); 
