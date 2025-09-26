@@ -186,4 +186,8 @@ function asyncFunc() {
   });
 }
 
-let p1 = asyncFunc();
+let promise = asyncFunc();
+promise.then((res) => {
+    console.log("Promise Result:", res);
+
+});
