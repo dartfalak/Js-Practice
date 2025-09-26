@@ -180,7 +180,7 @@
 function asyncFunc() {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      console.log("Async Function resolved");
+      console.log("async function resolved");
       resolve("success");
     }, 2000);
   });
@@ -188,6 +188,6 @@ function asyncFunc() {
 
 let promise = asyncFunc();
 promise.then((res) => {
-    console.log("Promise Result:", res);
+    console.log("promise Result:", res);
 
 });
