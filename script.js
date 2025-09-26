@@ -180,9 +180,9 @@
 function asyncFunc() {
     return new Promise((resolve,reject) => {
     set Timeout(() => {
-        console.log("Async Function resolved");
-        resolve("success");
+    console.log("Async Function resolved");
+    resolve("success");
     }, 2000);
 
   });
-}
+} 
