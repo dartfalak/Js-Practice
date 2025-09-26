@@ -173,6 +173,7 @@ promise.catch((error) => {
 });
 
 let promise = new Promise ((resolve, reject) => {
-    console.log("Promise started");
-reject("Promise rejected");
+  console.log("Promise started");
+   reject("some error occurred");
 }); 
+
