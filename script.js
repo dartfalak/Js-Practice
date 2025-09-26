@@ -178,11 +178,12 @@
 // }); 
 
 function asyncFunc() {
-    return new Promise((resolve,reject) => {
-    set Timeout(() => {
-    console.log("Async Function resolved");
-    resolve("success");
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      console.log("Async Function resolved");
+      resolve("success");
     }, 2000);
-
   });
-} 
+}
+
+let p1 = asyncFunc();
