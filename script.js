@@ -139,41 +139,50 @@
 
 // // let member1 = new Member("Eve", 101);
 
-function getInput (inputId,getNextId) { 
-    return new Promise((resolve, reject) => {
-     setTimeout(() => {
-    console.log("inputId:", inputId) 
-    if(getNextId) {
-        getNextId();
-    }
- }, 1000);
+// function getInput (inputId,getNextId) { 
+//     return new Promise((resolve, reject) => {
+//      setTimeout(() => {
+//     console.log("inputId:", inputId) 
+//     if(getNextId) {
+//         getNextId();
+//     }
+//  }, 1000);
 
-    });
-}
+//     });
+// }
 
 // getInput(1,() => {
 //     getInput(2);
 // });
 
 
- const getPromise = () => {
-  return new Promise((resolve, reject) => {
-    console.log("promise started");
-    resolve("promise resolved");
+//  const getPromise = () => {
+//   return new Promise((resolve, reject) => {
+//     console.log("promise started");
+//     resolve("promise resolved");
+//   });
+//  }
+
+//  let promiseResult = getPromise();
+//  promise.then ((res) => {
+//     console.log("promiseResult:", promiseResult);
+// });
+
+// promise.catch((error) => {
+//     console.log("Error")
+// });
+
+// let promise = new Promise ((resolve, reject) => {
+//   console.log("Promise started");
+//    reject("some error occurred");
+// }); 
+
+function asyncFunc() {
+    return new Promise((resolve,reject) => {
+    set Timeout(() => {
+        console.log("Async Function resolved");
+        resolve("success");
+    }, 2000);
+
   });
- }
-
- let promiseResult = getPromise();
- promise.then ((res) => {
-    console.log("promiseResult:", promiseResult);
-});
-
-promise.catch((error) => {
-    console.log("Error")
-});
-
-let promise = new Promise ((resolve, reject) => {
-  console.log("Promise started");
-   reject("some error occurred");
-}); 
-
+}
