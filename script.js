@@ -155,6 +155,7 @@ getInput(1).then((res) => {
   console.log("first input done");
     getInput(2).then((res) => {
         console.log("second input done");
+    })
 });
 
 
