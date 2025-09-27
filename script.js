@@ -163,7 +163,9 @@ getInput(1)
     console.log("third input done");
   });
 
-
+async function fetchData() {
+  console.log("fetching data...");
+}
 
 //  const getPromise = () => {
 //   return new Promise((resolve, reject) => {
