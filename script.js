@@ -150,7 +150,8 @@ function getInput (inputId,getNextId) {
 
     });
 }
-
+ 
+console.log("script started");
 getInput(1)
     .then((res) => {
   return getData(2);
