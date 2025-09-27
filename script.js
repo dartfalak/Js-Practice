@@ -151,12 +151,14 @@ function getInput (inputId,getNextId) {
     });
 }
 
-getInput(1).then((res) => {
-  console.log("first input done");
-    getInput(2).then((res) => {
+getInput(1)
+    .then((res) => {
+  return getData(2);
+})
+    .then((res) => {
         console.log("second input done");
-    })
-});
+    });
+
 
 
 //  const getPromise = () => {
