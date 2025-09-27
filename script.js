@@ -155,9 +155,12 @@ getInput(1)
     .then((res) => {
   return getData(2);
 })
-    .then((res) => {
+  .then((res) => {
         console.log("second input done");
-    });
+    })
+  .then((res) => {
+    console.log("third input done");
+  });
 
 
 
