@@ -211,3 +211,13 @@ function addNumbers(a, b) {
     }, 1000);
   });
 }
+
+async function run() {
+  console.log("starting calculations...");
+};
+
+let result = await addNumbers(5, 10);
+
+console.log("Result:", result);
+
+run();
