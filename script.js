@@ -202,3 +202,12 @@ promise.then((res) => {
     console.log("promise Result:", res);
 
 });
+
+
+function addNumbers(a, b) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      resolve(a + b);
+    }, 1000);
+  });
+}
