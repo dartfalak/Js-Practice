@@ -188,20 +188,20 @@ async function fetchData() {
 //    reject("some error occurred");
 // }); 
 
-function asyncFunc() {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log("async function resolved");
-      resolve("success");
-    }, 2000);
-  });
-}
+// function asyncFunc() {
+//   return new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       console.log("async function resolved");
+//       resolve("success");
+//     }, 2000);
+//   });
+// }
 
-let promise = asyncFunc();
-promise.then((res) => {
-    console.log("promise Result:", res);
+// let promise = asyncFunc();
+// promise.then((res) => {
+//     console.log("promise Result:", res);
 
-});
+// });
 
 
 function addNumbers(a, b) {
@@ -213,11 +213,11 @@ function addNumbers(a, b) {
 }
 
 async function run() {
-  console.log("starting calculations...");
+  await addNumbers();
 };
 
-let result = await addNumbers(5, 10);
+// let result = await addNumbers(5, 10);
 
-console.log("Result:", result);
+// console.log("Result:", result);
 
 run();
