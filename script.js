@@ -221,3 +221,17 @@ async function run() {
 // console.log("Result:", result);
 
 run();
+
+
+
+function delay(ms) {
+  return new Promise((resolve) => setTimeout(resolve, ms));
+}
+
+async function execute() {
+  console.log("execution started");
+  await delay(2000);
+  console.log("execution ended after 2 seconds");
+}
+
+execute();
