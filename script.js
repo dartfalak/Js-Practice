@@ -235,3 +235,21 @@ async function execute() {
 }
 
 execute();
+
+
+async function fetchData() {
+  return { data: "Sample Data" };
+
+}
+
+async function displayData(data) {
+  console.log("Data:", data);
+}
+
+async function process() {
+  const data = await fetchData();
+  const processedData = await displayData(data);
+  console.log("Processed Data:", processedData);
+}
+
+process();
