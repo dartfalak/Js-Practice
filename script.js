@@ -255,3 +255,5 @@ async function process() {
 process();
 
 const result = await addAfterDelay(2,8, 2000);
+
+await tryThreeTimes(failingFunction, 3);
