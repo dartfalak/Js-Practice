@@ -253,3 +253,5 @@ async function process() {
 }
 
 process();
+
+await logAfterDelay("Hello", 2000);
