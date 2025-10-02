@@ -254,4 +254,4 @@ async function process() {
 
 process();
 
-await logAfterDelay("Hello", 2000);
+const result = await addAfterDelay(2,8, 2000);
