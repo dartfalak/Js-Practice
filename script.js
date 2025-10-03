@@ -269,3 +269,6 @@ const getJokes = async () => {
   console.log(data[1].text);
 }
  
+funtion getJokes() {
+    fetch(URL).then((response) => {
+    return response.json();
