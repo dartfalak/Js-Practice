@@ -260,11 +260,12 @@
 
 
 const URL = "https://official-joke-api.appspot.com/jokes/random";
+const jokeElement = document.getElementById("joke");
 
 const getJokes = async () => {
   let response = await fetch(URL);
   console.log(response);
   let data = await response.json();
-  console.log(data);
+  console.log(data[1].text);
 }
  
