@@ -270,9 +270,12 @@ const getJokes = async () => {
 }
  
 funtion getJokes() {
-    fetch(URL).then((response) => {
+  fetch(URL)
+    .then((response) => {
     return response.json();
-    }).then((data) => {
+    })
+    .then((data) => {
       console.log(data[1].text);
+      jokeElement.innerText = data[1].text;
     });
 }
