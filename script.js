@@ -262,7 +262,9 @@
 const URL = "https://official-joke-api.appspot.com/jokes/random";
 
 const getJokes = async () => {
-  let promise = await fetch(URL);
-  console.log("Promise:", promise);
+  let response = await fetch(URL);
+  console.log(response);
+  let data = await response.json();
+  console.log(data);
 }
  
