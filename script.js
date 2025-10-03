@@ -269,7 +269,7 @@ const getJokes = async () => {
   console.log(data[1].text);
 }
  
-funtion getJokes() {
+function getJokes() {
   fetch(URL)
     .then((response) => {
     return response.json();
