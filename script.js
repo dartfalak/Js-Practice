@@ -281,3 +281,8 @@ function getJokes() {
       jokeElement.innerText = data[1].text;
     });
 }
+
+data.forEach((joke) => {
+  const li = document.createElement("li");
+  li.innerText
+}
