@@ -282,12 +282,12 @@ function getJokes() {
     });
 }
 
-data.forEach((joke) => {
-  const li = document.createElement("li");
-  li.innerText = `${joke.setup} - ${joke.punchline}`;
-  jokeList.appendChild(li);
-   });
-  } catch (error) {
-    console.error ("error fetching jokes:",error);
-    )
-  }
+try {
+  data.forEach((joke) => {
+    const li = document.createElement("li");
+    li.innerText = `${joke.setup} - ${joke.punchline}`;
+    jokeList.appendChild(li);
+  });
+} catch (error) {
+  console.error("Error fetching jokes:", error);
+}
