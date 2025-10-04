@@ -284,5 +284,6 @@ function getJokes() {
 
 data.forEach((joke) => {
   const li = document.createElement("li");
-  li.innerText
+  li.innerText = `${joke.setup} - ${joke.punchline}`;
+  jokeList 
 }
