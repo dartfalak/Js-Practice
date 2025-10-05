@@ -323,4 +323,3 @@ function refreshJokes() {
 }
 
 
-getJokes()
