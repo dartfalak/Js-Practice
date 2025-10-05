@@ -298,4 +298,10 @@ function handleError(error) {
   jokeElement.innerText = "Oops! Couldn't load jokes. Please try again later.";
 }
 
+function refreshJokes() {
+  jokeElement.innerText = "Loading new jokes...";
+  getJokes();
+}
+
+
 getJokes()
