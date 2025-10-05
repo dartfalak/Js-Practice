@@ -291,3 +291,9 @@ try {
 } catch (error) {
   console.error("Error fetching jokes:", error);
 }
+
+
+function handleError(error) {
+  console.error("Error fetching or displaying jokes:", error);
+  jokeElement.innerText = "Oops! Couldn't load jokes. Please try again later.";
+}
