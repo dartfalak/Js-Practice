@@ -298,6 +298,17 @@ function handleError(error) {
   jokeElement.innerText = "Oops! Couldn't load jokes. Please try again later.";
 }
 
+
+function filterJokesByKeyword(jokes, keyword) {
+  const filtered = jokes.filter(joke =>
+    joke.setup.toLowerCase().includes(keyword.toLowerCase()) ||
+    joke.punchline.toLowerCase().includes(keyword.toLowerCase())
+  );
+  displayJokeList(filtered);
+}
+
+
+
 function refreshJokes() {
   jokeElement.innerText = "Loading new jokes...";
   getJokes();
