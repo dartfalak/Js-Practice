@@ -282,21 +282,21 @@ function getJokes() {
     });
 }
 
-try {
-  data.forEach((joke) => {
-    const li = document.createElement("li");
-    li.innerText = `${joke.setup} - ${joke.punchline}`;
-    jokeList.appendChild(li);
-  });
-} catch (error) {
-  console.error("Error fetching jokes:", error);
-}
+// try {
+//   data.forEach((joke) => {
+//     const li = document.createElement("li");
+//     li.innerText = `${joke.setup} - ${joke.punchline}`;
+//     jokeList.appendChild(li);
+//   });
+// } catch (error) {
+//   console.error("Error fetching jokes:", error);
+// }
 
 
-function handleError(error) {
-  console.error("Error fetching or displaying jokes:", error);
-  jokeElement.innerText = "Oops! Couldn't load jokes. Please try again later.";
-}
+// function handleError(error) {
+//   console.error("Error fetching or displaying jokes:", error);
+//   jokeElement.innerText = "Oops! Couldn't load jokes. Please try again later.";
+// }
 
 
 function filterJokesByKeyword(jokes, keyword) {
