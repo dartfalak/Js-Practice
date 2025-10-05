@@ -307,6 +307,14 @@ function filterJokesByKeyword(jokes, keyword) {
   displayJokeList(filtered);
 }
 
+function searchJokes() {
+  const keyword = document.getElementById("keywordInput").value;
+  fetch(URL)
+    .then(response => response.json())
+    .then(data => filterJokesByKeyword(data, keyword))
+    .catch(handleError);
+}
+
 
 
 function refreshJokes() {
