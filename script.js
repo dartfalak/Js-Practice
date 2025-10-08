@@ -334,3 +334,11 @@ async function showMessage() {
 }
 
 showMessage();
+
+async function task1() {
+    return "Task 1 done"
+}
+
+async function task2() {
+    return "Task 2 done"
+}
