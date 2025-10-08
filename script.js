@@ -342,3 +342,7 @@ async function task1() {
 async function task2() {
     return "Task 2 done"
 }
+
+async function runAll() {
+    const result = await Promise.all([task1(),task2()])
+}
