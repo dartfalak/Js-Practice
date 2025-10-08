@@ -345,4 +345,5 @@ async function task2() {
 
 async function runAll() {
     const result = await Promise.all([task1(),task2()])
+    console.log(result);
 }
