@@ -259,67 +259,78 @@
 // await tryThreeTimes(failingFunction, 3);
 
 
-const URL = "https://official-joke-api.appspot.com/jokes/random";
+// const URL = "https://official-joke-api.appspot.com/jokes/random";
 
-      const jokeElement = document.getElementById("joke");
-      const jokeList = document.getElementById("jokeList");
+//       const jokeElement = document.getElementById("joke");
+//       const jokeList = document.getElementById("jokeList");
 
-const getJokes = async () => {
-  let response = await fetch(URL);
-  console.log(response);
-  let data = await response.json();
-  console.log(data[1].text);
-}
+// const getJokes = async () => {
+//   let response = await fetch(URL);
+//   console.log(response);
+//   let data = await response.json();
+//   console.log(data[1].text);
+// }
  
-function getJokes() {
-  fetch(URL)
-    .then((response) => {
-    return response.json();
-    })
-    .then((data) => {
-      console.log(data[1].text);
-      jokeElement.innerText = data[1].text;
-    });
-}
+// function getJokes() {
+//   fetch(URL)
+//     .then((response) => {
+//     return response.json();
+//     })
+//     .then((data) => {
+//       console.log(data[1].text);
+//       jokeElement.innerText = data[1].text;
+//     });
+// }
 
-// try {
-//   data.forEach((joke) => {
-//     const li = document.createElement("li");
-//     li.innerText = `${joke.setup} - ${joke.punchline}`;
-//     jokeList.appendChild(li);
-//   });
-// } catch (error) {
-//   console.error("Error fetching jokes:", error);
+// // try {
+// //   data.forEach((joke) => {
+// //     const li = document.createElement("li");
+// //     li.innerText = `${joke.setup} - ${joke.punchline}`;
+// //     jokeList.appendChild(li);
+// //   });
+// // } catch (error) {
+// //   console.error("Error fetching jokes:", error);
+// // }
+
+
+// // function handleError(error) {
+// //   console.error("Error fetching or displaying jokes:", error);
+// //   jokeElement.innerText = "Oops! Couldn't load jokes. Please try again later.";
+// // }
+
+
+// function filterJokesByKeyword(jokes, keyword) {
+//   const filtered = jokes.filter(joke =>
+//     joke.setup.toLowerCase().includes(keyword.toLowerCase()) ||
+//     joke.punchline.toLowerCase().includes(keyword.toLowerCase())
+//   );
+//   displayJokeList(filtered);
+// }
+
+// function searchJokes() {
+//   const keyword = document.getElementById("keywordInput").value;
+//   fetch(URL)
+//     .then(response => response.json())
+//     .then(data => filterJokesByKeyword(data, keyword))
+//     .catch(handleError);
 // }
 
 
-// function handleError(error) {
-//   console.error("Error fetching or displaying jokes:", error);
-//   jokeElement.innerText = "Oops! Couldn't load jokes. Please try again later.";
+
+// function refreshJokes() {
+//   jokeElement.innerText = "Loading new jokes...";
+//   getJokes();
 // }
 
 
-function filterJokesByKeyword(jokes, keyword) {
-  const filtered = jokes.filter(joke =>
-    joke.setup.toLowerCase().includes(keyword.toLowerCase()) ||
-    joke.punchline.toLowerCase().includes(keyword.toLowerCase())
-  );
-  displayJokeList(filtered);
+function delay(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
 }
 
-function searchJokes() {
-  const keyword = document.getElementById("keywordInput").value;
-  fetch(URL)
-    .then(response => response.json())
-    .then(data => filterJokesByKeyword(data, keyword))
-    .catch(handleError);
+async function showMessage() {
+  console.log("Waiting...");
+  await delay(2000);
+  console.log("Done after 2 seconds!");
 }
 
-
-
-function refreshJokes() {
-  jokeElement.innerText = "Loading new jokes...";
-  getJokes();
-}
-
-
+showMessage();
