@@ -350,8 +350,14 @@ async function runAll() {
 
 runAll()  
 
-let oddNumbers = new Promise((resolve,reject)) => {
+let oddNumbers = new Promise((resolve,reject)) =>{ 
     setTimeout(()=> {
         resolve("3,5,7")
-    })
-})
+    },1000)
+}
+
+let evenNumbers = new Promise((resolve,reject)) => {
+    setTimeout(()=> {
+        resolve("2,4,6")
+    },1000)
+}
