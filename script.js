@@ -347,3 +347,11 @@ async function runAll() {
     const result = await Promise.all([task1(),task2()])
     console.log(result);
 }
+
+runAll()  
+
+let oddNumbers = new Promise((resolve,reject)) => {
+    setTimeout(()=> {
+        resolve("3,5,7")
+    })
+})
