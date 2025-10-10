@@ -323,51 +323,57 @@
 // }
 
 
-function delay(ms) {
-  return new Promise(resolve => setTimeout(resolve, ms));
-}
+// function delay(ms) {
+//   return new Promise(resolve => setTimeout(resolve, ms));
+// }
 
-async function showMessage() {
-  console.log("Waiting...");
-  await delay(2000);
-  console.log("Done after 2 seconds!");
-}
+// async function showMessage() {
+//   console.log("Waiting...");
+//   await delay(2000);
+//   console.log("Done after 2 seconds!");
+// }
 
-showMessage();
+// showMessage();
 
-async function task1() {
-    return "Task 1 done"
-}
+// async function task1() {
+//     return "Task 1 done"
+// }
 
-async function task2() {
-    return "Task 2 done"
-}
+// async function task2() {
+//     return "Task 2 done"
+// }
 
-async function runAll() {
-    const result = await Promise.all([task1(),task2()])
-    console.log(result);
-}
+// async function runAll() {
+//     const result = await Promise.all([task1(),task2()])
+//     console.log(result);
+// }
 
-runAll()  
-async function numbers() {
-  let oddNumbers = new Promise((resolve, reject) => { 
-    setTimeout(() => {
-      resolve("3,5,7");
-    }, 1000);
-  });
+// runAll()  
+// async function numbers() {
+//   let oddNumbers = new Promise((resolve, reject) => { 
+//     setTimeout(() => {
+//       resolve("3,5,7");
+//     }, 1000);
+//   });
 
-  let evenNumbers = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve("2,4,6");
-    }, 1000);
-  });
+//   let evenNumbers = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//       resolve("2,4,6");
+//     }, 1000);
+//   });
 
 
-  let odd = await oddNumbers;
-  let even = await evenNumbers;
+//   let odd = await oddNumbers;
+//   let even = await evenNumbers;
 
-  console.log("Odd:", odd);
-  console.log("Even:", even);
-}
+//   console.log("Odd:", odd);
+//   console.log("Even:", even);
+// }
 
-numbers();
+// numbers();
+
+let promise = new Promise(function(resolve,reject) {
+    resolve(30)
+})
+
+console.log(promise)
