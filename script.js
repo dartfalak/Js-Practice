@@ -381,4 +381,8 @@ let promise = new Promise(function(resolve,reject) {
   }
 })
 
-console.log(promise)
+promise.then((message) => {
+  console.log ('then' + message)
+}). catch((message) => {
+  console.log('catch'+ message)
+})
