@@ -402,6 +402,7 @@ const fetchDataThree = new Promise((resolve,reject) => {
 Promise.all ([
  fetchDataOne,
  fetchDataTwo,
-  fetchDataThree
-
-])
+ fetchDataThree
+]).then(message) => {
+   console.log(message)
+})
