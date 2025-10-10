@@ -394,3 +394,14 @@ const fetchDataOne = new Promise((resolve,reject) => {
 const fetchDataTwo = new Promise((resolve,reject) => {
   resolve('fetching data two')
 })
+
+const fetchDataThree = new Promise((resolve,reject) => {
+  resolve('fetching data three ')
+})
+
+Promise.all ([
+ fetchDataOne,
+ fetchDataTwo,
+  fetchDataThree
+
+])
