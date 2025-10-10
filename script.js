@@ -386,3 +386,11 @@ promise.then((message) => {
 }). catch((message) => {
   console.log('catch'+ message)
 })
+
+const fetchDataOne = new Promise((resolve,reject) => {
+  resolve('fetching data one')
+})
+
+const fetchDataTwo = new Promise((resolve,reject) => {
+  resolve('fetching data two')
+})
