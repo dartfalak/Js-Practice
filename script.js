@@ -373,7 +373,12 @@
 // numbers();
 
 let promise = new Promise(function(resolve,reject) {
-    resolve(30)
+    let sum = 4+4
+  if(sum==8) {
+    resolve("success")
+  } else {
+    reject("Wrong")
+  }
 })
 
 console.log(promise)
