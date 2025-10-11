@@ -389,5 +389,9 @@ try {
  console.log('end');
 
 } catch (err) {
-  console.log('error has occured:'= err.stock);
+  console.log('error has occured:'= err.stack);
+} finally {
+  console.log('run');
 }
+
+console.log('execution continues');
