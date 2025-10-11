@@ -395,3 +395,16 @@ try {
 }
 
 console.log('execution continues');
+
+let json = '{"age" : 60}';
+
+try {
+  let user = JSON.parse(json);
+  if (!user.name) {
+    throw new SyntaxError ("Try again");
+  }
+
+  console.log(user.name);
+} catch (e) {
+  console.log("JSON Error:" + e.message);
+}
