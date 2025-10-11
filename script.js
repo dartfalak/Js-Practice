@@ -381,28 +381,13 @@ let promise = new Promise(function(resolve,reject) {
   }
 })
 
-promise.then((message) => {
-  console.log ('then' + message)
-}). catch((message) => {
-  console.log('catch'+ message)
-})
+try {
+  console.log('start')
 
-const fetchDataOne = new Promise((resolve,reject) => {
-  resolve('fetching data one')
-})
+  subject;
 
-const fetchDataTwo = new Promise((resolve,reject) => {
-  resolve('fetching data two')
-})
+ console.log('end');
 
-const fetchDataThree = new Promise((resolve,reject) => {
-  resolve('fetching data three ')
-})
-
-Promise.all ([
- fetchDataOne,
- fetchDataTwo,
- fetchDataThree
-]).then(message) => {
-   console.log(message)
-})
+} catch (err) {
+  console.log('error has occured:'= err.stock);
+}
