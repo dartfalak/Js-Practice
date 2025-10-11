@@ -396,15 +396,16 @@ try {
 
 console.log('execution continues');
 
-let json = '{"age" : 60}';
+
+let json = '{"name": "Alex"}';
 
 try {
   let user = JSON.parse(json);
-  if (!user.name) {
-    throw new SyntaxError ("Try again");
+  if (!user.age) {
+    throw new SyntaxError("Age is missing!");
   }
 
-  console.log(user.name);
+  console.log(user.age);
 } catch (e) {
-  console.log("JSON Error:" + e.message);
+  console.log("JSON Error: " + e.message);
 }
