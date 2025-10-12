@@ -400,7 +400,7 @@ let json = '{}';
 
 try {
   let user = JSON.parse(json);
-  if (!user.age) {
+  if (!user.name || !user.age) {
     throw new SyntaxError("Incomplete user data!");
   }
   console.log("User:", user);
