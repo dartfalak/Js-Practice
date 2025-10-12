@@ -396,12 +396,15 @@ try {
 
 console.log('execution continues');
 
-
-let json = '{"name": "John", "age": 25,'; // missing closing brace
+let json = '{"name": "Lisa", "age": "twenty"}';
 
 try {
   let user = JSON.parse(json);
-  console.log(user.name);
+  if (typeof user.age !== "number") {
+    throw new TypeError("Age must be a number!");
+  }
+
+  console.log("Age:", user.age);
 } catch (e) {
-  console.log("Invalid JSON: " + e.message);
+  console.log("Type Error: " + e.message);
 }
