@@ -397,15 +397,11 @@ try {
 console.log('execution continues');
 
 
-let json = '{"name": "Alex"}';
+let json = '{"name": "John", "age": 25,'; // missing closing brace
 
 try {
   let user = JSON.parse(json);
-  if (!user.age) {
-    throw new SyntaxError("Age is missing!");
-  }
-
-  console.log(user.age);
+  console.log(user.name);
 } catch (e) {
-  console.log("JSON Error: " + e.message);
+  console.log("Invalid JSON: " + e.message);
 }
