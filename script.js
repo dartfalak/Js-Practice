@@ -396,15 +396,14 @@ try {
 
 console.log('execution continues');
 
-let json = '{"name": "Lisa", "age": "twenty"}';
+let json = '{}';
 
 try {
   let user = JSON.parse(json);
-  if (typeof user.age !== "number") {
-    throw new TypeError("Age must be a number!");
+  if (!user.name || !user.age) {
+    throw new SyntaxError("Incomplete user data!");
   }
-
-  console.log("Age:", user.age);
+  console.log("User:", user);
 } catch (e) {
-  console.log("Type Error: " + e.message);
+  console.log("Error: " + e.message);
 }
