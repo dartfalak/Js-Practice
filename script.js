@@ -396,14 +396,41 @@ try {
 
 console.log('execution continues');
 
-let json = '{}';
+let jsonSamples = [
+  '{}', // Missing data
+  '{"name": "Lisa"}', // Missing age
+  '{"age": 25}', // Missing name
+  '{"name": "Lisa", "age": "twenty"}', // Wrong data type
+  '{"name": "Lisa", "age": 25}', // Correct data
+  '{"name": "Tom", "age": -5}', // Invalid value
+  '{bad json}', // Invalid JSON syntax
+];
 
-try {
-  let user = JSON.parse(json);
-  if (!user.name || !user.age) {
-    throw new SyntaxError("Incomplete user data!");
+for (let json of jsonSamples) {
+  try {
+    console.log("Parsing:", json);
+
+    let user = JSON.parse(json); 
+
+    
+    if (!user.name || !user.age) {
+      throw new SyntaxError("Incomplete user data!");
+    }
+
+  
+    if (typeof user.age !== "number") {
+      throw new TypeError("Age must be a number!");
+    }
+
+  
+    if (user.age < 0 || user.age > 120) {
+      throw new RangeError("Age value is not realistic!");
+    }
+
+    console.log("✅ User data is valid:", user);
+  } catch (e) {
+    console.log("❌ Error:", e.name + " - " + e.message);
   }
-  console.log("User:", user);
-} catch (e) {
-  console.log("Error: " + e.message);
+
+  console.log("---------------------");
 }
