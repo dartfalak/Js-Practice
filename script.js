@@ -397,13 +397,13 @@ try {
 console.log('execution continues');
 
 let jsonSamples = [
-  '{}', // Missing data
-  '{"name": "Lisa"}', // Missing age
-  '{"age": 25}', // Missing name
-  '{"name": "Lisa", "age": "twenty"}', // Wrong data type
-  '{"name": "Lisa", "age": 25}', // Correct data
-  '{"name": "Tom", "age": -5}', // Invalid value
-  '{bad json}', // Invalid JSON syntax
+  '{}',
+  '{"name": "Lisa"}',
+  '{"age": 25}',
+  '{"name": "Lisa", "age": "twenty"}', 
+  '{"name": "Lisa", "age": 25}',
+  '{"name": "Tom", "age": -5}',
+  '{bad json}',
 ];
 
 for (let json of jsonSamples) {
