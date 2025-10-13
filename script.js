@@ -427,10 +427,13 @@ for (let json of jsonSamples) {
       throw new RangeError("Age value is not realistic!");
     }
 
-    console.log("✅ User data is valid:", user);
+    console.log(" User data is valid:", user);
   } catch (e) {
     console.log("Error:", e.name + " - " + e.message);
   }
 
   console.log("---------------------");
 }
+
+
+
