@@ -412,7 +412,7 @@ for (let json of jsonSamples) {
 
     let user = JSON.parse(json); 
 
-    
+
     if (!user.name || !user.age) {
       throw new SyntaxError("Incomplete user data!");
     }
@@ -429,7 +429,7 @@ for (let json of jsonSamples) {
 
     console.log("✅ User data is valid:", user);
   } catch (e) {
-    console.log("❌ Error:", e.name + " - " + e.message);
+    console.log("Error:", e.name + " - " + e.message);
   }
 
   console.log("---------------------");
