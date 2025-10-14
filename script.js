@@ -436,8 +436,19 @@ console.log('execution continues');
 // }
 
 
-document.getElementById("textInput").addEventListener("keydown", (e) => {
-  console.log("Event object:", e);
-  console.log("Key pressed:", e.key);
-  console.log("Was Shift pressed?", e.shiftKey);
+// document.getElementById("textInput").addEventListener("keydown", (e) => {
+//   console.log("Event object:", e);
+//   console.log("Key pressed:", e.key);
+//   console.log("Was Shift pressed?", e.shiftKey);
+// });
+
+
+document.getElementById("input").addEventListener("keydown", (e) => {
+  if (e.key === "Enter") {
+    alert("You pressed Enter!");
+  } else if (e.key === "Escape") {
+    alert("You pressed Escape!");
+  } else if (e.key === " ") {
+    alert("You pressed Space!");
+  }
 });
