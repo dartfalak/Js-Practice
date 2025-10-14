@@ -446,8 +446,8 @@ console.log('execution continues');
 document.getElementById("input").addEventListener("keydown", (e) => {
   if (e.key === "Enter") {
     alert("You pressed Enter!");
-  } else if (e.key === "Escape") {
-    alert("You pressed Escape!");
+  } else if (e.key === "ctrl") {
+    alert("You pressed ctrl!");
   } else if (e.key === " ") {
     alert("You pressed Space!");
   }
