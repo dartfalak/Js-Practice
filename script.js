@@ -452,3 +452,9 @@ document.getElementById("input").addEventListener("keydown", (e) => {
     alert("You pressed Space!");
   }
 });
+
+let count = 0;
+document.addEventListener("keydown", () => {
+  count++;
+  document.getElementById("count").textContent = count;
+});
