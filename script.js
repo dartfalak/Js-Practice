@@ -396,44 +396,48 @@ try {
 
 console.log('execution continues');
 
-let jsonSamples = [
-  '{}',
-  '{"name": "Lisa"}',
-  '{"age": 25}',
-  '{"name": "Lisa", "age": "twenty"}', 
-  '{"name": "Lisa", "age": 25}',
-  '{"name": "Tom", "age": -5}',
-  '{bad json}',
-];
+// let jsonSamples = [
+//   '{}',
+//   '{"name": "Lisa"}',
+//   '{"age": 25}',
+//   '{"name": "Lisa", "age": "twenty"}', 
+//   '{"name": "Lisa", "age": 25}',
+//   '{"name": "Tom", "age": -5}',
+//   '{bad json}',
+// ];
 
-for (let json of jsonSamples) {
-  try {
-    console.log("Parsing:", json);
+// for (let json of jsonSamples) {
+//   try {
+//     console.log("Parsing:", json);
 
-    let user = JSON.parse(json); 
+//     let user = JSON.parse(json); 
 
 
-    if (!user.name || !user.age) {
-      throw new SyntaxError("Incomplete user data!");
-    }
-
-  
-    if (typeof user.age !== "number") {
-      throw new TypeError("Age must be a number!");
-    }
+//     if (!user.name || !user.age) {
+//       throw new SyntaxError("Incomplete user data!");
+//     }
 
   
-    if (user.age < 0 || user.age > 120) {
-      throw new RangeError("Age value is not realistic!");
-    }
+//     if (typeof user.age !== "number") {
+//       throw new TypeError("Age must be a number!");
+//     }
 
-    console.log(" User data is valid:", user);
-  } catch (e) {
-    console.log("Error:", e.name + " - " + e.message);
-  }
+  
+//     if (user.age < 0 || user.age > 120) {
+//       throw new RangeError("Age value is not realistic!");
+//     }
 
-  console.log("---------------------");
-}
+//     console.log(" User data is valid:", user);
+//   } catch (e) {
+//     console.log("Error:", e.name + " - " + e.message);
+//   }
+
+//   console.log("---------------------");
+// }
 
 
-
+document.getElementById("textInput").addEventListener("keydown", (e) => {
+  console.log("Event object:", e);
+  console.log("Key pressed:", e.key);
+  console.log("Was Shift pressed?", e.shiftKey);
+});
