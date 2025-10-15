@@ -485,4 +485,10 @@ let num = prompt("enter a number:");
 
 if (num > 0) {
   alert(num + "is positive");
+} else if (number < 0) {
+  alert(number + " is Negative");
+} else if (number == 0) {
+  alert("The number is Zero");
+} else {
+  alert("Please enter a valid number");
 }
