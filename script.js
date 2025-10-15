@@ -458,3 +458,13 @@ document.addEventListener("keydown", () => {
   count++;
   document.getElementById("count").textContent = count;
 });
+
+
+let num = prompt("enter a number:")
+
+if (num % 2 === 0) {
+   alert(num + "is even");
+} else {
+  alert(number + "is odd");
+
+}
