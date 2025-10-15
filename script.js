@@ -481,3 +481,8 @@ if (guess == number) {
 }
 
 
+let num = prompt("enter a number:");
+
+if (num > 0) {
+  alert(num + "is positive");
+}
