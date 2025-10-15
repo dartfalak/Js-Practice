@@ -460,11 +460,24 @@ document.addEventListener("keydown", () => {
 });
 
 
-let num = prompt("enter a number:")
+// let num = prompt("enter a number:")
 
-if (num % 2 === 0) {
-   alert(num + "is even");
+// if (num % 2 === 0) {
+//    alert(num + "is even");
+// } else {
+//   alert(number + "is odd");
+
+// }
+
+
+let random = (Math.random() * 5) + 1; 
+let number = parseInt(random);      
+let guess = prompt("Guess a number between 1 and 5:");
+
+if (guess == number) {
+  alert("Correct!");
 } else {
-  alert(number + "is odd");
-
+  alert("Wrong! It was " + number);
 }
+
+
