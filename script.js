@@ -492,3 +492,15 @@ if (num > 0) {
 } else {
   alert("Please enter a valid number");
 }
+
+document.addEventListener("DOMContentLoaded", function() {
+  const heading = document.getElementById("myHeading");
+
+  heading.addEventListener("mouseover", function() {
+    heading.style.color = "red";
+  });
+
+  heading.addEventListener("mouseout", function() {
+    heading.style.color = "black";
+  });
+});
