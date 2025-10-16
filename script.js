@@ -515,3 +515,9 @@ document.addEventListener("DOMContentLoaded", function () {
     counterText.textContent = count;
   });
 });
+
+
+function sayName() {
+    let name = document.getElementById("nameInput").value;
+    alert("Hello, " + name + "!");
+  }
