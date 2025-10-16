@@ -504,3 +504,14 @@ document.addEventListener("DOMContentLoaded", function() {
     heading.style.color = "black";
   });
 });
+
+document.addEventListener("DOMContentLoaded", function () {
+  let count = 0;
+  const button = document.getElementById("countBtn");
+  const counterText = document.getElementById("counter");
+
+  button.addEventListener("click", function () {
+    count++;
+    counterText.textContent = count;
+  });
+});
