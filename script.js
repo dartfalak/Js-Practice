@@ -521,3 +521,7 @@ function sayName() {
     let name = document.getElementById("nameInput").value;
     alert("Hello, " + name + "!");
   }
+
+
+  let arr1 = [1, 2, 3];
+  let arr2 = [4, 5, 6];
