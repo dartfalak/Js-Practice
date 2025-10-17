@@ -530,3 +530,6 @@ function sayName() {
   return arr1.filter(item => arr2.includes(item));
 }
 
+document.getElementById("btn").addEventListener("click", function() {
+  document.body.classList.toggle("dark-mode");
+});
