@@ -525,3 +525,8 @@ function sayName() {
 
   let arr1 = [1, 2, 3];
   let arr2 = [4, 5, 6];
+
+  function intersection(arr1, arr2) {
+  return arr1.filter(item => arr2.includes(item));
+}
+
