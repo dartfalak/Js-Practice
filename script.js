@@ -570,3 +570,12 @@ if (number % 2 === 0) {
 } else {
   console.log(number + " is odd");
 }
+
+
+let age = 17;
+
+if (age < 18) {
+  console.log("cannot vote");
+} else { 
+  console.log("can vote");
+}
