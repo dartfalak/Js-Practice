@@ -533,3 +533,15 @@ function sayName() {
 document.getElementById("btn").addEventListener("click", function() {
   document.body.classList.toggle("dark-mode");
 });
+
+
+const showTextBtn = document.getElementById("showText");
+const textDiv = document.getElementById("text");
+
+showTextBtn.addEventListener("click", function() {
+    if (textDiv.style.display === "none") {
+        textDiv.style.display = "block";
+    } else {
+        textDiv.style.display = "none";
+    }
+});
