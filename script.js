@@ -544,5 +544,6 @@ showTextBtn.addEventListener("click", function() {
         button.innerText = "hide text";
     } else {
         textDiv.style.display = "none";
+        button.innerText = "show text";
     }
 });
