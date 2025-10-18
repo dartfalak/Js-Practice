@@ -470,15 +470,15 @@ document.addEventListener("keydown", () => {
 // }
 
 
-let random = (Math.random() * 5) + 1; 
-let number = parseInt(random);      
-let guess = prompt("Guess a number between 1 and 5:");
+// let random = (Math.random() * 5) + 1; 
+// let number = parseInt(random);      
+// let guess = prompt("Guess a number between 1 and 5:");
 
-if (guess == number) {
-  alert("Correct!");
-} else {
-  alert("Wrong! It was " + number);
-}
+// if (guess == number) {
+//   alert("Correct!");
+// } else {
+//   alert("Wrong! It was " + number);
+// }
 
 
 let num = prompt("enter a number:");
@@ -547,3 +547,14 @@ showTextBtn.addEventListener("click", function() {
         button.innerText = "show text";
     }
 });
+
+
+let number = 10;
+
+if (number < 0 ) {
+    console.log("negative");
+  } else if (number > 0) {
+    console.log("positive");
+  } else { 
+    console.log("zero");
+  }
