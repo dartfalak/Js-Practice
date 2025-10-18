@@ -541,6 +541,7 @@ const textDiv = document.getElementById("text");
 showTextBtn.addEventListener("click", function() {
     if (textDiv.style.display === "none") {
         textDiv.style.display = "block";
+        button.innerText = "hide text";
     } else {
         textDiv.style.display = "none";
     }
