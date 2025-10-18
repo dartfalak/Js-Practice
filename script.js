@@ -579,3 +579,11 @@ if (age < 18) {
 } else { 
   console.log("can vote");
 }
+
+let value = 45;
+
+if (value >= 1 && value <= 100) {
+  console.log("In range");
+} else {
+  console.log("Out of range");
+}
