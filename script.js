@@ -587,3 +587,4 @@ if (value >= 1 && value <= 100) {
 } else {
   console.log("Out of range");
 }
+
