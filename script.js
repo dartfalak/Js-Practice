@@ -588,3 +588,15 @@ if (value >= 1 && value <= 100) {
   console.log("Out of range");
 }
 
+
+let btnHello = document.getElementById("btnHello");
+let btnWorld = document.getElementById("btnWorld");
+let content = document.getElementById("content");
+let para = document.querySelector("p");
+
+btnHello.addEventListener("click", function() {
+  para.innerText = "Hello";
+});
+
+
+  btnHello.addEventListener("click", function() {
