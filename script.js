@@ -589,16 +589,16 @@ document.addEventListener("keydown", () => {
 // }
 
 
- let btnHello = document.querySelector("#btnHello");
+  let btnHello = document.querySelector("#btnHello");
   let btnWorld = document.querySelector("#btnWorld");
   let content = document.querySelector("#content");
-  let para = document.querySelector("#content p"); // get the <p> inside #content
 
-
+  
   btnHello.addEventListener("click", () => {
-    para.innerText = "Hello";
+    content.innerHTML = "<p>Hello! Welcome to my page </p>";
   });
 
+  
   btnWorld.addEventListener("click", () => {
-    para.innerText = "World";
+    content.innerHTML = "<p>World says hi </p>";
   });
