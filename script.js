@@ -481,122 +481,122 @@ document.addEventListener("keydown", () => {
 // }
 
 
-let num = prompt("enter a number:");
+// let num = prompt("enter a number:");
 
-if (num > 0) {
-  alert(num + "is positive");
-} else if (number < 0) {
-  alert(number + " is Negative");
-} else if (number == 0) {
-  alert("The number is Zero");
-} else {
-  alert("Please enter a valid number");
-}
+// if (num > 0) {
+//   alert(num + "is positive");
+// } else if (number < 0) {
+//   alert(number + " is Negative");
+// } else if (number == 0) {
+//   alert("The number is Zero");
+// } else {
+//   alert("Please enter a valid number");
+// }
 
-document.addEventListener("DOMContentLoaded", function() {
-  const heading = document.getElementById("myHeading");
+// document.addEventListener("DOMContentLoaded", function() {
+//   const heading = document.getElementById("myHeading");
 
-  heading.addEventListener("mouseover", function() {
-    heading.style.color = "red";
+//   heading.addEventListener("mouseover", function() {
+//     heading.style.color = "red";
+//   });
+
+//   heading.addEventListener("mouseout", function() {
+//     heading.style.color = "black";
+//   });
+// });
+
+// document.addEventListener("DOMContentLoaded", function () {
+//   let count = 0;
+//   const button = document.getElementById("countBtn");
+//   const counterText = document.getElementById("counter");
+
+//   button.addEventListener("click", function () {
+//     count++;
+//     counterText.textContent = count;
+//   });
+// });
+
+
+// function sayName() {
+//     let name = document.getElementById("nameInput").value;
+//     alert("Hello, " + name + "!");
+//   }
+
+
+//   let arr1 = [1, 2, 3];
+//   let arr2 = [4, 5, 6];
+
+//   function intersection(arr1, arr2) {
+//   return arr1.filter(item => arr2.includes(item));
+// }
+
+// document.getElementById("btn").addEventListener("click", function() {
+//   document.body.classList.toggle("dark-mode");
+// });
+
+
+// const showTextBtn = document.getElementById("showText");
+// const textDiv = document.getElementById("text");
+
+// showTextBtn.addEventListener("click", function() {
+//     if (textDiv.style.display === "none") {
+//         textDiv.style.display = "block";
+//         button.innerText = "hide text";
+//     } else {
+//         textDiv.style.display = "none";
+//         button.innerText = "show text";
+//     }
+// });
+
+// let score = 72;
+
+// if (score >= 90) {
+//   console.log("Grade: A");
+// } else if (score >= 80) {
+//   console.log("Grade: B");
+// } else if (score >= 70) {
+//   console.log("Grade: C");
+// } else if (score >= 60) {
+//   console.log("Grade: D");
+// } else {
+//   console.log("Grade: F");
+// }
+
+
+// let number = 7;
+
+// if (number % 2 === 0) {
+//   console.log(number + " is even");
+// } else {
+//   console.log(number + " is odd");
+// }
+
+
+// let age = 17;
+
+// if (age < 18) {
+//   console.log("cannot vote");
+// } else { 
+//   console.log("can vote");
+// }
+
+// let value = 45;
+
+// if (value >= 1 && value <= 100) {
+//   console.log("In range");
+// } else {
+//   console.log("Out of range");
+// }
+
+
+ let btnHello = document.querySelector("#btnHello");
+  let btnWorld = document.querySelector("#btnWorld");
+  let content = document.querySelector("#content");
+
+  btnHello.addEventListener("click", () => {
+    content.innerText = "Hello";
   });
 
-  heading.addEventListener("mouseout", function() {
-    heading.style.color = "black";
+  btnWorld.addEventListener("click", () => {
+    content.innerText = "World";
   });
-});
-
-document.addEventListener("DOMContentLoaded", function () {
-  let count = 0;
-  const button = document.getElementById("countBtn");
-  const counterText = document.getElementById("counter");
-
-  button.addEventListener("click", function () {
-    count++;
-    counterText.textContent = count;
-  });
-});
-
-
-function sayName() {
-    let name = document.getElementById("nameInput").value;
-    alert("Hello, " + name + "!");
-  }
-
-
-  let arr1 = [1, 2, 3];
-  let arr2 = [4, 5, 6];
-
-  function intersection(arr1, arr2) {
-  return arr1.filter(item => arr2.includes(item));
-}
-
-document.getElementById("btn").addEventListener("click", function() {
-  document.body.classList.toggle("dark-mode");
-});
-
-
-const showTextBtn = document.getElementById("showText");
-const textDiv = document.getElementById("text");
-
-showTextBtn.addEventListener("click", function() {
-    if (textDiv.style.display === "none") {
-        textDiv.style.display = "block";
-        button.innerText = "hide text";
-    } else {
-        textDiv.style.display = "none";
-        button.innerText = "show text";
-    }
-});
-
-let score = 72;
-
-if (score >= 90) {
-  console.log("Grade: A");
-} else if (score >= 80) {
-  console.log("Grade: B");
-} else if (score >= 70) {
-  console.log("Grade: C");
-} else if (score >= 60) {
-  console.log("Grade: D");
-} else {
-  console.log("Grade: F");
-}
-
-
-let number = 7;
-
-if (number % 2 === 0) {
-  console.log(number + " is even");
-} else {
-  console.log(number + " is odd");
-}
-
-
-let age = 17;
-
-if (age < 18) {
-  console.log("cannot vote");
-} else { 
-  console.log("can vote");
-}
-
-let value = 45;
-
-if (value >= 1 && value <= 100) {
-  console.log("In range");
-} else {
-  console.log("Out of range");
-}
-
-
-let btnHello = document.getElementById("btnHello");
-let btnWorld = document.getElementById("btnWorld");
-let content = document.getElementById("content");
-let para = document.querySelector("p");
-
-btnHello.addEventListener("click", function() {
-  para.innerText = "Hello";
-});
-
-
-  btnHello.addEventListener("click", function() {
