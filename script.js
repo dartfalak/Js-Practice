@@ -592,11 +592,13 @@ document.addEventListener("keydown", () => {
  let btnHello = document.querySelector("#btnHello");
   let btnWorld = document.querySelector("#btnWorld");
   let content = document.querySelector("#content");
+  let para = document.querySelector("#content p"); // get the <p> inside #content
+
 
   btnHello.addEventListener("click", () => {
-    content.innerText = "Hello";
+    para.innerText = "Hello";
   });
 
   btnWorld.addEventListener("click", () => {
-    content.innerText = "World";
+    para.innerText = "World";
   });
