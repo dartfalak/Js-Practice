@@ -604,4 +604,5 @@ document.addEventListener("keydown", () => {
   //   });
 
 const paragraph = document.querySelector('p')
- paragraph.innerText = 'this is the updated paragraph text."
+ paragraph.innerText = 'this is the updated paragraph text.'
+paragraph.textContent = 'tshis is another way to update the paragraph text.'
