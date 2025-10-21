@@ -605,4 +605,8 @@ document.addEventListener("keydown", () => {
 
 const paragraph = document.querySelector('p')
  paragraph.innerText = 'this is the updated paragraph text.'
-paragraph.textContent = 'tshis is another way to update the paragraph text.'
+paragraph.textContent = 'this is another way to update the paragraph text.'
+
+const mul3 = (a, b, c) => {
+  console.log(a * b * c);
+};
