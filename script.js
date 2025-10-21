@@ -624,3 +624,7 @@ const checkNumber = (num) => {
   else if (num < 0) console.log("Negative");
   else console.log("Zero");
 };
+
+const doubleArray = (arr) => arr.map(num => num * 2);
+
+
