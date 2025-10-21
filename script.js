@@ -610,3 +610,11 @@ paragraph.textContent = 'this is another way to update the paragraph text.'
 const mul3 = (a, b, c) => {
   console.log(a * b * c);
 };
+
+const checkEvenOdd = (num) => {
+  if (num % 2 === 0) {
+    console.log("Even");
+  } else {
+    console.log("Odd");
+  }
+};
