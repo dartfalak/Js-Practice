@@ -589,16 +589,19 @@ document.addEventListener("keydown", () => {
 // }
 
 
-  document.addEventListener("DOMContentLoaded", () => {
-      let btnHello = document.querySelector("#btnHello");
-      let btnWorld = document.querySelector("#btnWorld");
-      let content = document.querySelector("#content");
+  // document.addEventListener("DOMContentLoaded", () => {
+  //     let btnHello = document.querySelector("#btnHello");
+  //     let btnWorld = document.querySelector("#btnWorld");
+  //     let content = document.querySelector("#content");
 
-      btnHello.addEventListener("click", () => {
-        content.innerHTML = "<p>Hello! Welcome to my page </p>";
-      });
+  //     btnHello.addEventListener("click", () => {
+  //       content.innerHTML = "<p>Hello! Welcome to my page </p>";
+  //     });
 
-      btnWorld.addEventListener("click", () => {
-        content.innerHTML = "<p>World says hi </p>";
-      });
-    });
+  //     btnWorld.addEventListener("click", () => {
+  //       content.innerHTML = "<p>World says hi </p>";
+  //     });
+  //   });
+
+const paragraph = document.querySelector('p')
+ paragraph.innerText = 'this is the updated paragraph text."
