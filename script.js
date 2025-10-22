@@ -635,3 +635,4 @@ const sortAsc = arr => arr.sort((a, b) => a - b);
 
 const minNum = arr => Math.min(...arr);
 
+const greaterThanTen = arr => arr.filter(num => num > 10);
