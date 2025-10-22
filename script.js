@@ -638,3 +638,5 @@ const minNum = arr => Math.min(...arr);
 const greaterThanTen = arr => arr.filter(num => num > 10);
 
 const stringLengths = arr => arr.map(str => str.length);
+
+const allPositive = arr => arr.every(num => num > 0);
