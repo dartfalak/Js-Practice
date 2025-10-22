@@ -624,3 +624,7 @@ const doubleArray = (arr) => arr.map(num => num * 2);
 
 const numbers = [1, 2, 3, 4, 5, 6];
 const evens = numbers.filter(num => num % 2 === 0);
+
+
+const toUpperNames = names => names.map(name => name.toUpperCase());
+const names = ["alice", "bob", "charlie"];
