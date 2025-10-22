@@ -640,3 +640,5 @@ const greaterThanTen = arr => arr.filter(num => num > 10);
 const stringLengths = arr => arr.map(str => str.length);
 
 const allPositive = arr => arr.every(num => num > 0);
+
+const sumArray = arr => arr.reduce((sum, num) => sum + num, 0);
