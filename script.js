@@ -628,3 +628,5 @@ const evens = numbers.filter(num => num % 2 === 0);
 
 const toUpperNames = names => names.map(name => name.toUpperCase());
 const names = ["alice", "bob", "charlie"];
+
+const factorial = n => (n <= 1 ? 1 : n * factorial(n - 1));
