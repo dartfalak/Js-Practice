@@ -643,6 +643,3 @@ const allPositive = arr => arr.every(num => num > 0);
 const sumArray = arr => arr.reduce((sum, num) => sum + num, 0);
 
 const greet = name => `Hello, ${name}!`;
-
-const isAdult = age => age >= 18;
-
