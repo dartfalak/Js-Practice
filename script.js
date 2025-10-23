@@ -645,13 +645,14 @@ const sumArray = arr => arr.reduce((sum, num) => sum + num, 0);
 const greet = name => `Hello, ${name}!`;
 
 
-hello();
-goodbye();
+hello(goodbye);
+// goodbye();
 
 
 function hello(){
   console.log("Hello!");
 }
+
 
 
 function goodbye(){
