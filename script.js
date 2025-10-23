@@ -649,10 +649,18 @@ hello(goodbye);
 // goodbye();
 
 
-function hello(){
+function hello(callback){
   console.log("Hello!");
+  callback();
 }
 
+function drop(){
+  console.log("Drop the call!");
+}
+
+function talk(){
+  console.log("Talking...");
+}
 
 
 function goodbye(){
