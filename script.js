@@ -665,3 +665,17 @@ function goodbye(){
   console.log("Goodbye!");
 }
 
+
+function makePizza(callback) {
+  console.log("making pizza");
+  setTimeout(() => {
+    console.log("pizzas ready!");
+    callback(); 
+  }, 2000);
+}
+
+function eatPizza() {
+  console.log("eating the pizza!");
+}
+
+makePizza(eatPizza);
