@@ -690,6 +690,7 @@ function triple(num) {
   console.log(num * 3);
 }
 
+
 function print(num) {
   console.log(num);
 }
@@ -701,3 +702,7 @@ function displayColor(color) {
 }
 
 colors.forEach(displayColor);
+
+let evenNumbers = [2, 4, 6, 8, 10];
+
+evenNumbers.forEach(print);
