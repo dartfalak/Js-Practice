@@ -693,3 +693,9 @@ function triple(num) {
 function print(num) {
   console.log(num);
 }
+
+let colors = ["red", "green", "blue"];
+
+function displayColor(color) {
+  console.log("Color:", color)
+}
