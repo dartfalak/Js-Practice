@@ -622,8 +622,8 @@ const checkEvenOdd = (num) => {
 
 const doubleArray = (arr) => arr.map(num => num * 2);
 
-const numbers = [1, 2, 3, 4, 5, 6];
-const evens = numbers.filter(num => num % 2 === 0);
+// const numbers = [1, 2, 3, 4, 5, 6];
+// const evens = numbers.filter(num => num % 2 === 0);
 
 
 const toUpperNames = names => names.map(name => name.toUpperCase());
@@ -679,3 +679,17 @@ function eatPizza() {
 }
 
 makePizza(eatPizza);
+
+
+let numbers = [1, 2, 3, 4, 5];
+
+numbers.forEach(triple);
+numbers.forEach(print);
+
+function triple(num) {
+  console.log(num * 3);
+}
+
+function print(num) {
+  console.log(num);
+}
