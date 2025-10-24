@@ -699,3 +699,5 @@ let colors = ["red", "green", "blue"];
 function displayColor(color) {
   console.log("Color:", color)
 }
+
+colors.forEach(displayColor);
