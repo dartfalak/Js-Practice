@@ -743,4 +743,4 @@ for (let num of numbers) {
   sum += num;
 }
 
-console.log("Sum:", sum); // 25
+console.log("Sum:", sum); 
