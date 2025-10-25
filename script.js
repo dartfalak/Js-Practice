@@ -747,3 +747,13 @@ console.log("Sum:", sum);
 
 const name = prompt("What’s your name?");
 alert("Hello, " + name + "!");
+
+
+const password = "openai";
+let input = prompt("Enter password:");
+
+if (input === password) {
+  alert("Access granted!");
+} else {
+  alert("Wrong password!");
+}
