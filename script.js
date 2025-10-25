@@ -734,3 +734,13 @@ function countVowels(str) {
 }
 
 console.log(countVowels("JavaScript")); 
+
+
+const numb = [2, 5, 8, 10];
+let sum = 0;
+
+for (let num of numbers) {
+  sum += num;
+}
+
+console.log("Sum:", sum); // 25
