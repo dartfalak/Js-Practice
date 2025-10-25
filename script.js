@@ -719,3 +719,18 @@ for (let i = 1; i < numbers.length; i++) {
 function isLeapYear(year) {
   return (year % 4 === 0 && year % 100 !== 0) || (year % 400 === 0);
 }
+
+function countVowels(str) {
+  const vowels = "aeiouAEIOU";
+  let count = 0;
+
+  for (let char of str) {
+    if (vowels.includes(char)) {
+      count++;
+    }
+  }
+
+  return count;
+}
+
+console.log(countVowels("JavaScript")); 
