@@ -681,7 +681,7 @@ function eatPizza() {
 makePizza(eatPizza);
 
 
-let numbers = [1, 2, 3, 4, 5];
+// let numbers = [1, 2, 3, 4, 5];
 
 numbers.forEach(triple);
 numbers.forEach(print);
@@ -706,3 +706,12 @@ colors.forEach(displayColor);
 let evenNumbers = [2, 4, 6, 8, 10];
 
 evenNumbers.forEach(print);
+
+const numbers = [10, 25, 7, 42, 19];
+let max = numbers[0];
+
+for (let i = 1; i < numbers.length; i++) {
+  if (numbers[i] > max) {
+    max = numbers[i];
+  }
+}
