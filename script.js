@@ -744,3 +744,6 @@ for (let num of numbers) {
 }
 
 console.log("Sum:", sum); 
+
+const name = prompt("What’s your name?");
+alert("Hello, " + name + "!");
