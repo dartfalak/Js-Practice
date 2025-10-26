@@ -707,8 +707,8 @@ let evenNumbers = [2, 4, 6, 8, 10];
 
 evenNumbers.forEach(print);
 
-const numbers = [10, 25, 7, 42, 19];
-let max = numbers[0];
+// const numbers = [10, 25, 7, 42, 19];
+// let max = numbers[0];
 
 for (let i = 1; i < numbers.length; i++) {
   if (numbers[i] > max) {
@@ -736,12 +736,12 @@ function countVowels(str) {
 console.log(countVowels("JavaScript")); 
 
 
-const numb = [2, 5, 8, 10];
-let sum = 0;
+// const numbers = [2, 5, 8, 10];
+// let sum = 0;
 
-for (let num of numbers) {
-  sum += num;
-}
+// for (let num of numbers) {
+//   sum += num;
+// }
 
 console.log("Sum:", sum); 
 
@@ -756,4 +756,11 @@ if (input === password) {
   alert("Access granted!");
 } else {
   alert("Wrong password!");
+}
+
+
+const numbers = [10, 20, 30, 40, 50];
+
+function square(element) {
+  return element * element;
 }
