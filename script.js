@@ -769,3 +769,7 @@ function square(element) {
 }
 
 console.log("Squares:", squares);
+
+function cube(element) {
+  return element * element * element;
+}
