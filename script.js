@@ -760,8 +760,8 @@ if (input === password) {
 
 
 const numbers = [10, 20, 30, 40, 50];
-
 const squares = numbers.map(square);
+const cubes = numbers.map(cube);
 
 
 function square(element) {
