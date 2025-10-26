@@ -768,7 +768,7 @@ function square(element) {
   return element * element;
 }
 
-console.log("Squares:", squares);
+console.log("cubes:");
 
 function cube(element) {
   return element * element * element;
