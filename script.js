@@ -773,3 +773,5 @@ console.log("cubes:");
 function cube(element) {
   return element * element * element;
 }
+
+filtered = numbers.filter(isGreaterThan25);
