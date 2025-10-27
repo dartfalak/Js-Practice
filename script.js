@@ -797,3 +797,5 @@ function outer() {
 
   return inner;
 }
+
+let increment = outer();
