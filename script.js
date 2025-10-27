@@ -775,3 +775,7 @@ function cube(element) {
 }
 
 filtered = numbers.filter(isGreaterThan25);
+
+
+let globalVar = "I’m global";
+console.log(globalVar);
