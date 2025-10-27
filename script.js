@@ -779,3 +779,9 @@ filtered = numbers.filter(isGreaterThan25);
 
 let globalVar = "I’m global";
 console.log(globalVar);
+
+function test() {
+  let inside = "I’m inside";
+  console.log(inside); 
+}
+console.log(inside); 
