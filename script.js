@@ -784,7 +784,7 @@ function test() {
   let inside = "I’m inside";
   console.log(inside); 
 }
-console.log(inside); 
+console.log(inside); //wont work
 
 
 function outer() {
