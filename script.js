@@ -799,3 +799,8 @@ function outer() {
 }
 
 let increment = outer();
+
+
+ksetTimeout(function() {
+  console.log("This runs after 2 seconds");
+}, 2000);
