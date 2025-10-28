@@ -801,6 +801,6 @@ function outer() {
 let increment = outer();
 
 
-ksetTimeout(function() {
+   setTimeout(function() {
   console.log("This runs after 2 seconds");
 }, 2000);
