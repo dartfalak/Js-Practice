@@ -805,36 +805,44 @@ let increment = outer();
   console.log("This runs after 2 seconds");
 }, 2000);
 
-function Timer() {
-  this.seconds = 0;
-  setInterval(function() {
-    this.seconds++;
-  }, 1000);
-}
+// function Timer() {
+//   this.seconds = 0;
+//   setInterval(function() {
+//     this.seconds++;
+//   }, 1000);
+// }
 
 
-function Timer() {
-  this.seconds = 0;
-  setInterval(() => {
-    this.seconds++;
-    console.log(this.seconds);
-  }, 1000);
-}
+// function Timer() {
+//   this.seconds = 0;
+//   setInterval(() => {
+//     this.seconds++;
+//     console.log(this.seconds);
+//   }, 1000);
+// }
 
-function Timer() {
-  this.seconds = 0;
+// function Timer() {
+//   this.seconds = 0;
 
-  setInterval(function() {
-    this.seconds++;
-    console.log(this.seconds);
-  }, 1000);
-}
+//   setInterval(function() {
+//     this.seconds++;
+//     console.log(this.seconds);
+//   }, 1000);
+// }
 
-const t = new Timer();
+// const t = new Timer();
 
-const counter = {
-  count: 0,
-  increment() {
-    this.count++;
-  }
-};
+// const counter = {
+//   count: 0,
+//   increment() {
+//     this.count++;
+//   }
+// };
+
+// function Person(name) {
+//   this.name = name;
+// }
+
+// const user = new Person('Alice');
+// console.log(user.name); 
+
