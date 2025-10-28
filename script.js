@@ -820,3 +820,14 @@ function Timer() {
     console.log(this.seconds);
   }, 1000);
 }
+
+function Timer() {
+  this.seconds = 0;
+
+  setInterval(function() {
+    this.seconds++;
+    console.log(this.seconds);
+  }, 1000);
+}
+
+const t = new Timer();
