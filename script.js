@@ -759,7 +759,7 @@ if (input === password) {
 }
 
 
-const numbers = [10, 20, 30, 40, 50];
+// const numbers = [10, 20, 30, 40, 50];
 const squares = numbers.map(square);
 const cubes = numbers.map(cube);
 
@@ -804,3 +804,12 @@ let increment = outer();
    setTimeout(function() {
   console.log("This runs after 2 seconds");
 }, 2000);
+
+function Timer() {
+  this.seconds = 0;
+  setInterval(function() {
+    this.seconds++;
+  }, 1000);
+}
+
+
