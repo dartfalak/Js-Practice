@@ -831,3 +831,10 @@ function Timer() {
 }
 
 const t = new Timer();
+
+const counter = {
+  count: 0,
+  increment() {
+    this.count++;
+  }
+};
