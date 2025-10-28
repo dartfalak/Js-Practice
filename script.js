@@ -846,3 +846,11 @@ let increment = outer();
 // const user = new Person('Alice');
 // console.log(user.name); 
 
+
+
+const cat = {
+  sound: 'Meow',
+  speak() {
+    console.log(this.sound);
+  }
+};
