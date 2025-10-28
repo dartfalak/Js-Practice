@@ -805,6 +805,8 @@ let increment = outer();
   console.log("This runs after 2 seconds");
 }, 2000);
 
+
+
 // function Timer() {
 //   this.seconds = 0;
 //   setInterval(function() {
