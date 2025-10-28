@@ -813,3 +813,10 @@ function Timer() {
 }
 
 
+function Timer() {
+  this.seconds = 0;
+  setInterval(() => {
+    this.seconds++;
+    console.log(this.seconds);
+  }, 1000);
+}
