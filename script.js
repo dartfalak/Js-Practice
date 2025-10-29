@@ -867,3 +867,14 @@ const user = Object.create(person);
 user.name = "Alice";
 
 user.greet();
+
+function Animal(name) {
+  this.name = name;
+}
+
+Animal.prototype.speak = function() {
+  console.log(`${this.name} makes a sound`);
+};
+
+const dog = new Animal("Rex");
+dog.speak(); 
