@@ -878,3 +878,15 @@ Animal.prototype.speak = function() {
 
 const dog = new Animal("Rex");
 dog.speak(); 
+
+const vehicle = {
+  move() { console.log("Moving..."); }
+};
+
+const car = Object.create(vehicle);
+car.drive = function() 
+  console.log("Driving...");
+};
+
+car.drive();
+car.move(); 
