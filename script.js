@@ -856,3 +856,14 @@ const cat = {
     console.log(this.sound);
   }
 };
+
+const person = {
+  greet() {
+    console.log("Hello!");
+  },
+};
+
+const user = Object.create(person);
+user.name = "Alice";
+
+user.greet();
