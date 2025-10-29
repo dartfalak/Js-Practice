@@ -876,17 +876,49 @@ Animal.prototype.speak = function() {
   console.log(`${this.name} makes a sound`);
 };
 
-const dog = new Animal("Rex");
-dog.speak(); 
+// const dog = new Animal("Rex");
+// dog.speak(); 
 
 const vehicle = {
   move() { console.log("Moving..."); }
 };
 
 const car = Object.create(vehicle);
-car.drive = function() 
+car.drive = function() {
   console.log("Driving...");
 };
 
 car.drive();
-car.move(); 
+car.move();
+
+const animal = {
+  eat() {
+    console.log("Eating...");
+  },
+  sleep() {
+    console.log("Sleeping...");
+  }
+};
+
+const dog = Object.create(animal);
+dog.bark = function() {
+  console.log("Woof!");
+};
+
+dog.bark(); 
+dog.eat();  
+dog.sleep();
+
+const shape = {
+  area() {
+    console.log("Area not defined.");
+  }
+};
+
+const circle = Object.create(shape);
+circle.radius = 5;
+circle.area = function() {
+  return Math.PI * this.radius ** 2;
+};
+
+sconsole.log(circle.area().toFixed(2));
