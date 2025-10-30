@@ -943,3 +943,11 @@ const user2 = new Person("Sara", 22);
 
 user1.greet();
 user2.haveBirthday();
+
+
+Array.prototype.last = function() {
+  return this[this.length - 1];
+};
+
+const arr = [10, 20, 30];
+console.log(arr.last());
