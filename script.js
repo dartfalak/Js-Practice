@@ -921,4 +921,23 @@ circle.area = function() {
   return Math.PI * this.radius ** 2;
 };
 
-sconsole.log(circle.area().toFixed(2));
+console.log(circle.area().toFixed(2));
+
+function Person(name, age) {
+  this.name = name;
+  this.age = age;
+}
+
+
+Person.prototype.greet = function() {
+  console.log(`Hi, I'm ${this.name} and I'm ${this.age} years old.`);
+};
+
+Person.prototype.haveBirthday = function() {
+  this.age++;
+  console.log(`${this.name} is now ${this.age}!`);
+};
+
+const user1 = new Person("Ali", 21);
+const user2 = new Person("Sara", 22);
+
