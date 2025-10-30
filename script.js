@@ -941,3 +941,5 @@ Person.prototype.haveBirthday = function() {
 const user1 = new Person("Ali", 21);
 const user2 = new Person("Sara", 22);
 
+user1.greet();
+user2.haveBirthday();
