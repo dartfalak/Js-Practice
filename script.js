@@ -969,3 +969,11 @@
 
 let num = String(20)
 console.log(typeof num);
+
+let val 
+console.log(typeof val);
+val = null
+console.log(typeof val);
+
+val = 2 + "3"
+console.log(typeof val);
