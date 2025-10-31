@@ -972,8 +972,10 @@ console.log(typeof num);
 
 let val 
 console.log(typeof val);
-val = null
+val = 10
 console.log(typeof val);
 
 val = 2 + "3"
+console.log(typeof val);
+val = "5" - 2
 console.log(typeof val);
