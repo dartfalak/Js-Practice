@@ -979,5 +979,3 @@ val = 2 + "3"
 console.log(typeof val);
 val = "5" - 2
 console.log(typeof val);
-val = +"15" + 5
-console.log(typeof val);
