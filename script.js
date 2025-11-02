@@ -999,3 +999,13 @@ function greet(greeting) {
 const person = { name: "Bob" };
 
 greet.call(person, "Hello"); 
+
+const user1 = { name: "Alice" };
+const user2 = { name: "Bob" };
+
+function introduce() {
+  console.log(`Hi, I’m ${this.name}`);
+}
+
+introduce.call(user1);
+introduce.call(user2);
