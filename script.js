@@ -1009,3 +1009,11 @@ function introduce() {
 
 introduce.call(user1);
 introduce.call(user2);
+
+function sum(a, b, c) {
+    return a + b + c;
+}
+
+console.log(num)
+
+var num = 10;
