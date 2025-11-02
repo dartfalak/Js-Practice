@@ -988,6 +988,14 @@ function greet(greeting) {
   console.log(`${greeting}, I’m ${this.name}`);
 }
 
+// const person = { name: "Bob" };
+
+greet.call(person, "Hello"); 
+
+function greet(greeting) {
+  console.log(`${greeting}, I’m ${this.name}`);
+}
+
 const person = { name: "Bob" };
 
 greet.call(person, "Hello"); 
