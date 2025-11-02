@@ -1016,4 +1016,4 @@ function sum(a, b, c) {
 
 console.log(num)
 
-var num = 10;
+let num = 10;
