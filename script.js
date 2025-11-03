@@ -1033,5 +1033,10 @@ function createCounter() {
   count++;
   console.log("Count:", count);
   };
+}
 
-  
+const counter = createCounter();
+
+counter();
+counter();
+counter();
