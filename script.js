@@ -1017,3 +1017,12 @@ function sum(a, b, c) {
 console.log(num)
 
 let num = 10;
+
+
+const userData = "john"
+
+function printData() {
+  console.log("User Data:", userData);
+}
+
+printData();
