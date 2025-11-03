@@ -984,39 +984,39 @@
 
 
 
-function greet(greeting) {
-  console.log(`${greeting}, I’m ${this.name}`);
-}
+// function greet(greeting) {
+//   console.log(`${greeting}, I’m ${this.name}`);
+// }
+
+// // const person = { name: "Bob" };
+
+// greet.call(person, "Hello"); 
+
+// function greet(greeting) {
+//   console.log(`${greeting}, I’m ${this.name}`);
+// }
 
 // const person = { name: "Bob" };
 
-greet.call(person, "Hello"); 
+// greet.call(person, "Hello"); 
 
-function greet(greeting) {
-  console.log(`${greeting}, I’m ${this.name}`);
-}
+// const user1 = { name: "Alice" };
+// const user2 = { name: "Bob" };
 
-const person = { name: "Bob" };
+// function introduce() {
+//   console.log(`Hi, I’m ${this.name}`);
+// }
 
-greet.call(person, "Hello"); 
+// introduce.call(user1);
+// introduce.call(user2);
 
-const user1 = { name: "Alice" };
-const user2 = { name: "Bob" };
+// function sum(a, b, c) {
+//     return a + b + c;
+// }
 
-function introduce() {
-  console.log(`Hi, I’m ${this.name}`);
-}
+// console.log(num)
 
-introduce.call(user1);
-introduce.call(user2);
-
-function sum(a, b, c) {
-    return a + b + c;
-}
-
-console.log(num)
-
-let num = 10;
+// let num = 10;
 
 
 const userData = "john"
