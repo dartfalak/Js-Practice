@@ -1057,3 +1057,13 @@ greet();
 function greet() {
   console.log("Good morning!");
 }
+
+say(); 
+
+function say() {
+  console.log("Hello");
+}
+
+function say() {
+  console.log("Bye");
+}
