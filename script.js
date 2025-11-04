@@ -1045,3 +1045,9 @@ var x;
 console.log(x); 
 x = 10;        
 console.log(x); 
+
+
+sayHello();
+function sayHello() {
+  console.log("Hello!");
+}
