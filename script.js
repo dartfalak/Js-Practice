@@ -1051,3 +1051,9 @@ sayHello();
 function sayHello() {
   console.log("Hello!");
 }
+
+greet();
+
+function greet() {
+  console.log("Good morning!");
+}
