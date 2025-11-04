@@ -1040,3 +1040,8 @@ const counter = createCounter();
 counter();
 counter();
 counter();
+
+var x;          
+console.log(x); 
+x = 10;        
+console.log(x); 
