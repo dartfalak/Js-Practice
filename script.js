@@ -1067,3 +1067,10 @@ function say() {
 function say() {
   console.log("Bye");
 }
+
+function Car(model) {
+  this.model = model;
+}
+
+const myCar = new Car("toyota");
+console.log(myCar.model); 
