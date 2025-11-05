@@ -1083,3 +1083,13 @@ const person = {
 };
 
 person.greet(); 
+
+const obj = {
+  value: 100,
+  show: function() {
+    const arrow = () => console.log(this.value);
+    arrow();
+  }
+};
+
+obj.show(); 
