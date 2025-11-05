@@ -1074,3 +1074,12 @@ function Car(model) {
 
 const myCar = new Car("toyota");
 console.log(myCar.model); 
+
+const person = {
+  name: "chloe",
+  greet() {
+    console.log("Hello, " + this.name);
+  }
+};
+
+person.greet(); 
