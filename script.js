@@ -1093,3 +1093,14 @@ const obj = {
 };
 
 obj.show(); 
+
+const counter = {
+  count: 0,
+  start: function() {
+    setTimeout(function() {
+      console.log(this.count);
+    }, 1000);
+  }
+};
+
+counter.start(); // undefined
