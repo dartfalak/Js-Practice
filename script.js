@@ -1103,4 +1103,4 @@ const counter = {
   }
 };
 
-counter.start(); // undefined
+counter.start();
