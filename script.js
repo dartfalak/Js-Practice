@@ -1138,3 +1138,15 @@ function createBankAccount() {
 const account = createBankAccount();
 account.deposit(500);  
 account.withdraw(300); 
+
+function outer() {
+  let outerVar = "I'm outside!";
+
+  function inner() {
+    console.log(outerVar);
+  }
+
+  inner();
+}
+
+outer();
