@@ -1027,17 +1027,17 @@ function printData() {
 
 printData();
 
-function createCounter() {
-  let count = 0;
-  return function() {
-  count++;
-  console.log("Count:", count);
-  };
-}
+// function createCounter() {
+//   let count = 0;
+//   return function() {
+//   count++;
+//   console.log("Count:", count);
+//   };
+// }
 
-const counter = createCounter();
+// const counter = createCounter();
 
-counter();
+// counter();
 counter();
 counter();
 
@@ -1094,13 +1094,28 @@ const obj = {
 
 obj.show(); 
 
-const counter = {
-  count: 0,
-  start: function() {
-    setTimeout(function() {
-      console.log(this.count);
-    }, 1000);
-  }
-};
+// const counter = {
+//   count: 0,
+//   start: function() {
+//     setTimeout(function() {
+//       console.log(this.count);
+//     }, 1000);
+//   }
+// };
 
-counter.start();
+// counter.start();
+
+function outer() {
+  let count = 0;
+
+  function inner() {
+    count++;
+    console.log(count);
+  }
+
+  return inner;
+}
+
+const counter = outer();
+counter(); 
+counter(); 
