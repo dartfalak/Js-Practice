@@ -1120,6 +1120,19 @@ const counter = outer();
 counter(); 
 counter(); 
 
+
+function outer() {
+  let name = "Alice";
+}
+
+function inner() {
+  console.log(name);
+}
+
+outer();
+inner();
+
+
 function createBankAccount() {
   let balance = 1000; 
 
