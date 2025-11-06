@@ -1119,3 +1119,22 @@ function outer() {
 const counter = outer();
 counter(); 
 counter(); 
+
+function createBankAccount() {
+  let balance = 1000; 
+
+  return {
+    deposit(amount) {
+      balance += amount;
+      console.log("Balance:", balance);
+    },
+    withdraw(amount) {
+      balance -= amount;
+      console.log("Balance:", balance);
+    }
+  };
+}
+
+const account = createBankAccount();
+account.deposit(500);  
+account.withdraw(300); 
