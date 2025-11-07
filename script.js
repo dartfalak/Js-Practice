@@ -1171,9 +1171,18 @@ function test() {
 
 test();
 
-console.log(number)
+print()
 
 function display() {
   console.log(number);
   let number = 50;
 }
+
+
+{
+  console.log(a);
+  let a = 10;
+  const b = 20;
+
+}
+
