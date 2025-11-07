@@ -1163,3 +1163,10 @@ function outer() {
 }
 
 outer();
+
+function test() {
+  console.log(num);
+  let num = 20;
+}
+
+test();
