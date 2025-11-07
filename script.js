@@ -1105,64 +1105,64 @@ obj.show();
 
 // counter.start();
 
-function outer() {
-  let count = 0;
+// function outer() {
+//   let count = 0;
 
-  function inner() {
-    count++;
-    console.log(count);
-  }
+//   function inner() {
+//     count++;
+//     console.log(count);
+//   }
 
-  return inner;
-}
+//   return inner;
+// }
 
-const counter = outer();
-counter(); 
-counter(); 
-
-
-function outer() {
-  let name = "Alice";
-}
-
-function inner() {
-  console.log(name);
-}
-
-outer();
-inner();
+// const counter = outer();
+// counter(); 
+// counter(); 
 
 
-function createBankAccount() {
-  let balance = 1000; 
+// function outer() {
+//   let name = "Alice";
+// }
 
-  return {
-    deposit(amount) {
-      balance += amount;
-      console.log("Balance:", balance);
-    },
-    withdraw(amount) {
-      balance -= amount;
-      console.log("Balance:", balance);
-    }
-  };
-}
+// function inner() {
+//   console.log(name);
+// }
 
-const account = createBankAccount();
-account.deposit(500);  
-account.withdraw(300); 
+// outer();
+// inner();
 
-function outer() {
-  let outerVar = "I'm outside!";
 
-  function inner() {
-    console.log(outerVar);
-  }
+// function createBankAccount() {
+//   let balance = 1000; 
 
-  inner();
-}
+//   return {
+//     deposit(amount) {
+//       balance += amount;
+//       console.log("Balance:", balance);
+//     },
+//     withdraw(amount) {
+//       balance -= amount;
+//       console.log("Balance:", balance);
+//     }
+//   };
+// }
 
-outer();
+// const account = createBankAccount();
+// account.deposit(500);  
+// account.withdraw(300); 
+
+// function outer() {
+//   let outerVar = "I'm outside!";
+
+//   function inner() {
+//     console.log(outerVar);
+//   }
+
+//   inner();
+// }
+
+// outer();
 
 function test() {
   console.log(num);
@@ -1170,3 +1170,10 @@ function test() {
 }
 
 test();
+
+console.log(number)
+
+function display() {
+  console.log(number);
+  let number = 50;
+}
