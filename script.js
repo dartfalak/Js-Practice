@@ -1186,3 +1186,11 @@ function display() {
 
 }
 
+
+function example() {
+  console.log(num); 
+  {
+    let num = 7;
+  }
+}
+example();
