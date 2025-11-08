@@ -1220,3 +1220,10 @@ const [ { name: firstUser }, { age: secondUserAge } ] = users;
 
 console.log(firstUser); 
 console.log(secondUserAge); 
+
+function showDetails({ name = "Guest", age = 18 } = {}) {
+  console.log(`${name} is ${age} years old`);
+}
+
+showDetails({ name: "Sara" }); 
+showDetails();                 
