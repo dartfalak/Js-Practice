@@ -1202,3 +1202,10 @@ const [first, , third] = numbers;
 
 console.log(first);
 console.log(third); 
+
+function showUser({ name, age }) {
+  console.log(`${name} is ${age} years old`);
+}
+
+const user = { name: "Zara", age: 20 };
+showUser(user);
