@@ -1233,5 +1233,5 @@ function displayUser({ name: fullName, city: homeTown }) {
   console.log(`${fullName} lives in ${homeTown}`);
 }
 
-const person = { name: "alice", country: "usa"};
+const person = { name: "alice", country: "usa", city: "new york" };
 displayUser(person);
