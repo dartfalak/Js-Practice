@@ -963,237 +963,237 @@
 // };
 
 
-// Object.setPrototypeOf(car, vehicle);
+// // Object.setPrototypeOf(car, vehicle);
 
-// car.drive(); 
+// // car.drive(); 
 
-// let num = String(20)
-// console.log(typeof num);
+// // let num = String(20)
+// // console.log(typeof num);
 
-// let val 
-// console.log(typeof val);
-// val = 10
-// console.log(typeof val);
+// // let val 
+// // console.log(typeof val);
+// // val = 10
+// // console.log(typeof val);
 
-// val = 2 + "3"
-// console.log(typeof val);
-// val = "5" - 2
-// console.log(typeof val);
-// val = +"15" + 5
-// console.log(typeof val);
+// // val = 2 + "3"
+// // console.log(typeof val);
+// // val = "5" - 2
+// // console.log(typeof val);
+// // val = +"15" + 5
+// // console.log(typeof val);
 
 
 
-// function greet(greeting) {
-//   console.log(`${greeting}, I’m ${this.name}`);
-// }
+// // function greet(greeting) {
+// //   console.log(`${greeting}, I’m ${this.name}`);
+// // }
+
+// // // const person = { name: "Bob" };
+
+// // greet.call(person, "Hello"); 
+
+// // function greet(greeting) {
+// //   console.log(`${greeting}, I’m ${this.name}`);
+// // }
 
 // // const person = { name: "Bob" };
 
-// greet.call(person, "Hello"); 
+// // greet.call(person, "Hello"); 
 
-// function greet(greeting) {
-//   console.log(`${greeting}, I’m ${this.name}`);
+// // const user1 = { name: "Alice" };
+// // const user2 = { name: "Bob" };
+
+// // function introduce() {
+// //   console.log(`Hi, I’m ${this.name}`);
+// // }
+
+// // introduce.call(user1);
+// // introduce.call(user2);
+
+// // function sum(a, b, c) {
+// //     return a + b + c;
+// // }
+
+// // console.log(num)
+
+// // let num = 10;
+
+
+// const userData = "john"
+
+// function printData() {
+//   console.log("User Data:", userData);
 // }
 
-// const person = { name: "Bob" };
+// printData();
 
-// greet.call(person, "Hello"); 
+// // function createCounter() {
+// //   let count = 0;
+// //   return function() {
+// //   count++;
+// //   console.log("Count:", count);
+// //   };
+// // }
 
-// const user1 = { name: "Alice" };
-// const user2 = { name: "Bob" };
+// // const counter = createCounter();
 
-// function introduce() {
-//   console.log(`Hi, I’m ${this.name}`);
-// }
-
-// introduce.call(user1);
-// introduce.call(user2);
-
-// function sum(a, b, c) {
-//     return a + b + c;
-// }
-
-// console.log(num)
-
-// let num = 10;
-
-
-const userData = "john"
-
-function printData() {
-  console.log("User Data:", userData);
-}
-
-printData();
-
-// function createCounter() {
-//   let count = 0;
-//   return function() {
-//   count++;
-//   console.log("Count:", count);
-//   };
-// }
-
-// const counter = createCounter();
-
+// // counter();
 // counter();
-counter();
-counter();
+// counter();
 
-var x;          
-console.log(x); 
-x = 10;        
-console.log(x); 
+// var x;          
+// console.log(x); 
+// x = 10;        
+// console.log(x); 
 
 
-sayHello();
-function sayHello() {
-  console.log("Hello!");
-}
+// sayHello();
+// function sayHello() {
+//   console.log("Hello!");
+// }
 
-greet();
+// greet();
 
-function greet() {
-  console.log("Good morning!");
-}
+// function greet() {
+//   console.log("Good morning!");
+// }
 
-say(); 
+// say(); 
 
-function say() {
-  console.log("Hello");
-}
+// function say() {
+//   console.log("Hello");
+// }
 
-function say() {
-  console.log("Bye");
-}
+// function say() {
+//   console.log("Bye");
+// }
 
-function Car(model) {
-  this.model = model;
-}
+// function Car(model) {
+//   this.model = model;
+// }
 
-const myCar = new Car("toyota");
-console.log(myCar.model); 
+// const myCar = new Car("toyota");
+// console.log(myCar.model); 
 
-const person = {
-  name: "chloe",
-  greet() {
-    console.log("Hello, " + this.name);
-  }
-};
-
-person.greet(); 
-
-const obj = {
-  value: 100,
-  show: function() {
-    const arrow = () => console.log(this.value);
-    arrow();
-  }
-};
-
-obj.show(); 
-
-// const counter = {
-//   count: 0,
-//   start: function() {
-//     setTimeout(function() {
-//       console.log(this.count);
-//     }, 1000);
+// const person = {
+//   name: "chloe",
+//   greet() {
+//     console.log("Hello, " + this.name);
 //   }
 // };
 
-// counter.start();
+// person.greet(); 
 
-// function outer() {
-//   let count = 0;
-
-//   function inner() {
-//     count++;
-//     console.log(count);
+// const obj = {
+//   value: 100,
+//   show: function() {
+//     const arrow = () => console.log(this.value);
+//     arrow();
 //   }
+// };
 
-//   return inner;
+// obj.show(); 
+
+// // const counter = {
+// //   count: 0,
+// //   start: function() {
+// //     setTimeout(function() {
+// //       console.log(this.count);
+// //     }, 1000);
+// //   }
+// // };
+
+// // counter.start();
+
+// // function outer() {
+// //   let count = 0;
+
+// //   function inner() {
+// //     count++;
+// //     console.log(count);
+// //   }
+
+// //   return inner;
+// // }
+
+// // const counter = outer();
+// // counter(); 
+// // counter(); 
+
+
+// // function outer() {
+// //   let name = "Alice";
+// // }
+
+// // function inner() {
+// //   console.log(name);
+// // }
+
+// // outer();
+// // inner();
+
+
+// // function createBankAccount() {
+// //   let balance = 1000; 
+
+// //   return {
+// //     deposit(amount) {
+// //       balance += amount;
+// //       console.log("Balance:", balance);
+// //     },
+// //     withdraw(amount) {
+// //       balance -= amount;
+// //       console.log("Balance:", balance);
+// //     }
+// //   };
+// // }
+
+// // const account = createBankAccount();
+// // account.deposit(500);  
+// // account.withdraw(300); 
+
+// // function outer() {
+// //   let outerVar = "I'm outside!";
+
+// //   function inner() {
+// //     console.log(outerVar);
+// //   }
+
+// //   inner();
+// // }
+
+// // outer();
+
+// function test() {
+//   console.log(num);
+//   let num = 20;
 // }
 
-// const counter = outer();
-// counter(); 
-// counter(); 
+// test();
 
+// print()
 
-// function outer() {
-//   let name = "Alice";
+// function display() {
+//   console.log(number);
+//   let number = 50;
 // }
 
-// function inner() {
-//   console.log(name);
+
+// {
+//   console.log(a);
+//   let a = 10;
+//   const b = 20;
+
 // }
 
-// outer();
-// inner();
 
-
-// function createBankAccount() {
-//   let balance = 1000; 
-
-//   return {
-//     deposit(amount) {
-//       balance += amount;
-//       console.log("Balance:", balance);
-//     },
-//     withdraw(amount) {
-//       balance -= amount;
-//       console.log("Balance:", balance);
-//     }
-//   };
-// }
-
-// const account = createBankAccount();
-// account.deposit(500);  
-// account.withdraw(300); 
-
-// function outer() {
-//   let outerVar = "I'm outside!";
-
-//   function inner() {
-//     console.log(outerVar);
+// function example() {
+//   console.log(num); 
+//   {
+//     let num = 7;
 //   }
-
-//   inner();
 // }
-
-// outer();
-
-function test() {
-  console.log(num);
-  let num = 20;
-}
-
-test();
-
-print()
-
-function display() {
-  console.log(number);
-  let number = 50;
-}
-
-
-{
-  console.log(a);
-  let a = 10;
-  const b = 20;
-
-}
-
-
-function example() {
-  console.log(num); 
-  {
-    let num = 7;
-  }
-}
-example();
+// example();
 
 
 const numbers = [10, 20, 30, 40];
@@ -1212,8 +1212,8 @@ showUser(user);
 
 
 const users = [
-  { name: "Ali", age: 22 },
-  { name: "Sara", age: 20 }
+  { name: "alice", age: 22 },
+  { name: "levi", age: 20 }
 ];
 
 const [ { name: firstUser }, { age: secondUserAge } ] = users;
@@ -1221,11 +1221,11 @@ const [ { name: firstUser }, { age: secondUserAge } ] = users;
 console.log(firstUser); 
 console.log(secondUserAge); 
 
-function showDetails({ name = "Guest", age = 18 } = {}) {
+function showDetails({ name = "guest", age = 18 } = {}) {
   console.log(`${name} is ${age} years old`);
 }
 
-showDetails({ name: "Sara" }); 
+showDetails({ name: "gabriel" }); 
 showDetails();                 
 
 
@@ -1233,5 +1233,5 @@ function displayUser({ name: fullName, city: homeTown }) {
   console.log(`${fullName} lives in ${homeTown}`);
 }
 
-const person = { name: "Hassan", city: "Karachi" };
+const person = { name: "alice", country: "usa"};
 displayUser(person);
