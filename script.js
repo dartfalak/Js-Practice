@@ -1207,7 +1207,7 @@ function showUser({ name, age }) {
   console.log(`${name} is ${age} years old`);
 }
 
-const user = { name: "Zara", age: 20 };
+const user = { name: "joe", age: 20 };
 showUser(user);
 
 
