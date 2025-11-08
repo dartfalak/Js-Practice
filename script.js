@@ -1196,12 +1196,12 @@
 // example();
 
 
-const numbers = [10, 20, 30, 40];
+// const numbers = [10, 20, 30, 40];
 
-const [first, , third] = numbers;
+// const [first, , third] = numbers;
 
-console.log(first);
-console.log(third); 
+// console.log(first);
+// console.log(third); 
 
 function showUser({ name, age }) {
   console.log(`${name} is ${age} years old`);
