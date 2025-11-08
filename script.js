@@ -1203,12 +1203,12 @@
 // console.log(first);
 // console.log(third); 
 
-function showUser({ name, age }) {
-  console.log(`${name} is ${age} years old`);
-}
+// function showUser({ name, age }) {
+//   console.log(`${name} is ${age} years old`);
+// }
 
-const user = { name: "joe", age: 20 };
-showUser(user);
+// const user = { name: "joe", age: 20 };
+// showUser(user);
 
 
 const users = [
