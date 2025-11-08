@@ -1235,3 +1235,10 @@ function displayUser({ name: fullName, city: homeTown }) {
 
 const person = { name: "alice", country: "usa", city: "new york" };
 displayUser(person);
+
+const car = { brand: "toyota" };
+
+const { brand: carBrand, model: carModel = "corolla" } = car;
+
+console.log(carBrand); 
+console.log(carModel);
