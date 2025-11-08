@@ -1260,3 +1260,10 @@ const {
 console.log(fullName); 
 console.log(years);   
 console.log(theme);    
+
+const employee = { id: 101, name: "sebastian", salary: 50000 };
+
+const { name: employeeName, salary } = employee;
+
+console.log(employeeName);
+console.log(salary);       
