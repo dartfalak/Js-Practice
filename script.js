@@ -1209,3 +1209,14 @@ function showUser({ name, age }) {
 
 const user = { name: "Zara", age: 20 };
 showUser(user);
+
+
+const users = [
+  { name: "Ali", age: 22 },
+  { name: "Sara", age: 20 }
+];
+
+const [ { name: firstUser }, { age: secondUserAge } ] = users;
+
+console.log(firstUser); 
+console.log(secondUserAge); 
