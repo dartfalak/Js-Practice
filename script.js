@@ -1227,3 +1227,11 @@ function showDetails({ name = "Guest", age = 18 } = {}) {
 
 showDetails({ name: "Sara" }); 
 showDetails();                 
+
+
+function displayUser({ name: fullName, city: homeTown }) {
+  console.log(`${fullName} lives in ${homeTown}`);
+}
+
+const person = { name: "Hassan", city: "Karachi" };
+displayUser(person);
