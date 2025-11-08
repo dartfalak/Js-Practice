@@ -938,8 +938,8 @@
 //   console.log(`${this.name} is now ${this.age}!`);
 // };
 
-// const user1 = new Person("Ali", 21);
-// const user2 = new Person("Sara", 22);
+// const user1 = new Person("alice", 21);
+// const user2 = new Person("john", 22);
 
 // user1.greet();
 // user2.haveBirthday();
@@ -954,7 +954,7 @@
 
 // const vehicle = {
 //   drive() {
-//     console.log("Driving...");
+//     console.log("driving...");
 //   }
 // };
 
@@ -1242,3 +1242,21 @@ const { brand: carBrand, model: carModel = "corolla" } = car;
 
 console.log(carBrand); 
 console.log(carModel);
+
+const settings = {
+  user: {
+    info: { name: "liana", age: 28 },
+    preferences: {}
+  }
+};
+
+const {
+  user: {
+    info: { name: fullName, age: years = 18 },
+    preferences: { theme = "light" }
+  }
+} = settings;
+
+console.log(fullName); 
+console.log(years);   
+console.log(theme);    
