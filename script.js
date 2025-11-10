@@ -1267,3 +1267,8 @@ const { name: employeeName, salary } = employee;
 
 console.log(employeeName);
 console.log(salary);       
+
+
+let numbers = [1, 2, 3, 4, 5];
+let maximum = Math.max(...numbers);
+console.log(...numbers);
