@@ -1075,198 +1075,198 @@
 // const myCar = new Car("toyota");
 // console.log(myCar.model); 
 
-// const person = {
-//   name: "chloe",
-//   greet() {
-//     console.log("Hello, " + this.name);
-//   }
-// };
-
-// person.greet(); 
-
-// const obj = {
-//   value: 100,
-//   show: function() {
-//     const arrow = () => console.log(this.value);
-//     arrow();
-//   }
-// };
-
-// obj.show(); 
-
-// // const counter = {
-// //   count: 0,
-// //   start: function() {
-// //     setTimeout(function() {
-// //       console.log(this.count);
-// //     }, 1000);
+// // const person = {
+// //   name: "chloe",
+// //   greet() {
+// //     console.log("Hello, " + this.name);
 // //   }
 // // };
 
-// // counter.start();
+// // person.greet(); 
 
-// // function outer() {
-// //   let count = 0;
-
-// //   function inner() {
-// //     count++;
-// //     console.log(count);
+// // const obj = {
+// //   value: 100,
+// //   show: function() {
+// //     const arrow = () => console.log(this.value);
+// //     arrow();
 // //   }
+// // };
 
-// //   return inner;
+// // obj.show(); 
+
+// // // const counter = {
+// // //   count: 0,
+// // //   start: function() {
+// // //     setTimeout(function() {
+// // //       console.log(this.count);
+// // //     }, 1000);
+// // //   }
+// // // };
+
+// // // counter.start();
+
+// // // function outer() {
+// // //   let count = 0;
+
+// // //   function inner() {
+// // //     count++;
+// // //     console.log(count);
+// // //   }
+
+// // //   return inner;
+// // // }
+
+// // // const counter = outer();
+// // // counter(); 
+// // // counter(); 
+
+
+// // // function outer() {
+// // //   let name = "Alice";
+// // // }
+
+// // // function inner() {
+// // //   console.log(name);
+// // // }
+
+// // // outer();
+// // // inner();
+
+
+// // // function createBankAccount() {
+// // //   let balance = 1000; 
+
+// // //   return {
+// // //     deposit(amount) {
+// // //       balance += amount;
+// // //       console.log("Balance:", balance);
+// // //     },
+// // //     withdraw(amount) {
+// // //       balance -= amount;
+// // //       console.log("Balance:", balance);
+// // //     }
+// // //   };
+// // // }
+
+// // // const account = createBankAccount();
+// // // account.deposit(500);  
+// // // account.withdraw(300); 
+
+// // // function outer() {
+// // //   let outerVar = "I'm outside!";
+
+// // //   function inner() {
+// // //     console.log(outerVar);
+// // //   }
+
+// // //   inner();
+// // // }
+
+// // // outer();
+
+// // function test() {
+// //   console.log(num);
+// //   let num = 20;
 // // }
 
-// // const counter = outer();
-// // counter(); 
-// // counter(); 
+// // test();
 
+// // print()
 
-// // function outer() {
-// //   let name = "Alice";
+// // function display() {
+// //   console.log(number);
+// //   let number = 50;
 // // }
 
-// // function inner() {
-// //   console.log(name);
+
+// // {
+// //   console.log(a);
+// //   let a = 10;
+// //   const b = 20;
+
 // // }
 
-// // outer();
-// // inner();
 
-
-// // function createBankAccount() {
-// //   let balance = 1000; 
-
-// //   return {
-// //     deposit(amount) {
-// //       balance += amount;
-// //       console.log("Balance:", balance);
-// //     },
-// //     withdraw(amount) {
-// //       balance -= amount;
-// //       console.log("Balance:", balance);
-// //     }
-// //   };
-// // }
-
-// // const account = createBankAccount();
-// // account.deposit(500);  
-// // account.withdraw(300); 
-
-// // function outer() {
-// //   let outerVar = "I'm outside!";
-
-// //   function inner() {
-// //     console.log(outerVar);
+// // function example() {
+// //   console.log(num); 
+// //   {
+// //     let num = 7;
 // //   }
+// // }
+// // example();
 
-// //   inner();
+
+// // const numbers = [10, 20, 30, 40];
+
+// // const [first, , third] = numbers;
+
+// // console.log(first);
+// // console.log(third); 
+
+// // function showUser({ name, age }) {
+// //   console.log(`${name} is ${age} years old`);
 // // }
 
-// // outer();
-
-// function test() {
-//   console.log(num);
-//   let num = 20;
-// }
-
-// test();
-
-// print()
-
-// function display() {
-//   console.log(number);
-//   let number = 50;
-// }
+// // const user = { name: "joe", age: 20 };
+// // showUser(user);
 
 
-// {
-//   console.log(a);
-//   let a = 10;
-//   const b = 20;
+// const users = [
+//   { name: "alice", age: 22 },
+//   { name: "levi", age: 20 }
+// ];
 
-// }
+// const [ { name: firstUser }, { age: secondUserAge } ] = users;
 
+// console.log(firstUser); 
+// console.log(secondUserAge); 
 
-// function example() {
-//   console.log(num); 
-//   {
-//     let num = 7;
-//   }
-// }
-// example();
-
-
-// const numbers = [10, 20, 30, 40];
-
-// const [first, , third] = numbers;
-
-// console.log(first);
-// console.log(third); 
-
-// function showUser({ name, age }) {
+// function showDetails({ name = "guest", age = 18 } = {}) {
 //   console.log(`${name} is ${age} years old`);
 // }
 
-// const user = { name: "joe", age: 20 };
-// showUser(user);
+// showDetails({ name: "gabriel" }); 
+// showDetails();                 
 
 
-const users = [
-  { name: "alice", age: 22 },
-  { name: "levi", age: 20 }
-];
+// function displayUser({ name: fullName, city: homeTown }) {
+//   console.log(`${fullName} lives in ${homeTown}`);
+// }
 
-const [ { name: firstUser }, { age: secondUserAge } ] = users;
+// const person = { name: "alice", country: "usa", city: "new york" };
+// displayUser(person);
 
-console.log(firstUser); 
-console.log(secondUserAge); 
+// const car = { brand: "toyota" };
 
-function showDetails({ name = "guest", age = 18 } = {}) {
-  console.log(`${name} is ${age} years old`);
-}
+// const { brand: carBrand, model: carModel = "corolla" } = car;
 
-showDetails({ name: "gabriel" }); 
-showDetails();                 
+// console.log(carBrand); 
+// console.log(carModel);
 
+// const settings = {
+//   user: {
+//     info: { name: "liana", age: 28 },
+//     preferences: {}
+//   }
+// };
 
-function displayUser({ name: fullName, city: homeTown }) {
-  console.log(`${fullName} lives in ${homeTown}`);
-}
+// const {
+//   user: {
+//     info: { name: fullName, age: years = 18 },
+//     preferences: { theme = "light" }
+//   }
+// } = settings;
 
-const person = { name: "alice", country: "usa", city: "new york" };
-displayUser(person);
+// console.log(fullName); 
+// console.log(years);   
+// console.log(theme);    
 
-const car = { brand: "toyota" };
+// const employee = { id: 101, name: "sebastian", salary: 50000 };
 
-const { brand: carBrand, model: carModel = "corolla" } = car;
+// const { name: employeeName, salary } = employee;
 
-console.log(carBrand); 
-console.log(carModel);
-
-const settings = {
-  user: {
-    info: { name: "liana", age: 28 },
-    preferences: {}
-  }
-};
-
-const {
-  user: {
-    info: { name: fullName, age: years = 18 },
-    preferences: { theme = "light" }
-  }
-} = settings;
-
-console.log(fullName); 
-console.log(years);   
-console.log(theme);    
-
-const employee = { id: 101, name: "sebastian", salary: 50000 };
-
-const { name: employeeName, salary } = employee;
-
-console.log(employeeName);
-console.log(salary);       
+// console.log(employeeName);
+// console.log(salary);       
 
 
 let numbers = [1, 2, 3, 4, 5];
