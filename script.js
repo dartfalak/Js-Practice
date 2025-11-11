@@ -1289,3 +1289,4 @@ let arrB = [30, 40];
 let combined = [...arrA, ...arrB];
 console.log("Combined:", combined);
 let arrC = [50, 60];
+let extended = [...combined, ...arrC];
