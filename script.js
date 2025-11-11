@@ -1284,9 +1284,3 @@ const arr3 = [7, 8, 9];
 
 arrconcat(arr1, arr2, arr3);
 
-// let arrA = [10, 20];
-// let arrB = [30, 40];
-// let combined = [...arrA, ...arrB];
-// console.log("Combined:", combined);
-// let arrC = [50, 60];
-// let extended = [...combined, ...arrC];
