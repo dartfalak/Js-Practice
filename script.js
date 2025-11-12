@@ -1285,17 +1285,17 @@ const arr3 = [7, 8, 9];
 arrconcat(arr1, arr2, arr3);
 
 
-function promiseAll(promises) {
-  return new Promise((resolve, reject) => {
-    let results = [];
-    let completed = 0;
-    promises.forEach((promise, index) => {
-    promise
-    .then((value) => {
-     results[index] = value;
-    completed++;
-     if (completed === promises.length) {
-    resolve(results);
-          }
-    })
+// function promiseAll(promises) {
+//   return new Promise((resolve, reject) => {
+//     let results = [];
+//     let completed = 0;
+//     promises.forEach((promise, index) => {
+//     promise
+//     .then((value) => {
+//      results[index] = value;
+//     completed++;
+//      if (completed === promises.length) {
+//     resolve(results);
+//           }
+//     })
   
