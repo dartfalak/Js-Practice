@@ -1308,3 +1308,8 @@ async function getData() {
 }
 
 getData();
+
+
+async function fetchUser() {
+  return { name: "maria", age: 25 };
+}
