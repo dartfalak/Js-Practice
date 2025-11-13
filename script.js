@@ -1289,3 +1289,6 @@ async function greet() {
   return "hello";
 }
 
+greet().then((res) => {
+  console.log(res);
+});
