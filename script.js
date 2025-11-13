@@ -1292,3 +1292,19 @@ async function greet() {
 greet().then((res) => {
   console.log(res);
 });
+
+
+function fetchData() {
+  return new Promise(resolve => {
+    setTimeout(() => resolve("data received!"), 2000);
+  });
+}
+
+async function getData() {
+  console.log("fetching");
+  const result = await fetchData(); 
+  console.log(result)
+  console.log("done!");
+}
+
+getData();
