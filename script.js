@@ -1285,3 +1285,7 @@ const arr3 = [7, 8, 9];
 arrconcat(arr1, arr2, arr3);
 
 
+async function greet() {
+  return "hello";
+}
+
