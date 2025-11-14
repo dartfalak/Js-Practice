@@ -1319,11 +1319,11 @@ async function displayUser() {
   console.log("User:", user);
 }
 
-displayUser();
+// displayUser();
 
-async function fetchNumbers() {
-  return [1, 2, 3, 4, 5];
-}
+// async function fetchNumbers() {
+//   return [1, 2, 3, 4, 5];
+// }
 
 async function processNumbers() {
   const numbers = await fetchNumbers();
