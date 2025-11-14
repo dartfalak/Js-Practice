@@ -1318,3 +1318,5 @@ async function displayUser() {
   const user = await fetchUser();
   console.log("User:", user);
 }
+
+displayUser();
