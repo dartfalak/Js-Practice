@@ -1313,3 +1313,8 @@ getData();
 async function fetchUser() {
   return { name: "maria", age: 25 };
 }
+
+async function displayUser() {
+  const user = await fetchUser();
+  console.log("User:", user);
+}
