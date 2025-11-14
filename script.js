@@ -1320,3 +1320,7 @@ async function displayUser() {
 }
 
 displayUser();
+
+async function fetchNumbers() {
+  return [1, 2, 3, 4, 5];
+}
