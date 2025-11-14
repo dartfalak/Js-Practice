@@ -1319,12 +1319,6 @@ async function displayUser() {
   console.log("User:", user);
 }
 
-// displayUser();
-
-// async function fetchNumbers() {
-//   return [1, 2, 3, 4, 5];
-// }
-
 async function processNumbers() {
   const numbers = await fetchNumbers();
   const doubled = numbers.map(num => num * 2);
