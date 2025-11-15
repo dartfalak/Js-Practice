@@ -1360,6 +1360,23 @@ console.log(c());
 console.log(c());
 
 
+console.log("start");
+
+setTimeout(() => {
+  console.log("step 1 done");
+
+  setTimeout(() => {
+    console.log("step 2 done");
+
+    setTimeout(() => {
+      console.log("step 3 done");
+    }, 1000);
+
+  }, 1000);
+
+}, 1000);
+
+
 function processArray(arr, callback) {
   let newArr = [];
   
