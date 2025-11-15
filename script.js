@@ -1324,3 +1324,12 @@ async function processNumbers() {
   const doubled = numbers.map(num => num * 2);
   console.log("squared numbers:", doubled);
 }
+
+function processData(data, callback) {
+  console.log("processing:", data);
+  callback();
+}
+
+processData("user data", () => {
+  console.log("callback executed");
+});
