@@ -1333,3 +1333,28 @@ function processData(data, callback) {
 processData("user data", () => {
   console.log("callback executed");
 });
+
+
+function calculate(a, b, callback) {
+  let result = a + b;
+  callback(result);
+}
+
+calculate(5, 7, (res) => {
+  console.log("Result:", res);
+});
+
+
+function counter() {
+  let count = 0;
+  
+  return function() {
+    count++;
+    return count;
+  };
+}
+
+let c = counter();
+console.log(c());
+console.log(c());
+console.log(c());
