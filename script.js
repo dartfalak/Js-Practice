@@ -1279,51 +1279,51 @@
 // }
 
 // const arr1 = [1, 2, 3];
-// const arr2 = [4, 5, 6];
-// const arr3 = [7, 8, 9];
+// // const arr2 = [4, 5, 6];
+// // const arr3 = [7, 8, 9];
 
-// arrconcat(arr1, arr2, arr3);
-
-
-async function greet() {
-  return "hello";
-}
-
-greet().then((res) => {
-  console.log(res);
-});
+// // arrconcat(arr1, arr2, arr3);
 
 
-function fetchData() {
-  return new Promise(resolve => {
-    setTimeout(() => resolve("data received!"), 2000);
-  });
-}
+// async function greet() {
+//   return "hello";
+// }
 
-async function getData() {
-  console.log("fetching");
-  const result = await fetchData(); 
-  console.log(result)
-  console.log("done!");
-}
-
-getData();
+// greet().then((res) => {
+//   console.log(res);
+// });
 
 
-async function fetchUser() {
-  return { name: "maria", age: 25 };
-}
+// function fetchData() {
+//   return new Promise(resolve => {
+//     setTimeout(() => resolve("data received!"), 2000);
+//   });
+// }
 
-async function displayUser() {
-  const user = await fetchUser();
-  console.log("User:", user);
-}
+// async function getData() {
+//   console.log("fetching");
+//   const result = await fetchData(); 
+//   console.log(result)
+//   console.log("done!");
+// }
 
-async function processNumbers() {
-  const numbers = await fetchNumbers();
-  const doubled = numbers.map(num => num * 2);
-  console.log("squared numbers:", doubled);
-}
+// getData();
+
+
+// async function fetchUser() {
+//   return { name: "maria", age: 25 };
+// }
+
+// async function displayUser() {
+//   const user = await fetchUser();
+//   console.log("User:", user);
+// }
+
+// async function processNumbers() {
+//   const numbers = await fetchNumbers();
+//   const doubled = numbers.map(num => num * 2);
+//   console.log("squared numbers:", doubled);
+// }
 
 function processData(data, callback) {
   console.log("processing:", data);
