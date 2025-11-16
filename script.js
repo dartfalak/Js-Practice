@@ -1391,4 +1391,9 @@ let output = processArray([1, 2, 3], (num) => num * 2);
 
 console.log(output); 
 
+function fetchData(id, callback) {
 
+  setTimeout(() => {
+    console.log("data fetched for id:", id);
+    callback();
+  }, 1000);
