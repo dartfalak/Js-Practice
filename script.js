@@ -1325,14 +1325,14 @@
 //   console.log("squared numbers:", doubled);
 // }
 
-function processData(data, callback) {
-  console.log("processing:", data);
-  callback();
-}
+// function processData(data, callback) {
+//   console.log("processing:", data);
+//   callback();
+// }
 
-processData("user data", () => {
-  console.log("callback executed");
-});
+// processData("user data", () => {
+//   console.log("callback executed");
+// });
 
 
 function calculate(a, b, callback) {
