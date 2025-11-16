@@ -1398,3 +1398,7 @@ function fetchData(id, callback) {
     callback();
   }, 1000);
 }
+
+fetchData(1, () => {
+  console.log("callback after data fetch");
+});
