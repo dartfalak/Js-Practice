@@ -1397,3 +1397,4 @@ function fetchData(id, callback) {
     console.log("data fetched for id:", id);
     callback();
   }, 1000);
+}
