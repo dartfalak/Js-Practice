@@ -1377,16 +1377,3 @@ setTimeout(() => {
 }, 1000);
 
 
-function processArray(arr, callback) {
-  let newArr = [];
-  
-  for (let i = 0; i < arr.length; i++) {
-    newArr.push(callback(arr[i]));
-  }
-  
-  return newArr;
-}
-
-let output = processArray([1, 2, 3], (num) => num * 2);
-
-console.log(output); 
