@@ -1404,19 +1404,3 @@ fetchData(1, () => {
 });
 
 
-function outer() {
-  let message = "hello from outer";
-  function inner() {
-    console.log(message);
-  }
-  return inner;
-}
-
-let innerFunc = outer();
-innerFunc();
-
-
-function makeMultiplier(factor) {
-  return function(number) {
-    return number * factor;
-  };
