@@ -1441,6 +1441,6 @@ function User(name, age) {
     this.name = name;
     this.age = age;
     this.editDetails = function() {
-        console.log(`sser Name: ${this.name}, Age: ${this.age}`);
+        console.log(`yser Name: ${this.name}, Age: ${this.age}`);
     }
 }
