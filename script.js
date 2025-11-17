@@ -1429,3 +1429,4 @@ function Member(branch) {
     this.editDetails = function() {
         console.log(`Member Branch: ${this.branch}`);
     }
+}
