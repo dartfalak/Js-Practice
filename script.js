@@ -1417,3 +1417,9 @@ let innerFunc = outer();
 innerFunc();
 
 
+function Developer(branch) {
+    this.branch = branch;
+    this.viewDetails = function() {
+        console.log(`Developer Branch: ${this.branch}`);
+    }
+}
