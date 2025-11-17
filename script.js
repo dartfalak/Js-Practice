@@ -1330,78 +1330,78 @@
 //   callback();
 // }
 
-// processData("user data", () => {
-//   console.log("callback executed");
+// // processData("user data", () => {
+// //   console.log("callback executed");
+// // });
+
+
+// function calculate(a, b, callback) {
+//   let result = a + b;
+//   callback(result);
+// }
+
+// calculate(5, 7, (res) => {
+//   console.log("Result:", res);
 // });
 
 
-function calculate(a, b, callback) {
-  let result = a + b;
-  callback(result);
-}
-
-calculate(5, 7, (res) => {
-  console.log("Result:", res);
-});
-
-
-function counter() {
-  let count = 0;
+// function counter() {
+//   let count = 0;
   
-  return function() {
-    count++;
-    return count;
-  };
-}
+//   return function() {
+//     count++;
+//     return count;
+//   };
+// }
 
-let c = counter();
-console.log(c());
-console.log(c());
-console.log(c());
-
-
-console.log("start");
-
-setTimeout(() => {
-  console.log("step 1 done");
-
-  setTimeout(() => {
-    console.log("step 2 done");
-
-    setTimeout(() => {
-      console.log("step 3 done");
-    }, 1000);
-
-  }, 1000);
-
-}, 1000);
+// let c = counter();
+// console.log(c());
+// console.log(c());
+// console.log(c());
 
 
-function processArray(arr, callback) {
-  let newArr = [];
+// console.log("start");
+
+// setTimeout(() => {
+//   console.log("step 1 done");
+
+//   setTimeout(() => {
+//     console.log("step 2 done");
+
+//     setTimeout(() => {
+//       console.log("step 3 done");
+//     }, 1000);
+
+//   }, 1000);
+
+// }, 1000);
+
+
+// function processArray(arr, callback) {
+//   let newArr = [];
   
-  for (let i = 0; i < arr.length; i++) {
-    newArr.push(callback(arr[i]));
-  }
+//   for (let i = 0; i < arr.length; i++) {
+//     newArr.push(callback(arr[i]));
+//   }
   
-  return newArr;
-}
+//   return newArr;
+// }
 
-let output = processArray([1, 2, 3], (num) => num * 2);
+// let output = processArray([1, 2, 3], (num) => num * 2);
 
-console.log(output); 
+// console.log(output); 
 
-function fetchData(id, callback) {
+// function fetchData(id, callback) {
 
-  setTimeout(() => {
-    console.log("data fetched for id:", id);
-    callback();
-  }, 1000);
-}
+//   setTimeout(() => {
+//     console.log("data fetched for id:", id);
+//     callback();
+//   }, 1000);
+// }
 
-fetchData(1, () => {
-  console.log("callback after data fetch");
-});
+// fetchData(1, () => {
+//   console.log("callback after data fetch");
+// });
 
 
 
