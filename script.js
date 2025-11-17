@@ -1420,17 +1420,27 @@ innerFunc();
 function Developer(branch) {
     this.branch = branch;
     this.viewDetails = function() {
-        console.log(`Developer Branch: ${this.branch}`);
+        console.log(`developer branch: ${this.branch}`);
     }
 }
 
 function Member(branch) {
     Developer.call(this, branch);
     this.editDetails = function() {
-        console.log(`Member Branch: ${this.branch}`);
+        console.log(`member branch: ${this.branch}`);
     }
 }
 
-let member1 = new Member("Frontend");
+let member1 = new Member("frontend");
 member1.viewDetails();
 member1.editDetails();
+
+
+
+function User(name, age) {
+    this.name = name;
+    this.age = age;
+    this.editDetails = function() {
+        console.log(`sser Name: ${this.name}, Age: ${this.age}`);
+    }
+}
