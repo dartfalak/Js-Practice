@@ -1423,3 +1423,9 @@ function Developer(branch) {
         console.log(`Developer Branch: ${this.branch}`);
     }
 }
+
+function Member(branch) {
+    Developer.call(this, branch);
+    this.editDetails = function() {
+        console.log(`Member Branch: ${this.branch}`);
+    }
