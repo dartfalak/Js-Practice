@@ -1402,3 +1402,16 @@ function fetchData(id, callback) {
 fetchData(1, () => {
   console.log("callback after data fetch");
 });
+
+
+function outer() {
+  let message = "hello from outer";
+  function inner() {
+    console.log(message);
+  }
+  return inner;
+}
+
+let innerFunc = outer();
+innerFunc();
+
