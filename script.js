@@ -1415,3 +1415,8 @@ function outer() {
 let innerFunc = outer();
 innerFunc();
 
+
+function makeMultiplier(factor) {
+  return function(number) {
+    return number * factor;
+  };
