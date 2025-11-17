@@ -1436,11 +1436,3 @@ member1.viewDetails();
 member1.editDetails();
 
 
-
-function User(name, age) {
-    this.name = name;
-    this.age = age;
-    this.editDetails = function() {
-        console.log(`yser Name: ${this.name}, Age: ${this.age}`);
-    }
-}
