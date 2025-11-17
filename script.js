@@ -1430,3 +1430,7 @@ function Member(branch) {
         console.log(`Member Branch: ${this.branch}`);
     }
 }
+
+let member1 = new Member("Frontend");
+member1.viewDetails();
+member1.editDetails();
