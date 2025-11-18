@@ -1435,3 +1435,16 @@ let member1 = new Member("frontend");
 member1.viewDetails();
 member1.editDetails();
 
+
+function User(name, age) {
+    this.name = name;
+    this.age = age;
+    this.viewDetails = function() {
+        console.log(`name: ${this.name}, age: ${this.age}`);
+    }
+
+    this.editDetails = function(newName, newAge) {
+        this.name = newName;
+        this.age = newAge;
+        console.log(`updated name: ${this.name}, updated age: ${this.age}`);
+    }
