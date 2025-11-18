@@ -1442,3 +1442,9 @@ function User(name, age) {
     this.viewDetails = function() {
         console.log(`name: ${this.name}, age: ${this.age}`);
     }
+
+    this.editDetails = function(newName, newAge) {
+        this.name = newName;
+        this.age = newAge;
+        console.log(`updated name: ${this.name}, updated age: ${this.age}`);
+    }
