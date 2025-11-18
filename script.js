@@ -1436,3 +1436,9 @@ member1.viewDetails();
 member1.editDetails();
 
 
+function User(name, age) {
+    this.name = name;
+    this.age = age;
+    this.viewDetails = function() {
+        console.log(`name: ${this.name}, age: ${this.age}`);
+    }
