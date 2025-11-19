@@ -1464,3 +1464,4 @@ function Admin(name, age, adminId) {
 let admin1 = new Admin("david", 30, "A123");
 admin1.viewDetails();
 admin1.viewAdminDetails();
+
