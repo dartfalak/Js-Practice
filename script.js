@@ -1449,3 +1449,12 @@ function User(name, age) {
         console.log(`updated name: ${this.name}, updated age: ${this.age}`);
     }
 }
+
+
+function Admin(name, age, adminId) {
+    User.call(this, name, age);
+    this.adminId = adminId;
+    this.viewAdminDetails = function() {
+        console.log(`adminId: ${this.adminId}`);
+    }
+}
