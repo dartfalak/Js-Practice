@@ -1417,23 +1417,6 @@ let innerFunc = outer();
 innerFunc();
 
 
-function Developer(branch) {
-    this.branch = branch;
-    this.viewDetails = function() {
-        console.log(`developer branch: ${this.branch}`);
-    }
-}
-
-function Member(branch) {
-    Developer.call(this, branch);
-    this.editDetails = function() {
-        console.log(`member branch: ${this.branch}`);
-    }
-}
-
-let member1 = new Member("frontend");
-member1.viewDetails();
-member1.editDetails();
 
 
 function User(name, age) {
@@ -1475,4 +1458,4 @@ function Member(name, memberId) {
 
 let member1 = new Member("Eve", 101);
 member1.viewDetails();
-member1.viewMemberDetails();
+member1.viewMemberDetails
