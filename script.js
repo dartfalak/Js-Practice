@@ -1458,4 +1458,4 @@ function Member(name, memberId) {
 
 let member1 = new Member("Eve", 101);
 member1.viewDetails();
-member1.viewMemberDetails
+member1.viewMemberDetails();
