@@ -1465,3 +1465,10 @@ let admin1 = new Admin("david", 30, "A123");
 admin1.viewDetails();
 admin1.viewAdminDetails();
 
+function Member(name, memberId) {
+    User.call(this, name, null);
+    this.memberId = memberId;
+    this.viewMemberDetails = function() {
+        console.log(`memberId: ${this.memberId}`);
+    }
+}
