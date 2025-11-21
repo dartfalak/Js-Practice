@@ -1472,3 +1472,15 @@ Person.prototype.displayInfo = function() {
 let person1 = new Person("evan");
 person1.displayInfo();
 
+
+function Employee(name, employeeId) {
+    Person.call(this, name);
+    this.employeeId = employeeId;
+    this.displayEmployeeInfo = function() {
+        console.log(`employeeId: ${this.employeeId}`);
+    }
+}
+
+let emp1 = new Employee("frank", "E456");
+emp1.displayInfo();
+emp1.displayEmployeeInfo();
