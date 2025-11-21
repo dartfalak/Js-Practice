@@ -1479,3 +1479,7 @@ function Employee(name, employeeId) {
         console.log(`employeeId: ${this.employeeId}`);
     }
 }
+
+let emp1 = new Employee("frank", "E456");
+emp1.displayInfo();
+emp1.displayEmployeeInfo();
