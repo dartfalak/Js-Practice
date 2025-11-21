@@ -1456,6 +1456,18 @@ function Member(name, memberId) {
     }
 }
 
-let member1 = new Member("Eve", 101);
+let member1 = new Member("adam", 101);
 member1.viewDetails();
 member1.viewMemberDetails();
+
+
+function Person(name) {
+    this.name = name;
+}
+
+Person.prototype.displayInfo = function() {
+        console.log(`name: ${this.name}`);
+    }
+
+let person1 = new Person("evan");
+person1.displayInfo();
