@@ -1493,3 +1493,7 @@ function Student(name, studentId) {
         console.log(`studentId: ${this.studentId}`);
     }
 }
+
+let student1 = new Student("grace", "S789");
+student1.displayInfo();
+student1.displayStudentInfo();
