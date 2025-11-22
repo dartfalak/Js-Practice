@@ -1502,6 +1502,14 @@ function Vehicle(make, model) {
     this.make = make;
     this.model = model;
     this.displayInfo = function() {
-        console.log(`make: ${this.make}, model: ${this.model}`);
+    console.log(`make: ${this.make}, model: ${this.model}`);
+    }
+}
+
+function Car(make, model, numDoors) {
+    Vehicle.call(this, make, model);
+    this.numDoors = numDoors;
+    this.displayCarInfo = function() {
+    console.log(`numDoors: ${this.numDoors}`);
     }
 }
