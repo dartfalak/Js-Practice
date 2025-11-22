@@ -1405,33 +1405,33 @@
 
 
 
-function outer() {
-  let message = "hello from outer";
-  function inner() {
-    console.log(message);
-  }
-  return inner;
-}
+// function outer() {
+//   let message = "hello from outer";
+//   function inner() {
+//     console.log(message);
+//   }
+//   return inner;
+// }
 
-let innerFunc = outer();
-innerFunc();
-
-
+// let innerFunc = outer();
+// innerFunc();
 
 
-function User(name, age) {
-    this.name = name;
-    this.age = age;
-    this.viewDetails = function() {
-        console.log(`name: ${this.name}, age: ${this.age}`);
-    }
 
-    this.editDetails = function(newName, newAge) {
-        this.name = newName;
-        this.age = newAge;
-        console.log(`updated name: ${this.name}, updated age: ${this.age}`);
-    }
-}
+
+// function User(name, age) {
+//     this.name = name;
+//     this.age = age;
+//     this.viewDetails = function() {
+//         console.log(`name: ${this.name}, age: ${this.age}`);
+//     }
+
+//     this.editDetails = function(newName, newAge) {
+//         this.name = newName;
+//         this.age = newAge;
+//         console.log(`updated name: ${this.name}, updated age: ${this.age}`);
+//     }
+// }
 
 
 function Admin(name, age, adminId) {
