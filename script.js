@@ -1497,3 +1497,11 @@ function Student(name, studentId) {
 let student1 = new Student("grace", "S789");
 student1.displayInfo();
 student1.displayStudentInfo();
+
+function Vehicle(make, model) {
+    this.make = make;
+    this.model = model;
+    this.displayInfo = function() {
+        console.log(`make: ${this.make}, model: ${this.model}`);
+    }
+}
