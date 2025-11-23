@@ -1514,20 +1514,3 @@ function Car(make, model, numDoors) {
     }
 }
 
-
-
-let car1 = new Car("honda", "civic", 4);
-car1.displayInfo();
-car1.displayCarInfo();
-
-function Bike(make, model, type) {
-    Vehicle.call(this, make, model);
-    this.type = type;
-    this.displayBikeInfo = function() {
-    console.log(`type: ${this.type}`);
-    }
-}
-
-let bike1 = new Bike("yamaha", "yzf-r3", "sport");
-bike1.displayInfo();
-bike1.displayBikeInfo();
