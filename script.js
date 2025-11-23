@@ -1527,3 +1527,7 @@ function Bike(make, model, type) {
     console.log(`type: ${this.type}`);
     }
 }
+
+let bike1 = new Bike("yamaha", "yzf-r3", "sport");
+bike1.displayInfo();
+bike1.displayBikeInfo();
