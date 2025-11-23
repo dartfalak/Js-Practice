@@ -1519,3 +1519,11 @@ function Car(make, model, numDoors) {
 let car1 = new Car("honda", "civic", 4);
 car1.displayInfo();
 car1.displayCarInfo();
+
+function Bike(make, model, type) {
+    Vehicle.call(this, make, model);
+    this.type = type;
+    this.displayBikeInfo = function() {
+    console.log(`type: ${this.type}`);
+    }
+}
