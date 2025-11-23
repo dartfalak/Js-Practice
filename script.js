@@ -1513,3 +1513,9 @@ function Car(make, model, numDoors) {
     console.log(`numDoors: ${this.numDoors}`);
     }
 }
+
+
+
+let car1 = new Car("honda", "civic", 4);
+car1.displayInfo();
+car1.displayCarInfo();
