@@ -1518,14 +1518,14 @@ function Car(make, model, numDoors) {
 function asyncFunc() {
     return new Promise((resolve, reject) => {
     setTimeout(() => {
-        console.log("async function resolved");
-        resolve("success");
+     console.log("async function resolved");
+    resolve("success");
         }, 2000);
     });
 }
 
 let promise = asyncFunc();
 promise.then((res) => {
-    console.log("promise Result:", res);
+    console.log("promise result:", res);
 });
 
