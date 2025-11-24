@@ -1528,3 +1528,4 @@ let promise = asyncFunc();
 promise.then((res) => {
     console.log("promise Result:", res);
 });
+
