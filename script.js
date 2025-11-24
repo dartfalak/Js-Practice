@@ -1523,3 +1523,8 @@ function asyncFunc() {
         }, 2000);
     });
 }
+
+let promise = asyncFunc();
+promise.then((res) => {
+    console.log("promise Result:", res);
+});
