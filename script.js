@@ -1522,3 +1522,4 @@ function asyncFunc() {
         resolve("success");
         }, 2000);
     });
+}
