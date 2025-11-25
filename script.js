@@ -1541,5 +1541,5 @@ run();
 
 
 async function asyncawaitFunc() {
-    return "asyncawait success";
+    return ("asyncawait success");
 }
