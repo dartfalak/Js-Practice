@@ -1530,14 +1530,7 @@ promise.then((res) => {
 });
 
 
-function asyncawaitFunc() {
-    return new Promise((resolve, reject) => {
-    setTimeout(() => {
-        console.log("asyncawait function resolved");
-        resolve("success");
-    }, 2000);
-    });
-}
+
 
 async function run() {
     let result = await asyncawaitFunc();
