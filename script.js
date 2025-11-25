@@ -1538,3 +1538,10 @@ function asyncawaitFunc() {
     }, 2000);
     });
 }
+
+async function run() {
+    let result = await asyncawaitFunc();
+    console.log("asyncawait Result:", result);
+}
+
+run();
