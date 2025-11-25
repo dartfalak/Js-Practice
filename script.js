@@ -1534,12 +1534,12 @@ promise.then((res) => {
 
 async function run() {
     let result = await asyncawaitFunc();
-    console.log("asyncawait Result:", result);
+    console.log("result:", result);
 }
 
 run();
 
 
 async function asyncawaitFunc() {
-    return ("asyncawait success");
+    return ("success");
 }
