@@ -1538,3 +1538,8 @@ async function run() {
 }
 
 run();
+
+
+async function asyncawaitFunc() {
+    return "asyncawait success";
+}
