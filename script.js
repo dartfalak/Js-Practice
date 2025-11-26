@@ -1558,3 +1558,5 @@ async function process() {
     const processedData = await displayData(data);
     console.log("processed data:", processedData);
 }
+
+process();
