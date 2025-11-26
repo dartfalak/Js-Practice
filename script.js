@@ -1543,3 +1543,12 @@ run();
 async function asyncawaitFunc() {
     return ("success");
 }
+
+
+asycnc function fetchData() {
+    return { data: "sample data" };
+}
+
+async function displayData(data) {
+    console.log("data:", data);
+}
