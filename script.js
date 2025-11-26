@@ -1552,3 +1552,9 @@ asycnc function fetchData() {
 async function displayData(data) {
     console.log("data:", data);
 }
+
+async function process() {
+    const data = await fetchData();
+    const processedData = await displayData(data);
+    console.log("processed data:", processedData);
+}
