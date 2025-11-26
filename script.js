@@ -1545,7 +1545,7 @@ async function asyncawaitFunc() {
 }
 
 
-asycnc function fetchData() {
+async function fetchData() {
     return { data: "sample data" };
 }
 
@@ -1560,3 +1560,5 @@ async function process() {
 }
 
 process();
+
+
