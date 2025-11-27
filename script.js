@@ -1562,3 +1562,30 @@ async function process() {
 process();
 
 
+async function {
+    const data = await fetchData();
+    const processedData = await displayData(data);
+}
+
+async function tryThreeTimes(asyncFunc, maxAttempts) {
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+        try {
+            let result = await asyncFunc();
+            console.log("Function succeeded:", result);
+            return result;
+        } catch (error) {
+            console.log(`Attempt ${attempt} failed:`, error);
+            if (attempt === maxAttempts) {
+                console.log("All attempts failed.");
+                throw error;
+            }
+        }
+    }
+}
+
+async function addAfterDelay(a, b, delay) {
+    return new Promise((resolve) => {
+        setTimeout(() => {
+            resolve(a + b);
+        }, delay);
+    });
