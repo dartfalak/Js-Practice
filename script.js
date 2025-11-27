@@ -1561,3 +1561,9 @@ async function process() {
 
 process();
 
+function addAfterDelay(a, b, delay) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(a + b);
+        }, delay);
+    });
