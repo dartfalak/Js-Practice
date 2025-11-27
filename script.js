@@ -1561,9 +1561,3 @@ async function process() {
 
 process();
 
-
-async function {
-    const data = await fetchData();
-    const processedData = await displayData(data);
-}
-
