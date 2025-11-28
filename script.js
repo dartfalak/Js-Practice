@@ -1569,3 +1569,4 @@ function addAfterDelay(a, b, delay) {
             resolve(a + b);
         }, delay);
     });
+}
