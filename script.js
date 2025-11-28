@@ -1570,3 +1570,14 @@ function addAfterDelay(a, b, delay) {
         }, delay);
     });
 }
+
+async function tryThreeTimes(asyncFunc, maxAttempts) {
+    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+        try {
+         let result = await asyncFunc();
+            console.log("attempt", attempt, "succeeded with result:", result);
+            return result;
+        } catch (error) {
+            console.log("attempt", attempt, "failed:", error);
+            if (attempt === maxAttempts) {
+                throw new Error("all attempts failed")
