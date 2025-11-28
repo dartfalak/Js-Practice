@@ -1581,3 +1581,7 @@ async function tryThreeTimes(asyncFunc, maxAttempts) {
             console.log("attempt", attempt, "failed:", error);
             if (attempt === maxAttempts) {
                 throw new Error("all attempts failed")
+            }
+        }
+    }
+}
