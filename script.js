@@ -1614,7 +1614,8 @@ function execute() {
 execute();
 
 async function showMessage() {
-    console.log("waiting...");
+    console.log("waiting");
     await delay(2000);
     console.log("done after 2 sec!");
+
 }
