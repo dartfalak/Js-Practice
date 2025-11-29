@@ -1596,3 +1596,8 @@ function failingFunction() {
         }, 1000);
     });
 }
+
+
+function delay(ms) {
+    return new Promise(resolve => setTimeout(resolve, ms));
+}
