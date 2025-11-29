@@ -1601,3 +1601,11 @@ function failingFunction() {
 function delay(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
+ 
+
+function execute() {
+    console.log("execution started");
+    delay(2000).then(() => {
+        console.log("execution finished after 2 seconds");
+    });
+}
