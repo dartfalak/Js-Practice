@@ -1606,9 +1606,15 @@ function delay(ms) {
 function execute() {
     console.log("execution started");
     delay(2000).then(() => {
-        console.log("execution finished after 2 seconds");
+        console.log("execution finished after 2 sec");
     });
 }
  
 
 execute();
+
+async function showMessage() {
+    console.log("waiting...");
+    await delay(2000);
+    console.log("done after 2 sec!");
+}
