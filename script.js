@@ -1609,3 +1609,6 @@ function execute() {
         console.log("execution finished after 2 seconds");
     });
 }
+ 
+
+execute();
