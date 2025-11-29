@@ -1585,3 +1585,14 @@ async function tryThreeTimes(asyncFunc, maxAttempts) {
         }
     }
 }
+
+ 
+
+
+function failingFunction() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            reject("function failed");
+        }, 1000);
+    });
+}
