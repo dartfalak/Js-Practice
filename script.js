@@ -1622,3 +1622,7 @@ async function showMessage() {
 
 
 showMessage();
+
+async function task1() {
+    return "task 1 done";
+}
