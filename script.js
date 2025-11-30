@@ -1619,3 +1619,6 @@ async function showMessage() {
     console.log("done after 2 sec!");
 
 }
+
+
+showMessage();
