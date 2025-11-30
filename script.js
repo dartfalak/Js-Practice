@@ -1623,13 +1623,7 @@ async function showMessage() {
 
 showMessage();
 
-async function task1() {
-    return "task 1 done";
-}
 
-async function task2() {
-    return "task 2 done";
-}
 
 async function runAll() {
     const result = await Promise.all([task1(), task2()]);
