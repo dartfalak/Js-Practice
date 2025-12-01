@@ -1665,3 +1665,15 @@ promise.then((res) => {
     console.log("promise resolved with:", res);
 }).catch((err) => {
     console.log("promise rejected with:", err);
+});
+ try {
+    console.log('start');
+    subject;
+    console.log('end');
+} catch (err) {
+    console.log('error has occured:' + err.stack);
+} finally {
+    console.log('run');
+}
+console.log('execution continues');
+ 
