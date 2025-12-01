@@ -1660,3 +1660,8 @@ let promise = new Promise(function(resolve, reject) {
         reject("Wrong");
     }
 });
+
+promise.then((res) => {
+    console.log("promise resolved with:", res);
+}).catch((err) => {
+    console.log("promise rejected with:", err);
