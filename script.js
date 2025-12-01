@@ -1651,13 +1651,3 @@ async function numbers() {
 
 numbers();
 
-
-let promise = new Promise(function(resolve, reject) {
-    let sum = 4 + 4;
-    if (sum == 8) {
-        resolve("success");
-    } else {
-        reject("Wrong");
-    }
-});
-
