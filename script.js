@@ -1524,10 +1524,10 @@ function asyncFunc() {
     });
 }
 
-let promise = asyncFunc();
-promise.then((res) => {
-    console.log("promise result:", res);
-});
+// let promise = asyncFunc();
+// promise.then((res) => {
+//     console.log("promise result:", res);
+// });
 
 
 
