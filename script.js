@@ -1711,5 +1711,6 @@ const vehicle = {
 const car = {
     brand: "Toyota"
 };
+
 Object.setPrototypeOf(car, vehicle);
 car.drive();
