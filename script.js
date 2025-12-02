@@ -1686,3 +1686,10 @@ Person.prototype.haveBirthday = function() {
     console.log(`${this.name} is now ${this.age}!`);
 };
 
+
+
+const user
+1 = new Person("alice", 21);
+const user2 = new Person("john", 22);
+user1.greet();
+user2.haveBirthday();
