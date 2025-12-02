@@ -1537,6 +1537,7 @@ async function run() {
     console.log("result:", result);
 }
 
+
 run();
 
 
@@ -1665,3 +1666,23 @@ promise.then((res) => {
 }).catch((err) => {
     console.log("Error:", err);
 });
+
+
+
+
+
+function Person(name, age) {
+    this.name = name;
+    this.age = age;
+}
+
+Person.prototype.greet = function() {
+    console.log(`hi, I'm ${this.name} and I'm ${this.age} years old.`);
+};
+
+
+Person.prototype.haveBirthday = function() {
+    this.age++;
+    console.log(`${this.name} is now ${this.age}!`);
+};
+
