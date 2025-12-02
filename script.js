@@ -1701,3 +1701,15 @@ Array.prototype.last = function() {
 
 const arr = [10, 20, 30];
 console.log(arr.last());
+
+
+const vehicle = {
+    drive() {
+        console.log("driving");
+    }
+};
+const car = {
+    brand: "Toyota"
+};
+Object.setPrototypeOf(car, vehicle);
+car.drive();
