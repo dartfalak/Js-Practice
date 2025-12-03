@@ -1714,17 +1714,3 @@ const car = {
 
 Object.setPrototypeOf(car, vehicle);
 car.drive();
-
-
-let num = String(20);
-console.log(typeof num);
-let val;
-console.log(typeof val);
-val = 10;
-console.log(typeof val);
-val = 2 + "3";
-console.log(typeof val);
-val = "5" - 2;
-console.log(typeof val);
-val = +"15" + 5;
-console.log(typeof val);
