@@ -1724,3 +1724,5 @@ function Timer() {
     }, 1000);
 }
 
+
+const t = new Timer();
