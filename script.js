@@ -1714,3 +1714,13 @@ const car = {
 
 Object.setPrototypeOf(car, vehicle);
 car.drive();
+
+
+function Timer() {
+    this.seconds = 0;
+    setInterval(() => {
+        this.seconds++;
+        console.log(this.seconds);
+    }, 1000);
+}
+
