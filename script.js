@@ -1688,19 +1688,19 @@ Person.prototype.haveBirthday = function() {
 
 
 
-const user
-1 = new Person("alice", 21);
-const user2 = new Person("john", 22);
-user1.greet();
-user2.haveBirthday();
+// const user
+// 1 = new Person("alice", 21);
+// const user2 = new Person("john", 22);
+// user1.greet();
+// user2.haveBirthday();
 
  
-Array.prototype.last = function() {
-    return this[this.length - 1];
-};
+// Array.prototype.last = function() {
+//     return this[this.length - 1];
+// };
 
-const arr = [10, 20, 30];
-console.log(arr.last());
+// const arr = [10, 20, 30];
+// console.log(arr.last());
 
 
 const vehicle = {
@@ -1726,3 +1726,10 @@ function Timer() {
 
 
 const t = new Timer();
+
+
+
+
+
+
+
