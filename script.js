@@ -1751,3 +1751,11 @@ const d = new Dog("max");
 d.eat();  
 d.bark(); 
 
+
+function A() {}
+A.prototype.x = 10;
+
+const obj = new A();
+
+console.log(obj.x);             
+console.log(obj.hasOwnProperty('x')); 
