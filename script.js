@@ -1759,3 +1759,4 @@ const obj = new A();
 
 console.log(obj.x);             
 console.log(obj.hasOwnProperty('x')); 
+console.log('x' in obj);
