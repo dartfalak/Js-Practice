@@ -1752,6 +1752,19 @@ d.eat();
 d.bark(); 
 
 
+
+function User() {}
+User.prototype.role = "guest";
+
+const u = new User();
+
+u.role = "admin";
+console.log(u.role);
+
+delete u.role;
+console.log(u.role); 
+
+
 function A() {}
 A.prototype.x = 10;
 
