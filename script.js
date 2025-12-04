@@ -1760,3 +1760,16 @@ const obj = new A();
 console.log(obj.x);             
 console.log(obj.hasOwnProperty('x')); 
 console.log('x' in obj);
+
+function A() {}
+A.prototype.x = 1;
+
+function B() {}
+B.prototype = new A();
+B.prototype.y = 2;
+
+const obj = new B();
+
+console.log(obj.x); 
+console.log(obj.y); 
+console.log(obj.z);
