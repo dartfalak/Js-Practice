@@ -1781,7 +1781,7 @@ function B() {}
 B.prototype = new A();
 B.prototype.y = 2;
 
-const obj = new B();
+// const obj = new B();
 
 console.log(obj.x); 
 console.log(obj.y); 
