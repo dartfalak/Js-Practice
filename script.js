@@ -1808,3 +1808,6 @@ function Employee(name, employeeId) {
     }
 }
 
+let emp1 = new Employee("amal", "E456");
+emp1.displayInfo();
+emp1.displayEmployeeInfo();
