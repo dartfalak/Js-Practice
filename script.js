@@ -1788,4 +1788,11 @@ console.log(obj.y);
 console.log(obj.z);
 
 
+function Person(name) {
+    this.name = name;
+}
+
+Person.prototype.displayInfo = function() {
+    console.log(`name: ${this.name}`);
+}
 
