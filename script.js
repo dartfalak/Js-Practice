@@ -1798,3 +1798,13 @@ Person.prototype.displayInfo = function() {
 
 let person1 = new Person("evan");
 person1.displayInfo();
+
+
+function Employee(name, employeeId) {
+    Person.call(this, name);
+    this.employeeId = employeeId;
+    this.displayEmployeeInfo = function() {
+        console.log(`employeeId: ${this.employeeId}`);
+    }
+}
+
