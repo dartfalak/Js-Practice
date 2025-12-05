@@ -1811,3 +1811,11 @@ function Employee(name, employeeId) {
 let emp1 = new Employee("amal", "E456");
 emp1.displayInfo();
 emp1.displayEmployeeInfo();
+
+function Student(name, studentId) {
+    Person.call(this, name);
+    this.studentId = studentId;
+    this.displayStudentInfo = function() {
+        console.log(`studentId: ${this.studentId}`);
+    }
+}
