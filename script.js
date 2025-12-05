@@ -1796,3 +1796,5 @@ Person.prototype.displayInfo = function() {
     console.log(`name: ${this.name}`);
 }
 
+let person1 = new Person("evan");
+person1.displayInfo();
