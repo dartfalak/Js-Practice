@@ -1819,3 +1819,7 @@ function Student(name, studentId) {
         console.log(`studentId: ${this.studentId}`);
     }
 }
+
+let student1 = new Student("ryan", "S789");
+student1.displayInfo();
+student1.displayStudentInfo();
