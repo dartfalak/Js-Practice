@@ -1853,3 +1853,12 @@ function asyncFunc() {
         }, 2000);
     });
 }
+
+let promise = asyncFunc();
+promise.then((res) => {
+    console.log("promise result:", res);
+});
+async function run() {
+    let result = await asyncFunc();
+    console.log("result:", result);
+}
