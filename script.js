@@ -1851,3 +1851,4 @@ function asyncFunc() {
             console.log("async function resolved");
             resolve("success");
         }, 2000);
+    });
