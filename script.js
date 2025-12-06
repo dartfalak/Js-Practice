@@ -1836,3 +1836,7 @@ function Vehicle(make, model) {
 function Car(make, model, numDoors) {
     Vehicle.call(this, make, model);
     this.numDoors = numDoors;
+    this.displayCarInfo = function() {
+        console.log(`numDoors: ${this.numDoors}`);
+    }
+}
