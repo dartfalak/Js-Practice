@@ -1832,3 +1832,7 @@ function Vehicle(make, model) {
         console.log(`make: ${this.make}, model: ${this.model}`);
     }
 }
+
+function Car(make, model, numDoors) {
+    Vehicle.call(this, make, model);
+    this.numDoors = numDoors;
