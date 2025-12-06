@@ -1841,24 +1841,3 @@ function Car(make, model, numDoors) {
     }
 }
 
-let myCar = new Car("Honda", "Civic", 4);
-myCar.displayInfo();
-myCar.displayCarInfo();
-
-function asyncFunc() {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            console.log("async function resolved");
-            resolve("success");
-        }, 2000);
-    });
-}
-
-let promise = asyncFunc();
-promise.then((res) => {
-    console.log("promise result:", res);
-});
-async function run() {
-    let result = await asyncFunc();
-    console.log("result:", result);
-}
