@@ -1840,3 +1840,13 @@ function Car(make, model, numDoors) {
         console.log(`numDoors: ${this.numDoors}`);
     }
 }
+
+let myCar = new Car("Honda", "Civic", 4);
+myCar.displayInfo();
+myCar.displayCarInfo();
+
+function asyncFunc() {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            console.log("async function resolved");
+            
