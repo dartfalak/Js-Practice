@@ -1849,4 +1849,5 @@ function asyncFunc() {
     return new Promise((resolve, reject) => {
         setTimeout(() => {
             console.log("async function resolved");
-            
+            resolve("success");
+        }, 2000);
