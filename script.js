@@ -1827,4 +1827,5 @@ student1.displayStudentInfo();
 
 String.prototype.reverse = function() {
     return 
-this.split("").reverse().
+this.split("").reverse().join("");
+};
