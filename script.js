@@ -1417,55 +1417,6 @@
 // innerFunc();
 
 
-
-
-// function User(name, age) {
-//     this.name = name;
-//     this.age = age;
-//     this.viewDetails = function() {
-//         console.log(`name: ${this.name}, age: ${this.age}`);
-//     }
-
-//     this.editDetails = function(newName, newAge) {
-//         this.name = newName;
-//         this.age = newAge;
-//         console.log(`updated name: ${this.name}, updated age: ${this.age}`);
-//     }
-// }
-
-
-function Admin(name, age, adminId) {
-    User.call(this, name, age);
-    this.adminId = adminId;
-    this.viewAdminDetails = function() {
-        console.log(`adminId: ${this.adminId}`);
-    }
-
-}
-
-
-let admin1 = new Admin("david", 30, "A123");
-admin1.viewDetails();
-admin1.viewAdminDetails();
-
-function Member(name, memberId) {
-    User.call(this, name, null);
-    this.memberId = memberId;
-    this.viewMemberDetails = function() {
-        console.log(`memberId: ${this.memberId}`);
-    }
-}
-
-let member1 = new Member("adam", 101);
-member1.viewDetails();
-member1.viewMemberDetails();
-
-
-function Person(name) {
-    this.name = name;
-}
-
-
 function asyncFunc() {
     return new Promise((resolve, reject) => {
     setTimeout(() => {
