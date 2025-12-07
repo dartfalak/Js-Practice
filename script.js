@@ -1701,3 +1701,6 @@ console.log("hello".reverse())
 Object.prototype.describe = function() {
     return "this is an object";
 };
+
+const obj = { a: 1, b: 2 };
+console.log(obj.describe());
