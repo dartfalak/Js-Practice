@@ -1670,7 +1670,7 @@ console.log(u.role);
 function A() {}
 A.prototype.x = 10;
 
-const obj = new A();
+// const obj = new A();
 
 console.log(obj.x);             
 console.log(obj.hasOwnProperty('x')); 
@@ -1712,3 +1712,4 @@ Array.prototype.first = function() {
 
 const arr = [5, 10, 15];
 console.log(arr.first());
+
