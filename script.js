@@ -1696,3 +1696,8 @@ this.split("").reverse().join("");
 };
 
 console.log("hello".reverse())
+
+
+Object.prototype.describe = function() {
+    return "this is an object";
+};
