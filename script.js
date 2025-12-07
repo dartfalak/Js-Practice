@@ -1704,3 +1704,8 @@ Object.prototype.describe = function() {
 
 const obj = { a: 1, b: 2 };
 console.log(obj.describe());
+
+Array.prototype.first = function() {
+    return this[0];
+};
+
