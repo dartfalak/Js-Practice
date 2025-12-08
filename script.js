@@ -1722,3 +1722,10 @@ Array.prototype.sum = function() {
 const numbers = [1, 2, 3, 4, 5];
 console.log(numbers.sum());
 
+
+Function.prototype.delay = function(ms) {
+    const func = this;
+    return function(...args) {
+        setTimeout(() => {
+            func.apply(this, args);
+        }, ms);
