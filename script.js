@@ -743,19 +743,19 @@
 // //   sum += num;
 // // }
 
-// console.log("Sum:", sum); 
+// console.log("sum:", sum); 
 
-// const name = prompt("What’s your name?");
-// alert("Hello, " + name + "!");
+// const name = prompt("what’s your name?");
+// alert("hello, " + name + "!");
 
 
 // const password = "openai";
-// let input = prompt("Enter password:");
+// let input = prompt("enter password:");
 
 // if (input === password) {
-//   alert("Access granted!");
+//   alert("access granted!");
 // } else {
-//   alert("Wrong password!");
+//   alert("wrong password!");
 // }
 
 
