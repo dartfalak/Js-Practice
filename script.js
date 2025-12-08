@@ -891,27 +891,11 @@
 // // car.drive();
 // // car.move();
 
-// const animal = {
-//   eat() {
-//     console.log("Eating...");
-//   },
-//   sleep() {
-//     console.log("Sleeping...");
-//   }
-// };
 
-// const dog = Object.create(animal);
-// dog.bark = function() {
-//   console.log("Woof!");
-// };
-
-// dog.bark(); 
-// dog.eat();  
-// dog.sleep();
 
 // const shape = {
 //   area() {
-//     console.log("Area not defined.");
+//     console.log("area not defined.");
 //   }
 // };
 
@@ -944,28 +928,6 @@
 // user1.greet();
 // user2.haveBirthday();
 
-
-// Array.prototype.last = function() {
-//   return this[this.length - 1];
-// };
-
-// const arr = [10, 20, 30];
-// console.log(arr.last());
-
-// const vehicle = {
-//   drive() {
-//     console.log("driving...");
-//   }
-// };
-
-// const car = {
-//   brand: "Toyota"
-// };
-
-
-// // Object.setPrototypeOf(car, vehicle);
-
-// // car.drive(); 
 
 // // let num = String(20)
 // // console.log(typeof num);
@@ -1015,65 +977,6 @@
 // // }
 
 // // console.log(num)
-
-// // let num = 10;
-
-
-// const userData = "john"
-
-// function printData() {
-//   console.log("User Data:", userData);
-// }
-
-// printData();
-
-// // function createCounter() {
-// //   let count = 0;
-// //   return function() {
-// //   count++;
-// //   console.log("Count:", count);
-// //   };
-// // }
-
-// // const counter = createCounter();
-
-// // counter();
-// counter();
-// counter();
-
-// var x;          
-// console.log(x); 
-// x = 10;        
-// console.log(x); 
-
-
-// sayHello();
-// function sayHello() {
-//   console.log("Hello!");
-// }
-
-// greet();
-
-// function greet() {
-//   console.log("Good morning!");
-// }
-
-// say(); 
-
-// function say() {
-//   console.log("Hello");
-// }
-
-// function say() {
-//   console.log("Bye");
-// }
-
-// function Car(model) {
-//   this.model = model;
-// }
-
-// const myCar = new Car("toyota");
-// console.log(myCar.model); 
 
 // // const person = {
 // //   name: "chloe",
