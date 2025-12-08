@@ -1713,3 +1713,8 @@ Array.prototype.first = function() {
 const arr = [5, 10, 15];
 console.log(arr.first());
 
+
+Array.prototype.sum = function() {
+    return this.reduce((total, num) => total + num, 0);
+};
+
