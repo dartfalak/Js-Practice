@@ -1632,3 +1632,5 @@ Array.prototype.customMap = function(callback) {
         result.push(callback(this[i], i, this));
     }
     return result;
+};
+
