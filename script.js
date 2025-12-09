@@ -1634,3 +1634,5 @@ Array.prototype.customMap = function(callback) {
     return result;
 };
 
+
+console.log([1,2,3].customMap(num => num * 2)
