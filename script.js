@@ -1626,3 +1626,9 @@ const numbers = [1, 2, 3, 4, 5];
 console.log(numbers.sum());
 
 
+Array.prototype.customMap = function(callback) {
+    let result = [];
+    for(let i = 0; i < this.length; i++) {
+        result.push(callback(this[i], i, this));
+    }
+    
