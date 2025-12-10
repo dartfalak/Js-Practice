@@ -1652,3 +1652,5 @@ const counter = (function () {
         get: () => count
     };
 })();
+
+console.log(counter.inc());
