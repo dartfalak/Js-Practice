@@ -1655,3 +1655,4 @@ const counter = (function () {
 
 console.log(counter.inc());
 console.log(counter.get());
+console.log(counter.dec());
