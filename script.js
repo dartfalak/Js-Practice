@@ -1637,3 +1637,8 @@ Array.prototype.customMap = function(callback) {
 
 console.log([1,2,3].customMap(num => num * 2)
 );
+
+
+(function (name, age) {
+    console.log(`name: ${name}, age: ${age}`);
+})("adam", 25);
