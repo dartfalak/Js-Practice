@@ -1642,3 +1642,13 @@ console.log([1,2,3].customMap(num => num * 2)
 (function (name, age) {
     console.log(`name: ${name}, age: ${age}`);
 })("adam", 25);
+
+const counter = (function () {
+    let count = 0;
+
+    return {
+        inc: () => ++count,
+        dec: () => --count,
+        get: () => count
+    };
+})();
