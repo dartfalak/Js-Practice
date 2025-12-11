@@ -1669,3 +1669,12 @@ const person = (function() {
 
 person.setName("jack");
 console.log(person.getName());
+
+
+const settings = (function(mode,theme)
+ {
+    return {
+    mode : mode,
+    theme : theme,
+    };
+})("dark","red");
