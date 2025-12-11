@@ -1656,3 +1656,12 @@ const counter = (function () {
 console.log(counter.inc());
 console.log(counter.get());
 console.log(counter.dec());
+
+
+const person = (function() {
+    let name = "default";
+    return {
+        setName: (newName) => { name = newName; },
+        getName: () => name
+    };
+})();
