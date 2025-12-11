@@ -1665,3 +1665,6 @@ const person = (function() {
         getName: () => name
     };
 })();
+
+
+person.setName("jack");
