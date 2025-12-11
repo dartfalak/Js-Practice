@@ -1668,3 +1668,4 @@ const person = (function() {
 
 
 person.setName("jack");
+console.log(person.getName());
