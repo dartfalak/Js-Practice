@@ -1678,3 +1678,5 @@ const settings = (function(mode,theme)
     theme : theme,
     };
 })("dark","red");
+
+console.log(settings.mode);
