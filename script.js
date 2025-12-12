@@ -1680,3 +1680,9 @@ const settings = (function(mode,theme)
 })("dark","red");
 
 console.log(settings.mode);
+
+
+let counter = (function() {
+    let count = start;
+    return function() {
+        count++;
