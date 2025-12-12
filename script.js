@@ -1686,3 +1686,6 @@ let counter = (function() {
     let count = start;
     return function() {
         count++;
+        return count;
+    };
+})(10);
