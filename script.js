@@ -1689,3 +1689,5 @@ let counter = (function() {
         return count;
     };
 })(10);
+
+console.log(counter());
