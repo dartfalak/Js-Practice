@@ -1714,5 +1714,10 @@ const bankAccount = (function() {
     return {
         deposit(amount) {
             balance += amount;
+            return balance;
+        },
+        getBalance() {
+            return balance;
         }
-        
+    };
+})();
