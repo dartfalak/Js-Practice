@@ -1702,3 +1702,6 @@ const calculator = (function() {
         multiply: (a, b) => a * b,
         divide: (a, b) => a / b
     };
+})();
+
+console.log(calculator.add(5, 3));
