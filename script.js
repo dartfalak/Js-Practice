@@ -1704,4 +1704,5 @@ const calculator = (function() {
     };
 })();
 
-console.log(calculator.add(5, 3));
+console.log(calculator.add(2, 6));
+console.log(calculator.subtract(10, 4));
