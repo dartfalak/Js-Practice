@@ -1692,3 +1692,11 @@ let counter = (function() {
 
 console.log(counter());
 console.log(counter());
+
+
+
+const calculator = (function() {
+    return {
+        add: (a, b) => a + b,
+        subtract: (a, b) => a - b,
+        
