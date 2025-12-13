@@ -1708,3 +1708,11 @@ console.log(calculator.add(2, 6));
 console.log(calculator.subtract(10, 4));
 console.log(calculator.multiply(3, 5));
 console.log(calculator.divide(20, 4));
+
+const bankAccount = (function() {
+    let balance = 0;
+    return {
+        deposit(amount) {
+            balance += amount;
+        }
+        
