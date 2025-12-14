@@ -1722,5 +1722,5 @@ const bankAccount = (function() {
     };
 })();
 
-console.log(bankAccount.deposit(500));
+console.log(bankAccount.deposit(800));
 console.log(bankAccount.getBalance());
