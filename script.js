@@ -1724,3 +1724,6 @@ const bankAccount = (function() {
 
 console.log(bankAccount.deposit(800));
 console.log(bankAccount.getBalance());
+
+const userModule = (function() {
+    let users = [];
