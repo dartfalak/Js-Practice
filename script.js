@@ -1721,3 +1721,5 @@ const bankAccount = (function() {
         }
     };
 })();
+
+console.log(bankAccount.deposit(500));
