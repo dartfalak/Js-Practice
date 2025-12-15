@@ -1725,3 +1725,13 @@ const bankAccount = (function() {
 console.log(bankAccount.deposit(800));
 console.log(bankAccount.getBalance());
 
+
+(async function() {
+    console.log("fetching data");
+await getData(1);
+    console.log("fetching data 2");
+    await getData(2);
+    console.log("all data fetched");
+  }
+)();
+
