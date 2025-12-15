@@ -1735,3 +1735,8 @@ await getData(1);
   }
 )();
 
+
+(function() {
+    console.log("runs immediately");
+    var y = 13;
+})();
