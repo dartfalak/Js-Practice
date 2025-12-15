@@ -1741,4 +1741,4 @@ await getData(1);
     var y = 13;
 })();
 
-console.log(typeof y);
+console.log(y);
