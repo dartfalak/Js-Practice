@@ -1740,3 +1740,5 @@ await getData(1);
     console.log("runs immediately");
     var y = 13;
 })();
+
+console.log(typeof y);
