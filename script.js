@@ -1744,11 +1744,3 @@ await getData(1);
 console.log(y);
 
 
-(function() {
-    let secret
-    = "hidden value";
-    console.log("accessing secret:", secret);
-})();
-
-
-console.log("trying to access secret:", secret);
