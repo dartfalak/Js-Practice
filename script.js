@@ -1749,3 +1749,4 @@ console.log(y);
     let secret = secretValue;
     if (shouldLog) {
         console.log("accessing secret:", secret);
+    }
