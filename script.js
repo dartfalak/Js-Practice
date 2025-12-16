@@ -1749,3 +1749,6 @@ console.log(y);
     = "hidden value";
     console.log("accessing secret:", secret);
 })();
+
+
+console.log("trying to access secret:", secret);
