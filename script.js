@@ -1742,3 +1742,10 @@ await getData(1);
 })();
 
 console.log(y);
+
+
+(function() {
+    let secret
+    = "hidden value";
+    console.log("accessing secret:", secret);
+})();
