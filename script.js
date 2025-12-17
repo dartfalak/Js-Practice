@@ -1748,3 +1748,5 @@ console.log(y);
     let name = "private";
     console.log("inside IIFE:", name);
 })();
+
+console.log("outside IIFE:", name);
