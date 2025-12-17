@@ -1744,15 +1744,3 @@ await getData(1);
 console.log(y);
 
 
-
-(function(secretValue,shouldLog = true)) {
-    let secret = secretValue;
-    if (shouldLog) {
-        console.log("accessing secret:", secret);
-    }
-    return {
-        getSecret: () => secret
-    };
-})("mySecret", true);
-
-console.log(secretModule.getSecret());
