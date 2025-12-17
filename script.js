@@ -1750,4 +1750,9 @@ console.log(y);
     if (shouldLog) {
         console.log("accessing secret:", secret);
     }
-})("hidden info", true)
+    return {
+        getSecret: () => secret
+    };
+})("mySecret", true);
+
+console.log(secretModule.getSecret());
