@@ -1744,3 +1744,7 @@ await getData(1);
 console.log(y);
 
 
+(function() {
+    let name = "private";
+    console.log("inside IIFE:", name);
+})();
