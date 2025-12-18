@@ -1757,3 +1757,7 @@ const result = (function(marks,total) {
  if (percentage >= 90) { return "grade A"; };
  if (percentage >= 70) { return "grade B"; };
  if (percentage >= 50) { return "grade C"; };
+    return "grade F";
+})(230, 500);
+
+console.log(result);
