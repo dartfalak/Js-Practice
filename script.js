@@ -1754,4 +1754,5 @@ console.log("outside IIFE:", name);
 
 const result = (function(marks,total) {
     const percentage = (marks / total) * 100;
- if (percentage >= 90) { return "grade A"; }
+ if (percentage >= 90) { return "grade A"; };
+ if (percentage >= 70) { return "grade B"; };
