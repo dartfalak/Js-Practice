@@ -1781,4 +1781,6 @@ function addPoints(points) {
     };
 })();
 
-console.log(scoreboard.addPoints(10));
+console.log(scoreboard.addPoints(8));
+console.log(scoreboard.addPoints(5));
+console.log(scoreboard.reset());
