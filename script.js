@@ -1767,3 +1767,10 @@ const scoreboard = (function() {
     let score = 0;
 function addPoints(points) {
         score += points;
+        return score;
+    }
+
+    function reset() {
+        score = 0;
+        return score;
+            
