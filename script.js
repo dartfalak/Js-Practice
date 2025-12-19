@@ -1780,3 +1780,5 @@ function addPoints(points) {
         reset
     };
 })();
+
+console.log(scoreboard.addPoints(10));
