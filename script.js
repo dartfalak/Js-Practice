@@ -1765,3 +1765,5 @@ console.log(result);
 
 const scoreboard = (function() {
     let score = 0;
+function addPoints(points) {
+        score += points;
