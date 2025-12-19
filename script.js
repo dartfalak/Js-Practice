@@ -1773,4 +1773,10 @@ function addPoints(points) {
     function reset() {
         score = 0;
         return score;
+    }
             
+    return {
+        addPoints,
+        reset
+    };
+})();
