@@ -1761,3 +1761,7 @@ const result = (function(marks,total) {
 })(230, 500);
 
 console.log(result);
+
+
+const scoreboard = (function() {
+    let score = 0;
