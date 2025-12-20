@@ -1784,3 +1784,12 @@ function addPoints(points) {
 console.log(scoreboard.addPoints(8));
 console.log(scoreboard.addPoints(5));
 console.log(scoreboard.reset());
+
+
+(function() {
+    let count = 0;
+    setInterval(() => {
+        count++;
+        console.log("count:", count);
+    }, 1000);
+})();
