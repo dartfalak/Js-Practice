@@ -1786,3 +1786,8 @@ console.log(scoreboard.addPoints(5));
 console.log(scoreboard.reset());
 
 
+(function() {
+    let name = "IIFE example";
+    console.log("inside IIFE:", name);
+})();
+
