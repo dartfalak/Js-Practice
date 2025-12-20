@@ -1791,3 +1791,4 @@ console.log(scoreboard.reset());
     console.log("inside IIFE:", name);
 })();
 
+console.log("outside IIFE:", name);
