@@ -1820,3 +1820,5 @@ const taskTracker = (function() {
       }
     };
 })();
+
+taskTracker.addTask("buy groceries");
