@@ -1801,3 +1801,4 @@ const validator = (function() {
 })();
 
 console.log(validator.isEmail(""));
+console.log(validator.isEmail("falak@gmail.com"));
