@@ -1823,3 +1823,5 @@ const taskTracker = (function() {
 
 taskTracker.addTask("buy groceries");
 taskTracker.addTask("walk the dog");
+taskTracker.addTask("do the laundry");
+taskTracker.listTasks();
