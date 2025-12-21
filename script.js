@@ -1826,3 +1826,4 @@ taskTracker.addTask("walk the dog");
 taskTracker.addTask("do the laundry");
 taskTracker.listTasks();
 taskTracker.removeTask("walk the dog");
+taskTracker.listTasks();
