@@ -1812,3 +1812,4 @@ const taskTracker = (function() {
     },
     removeTask(task) {
         tasks = tasks.filter(t => t !== task);
+        console.log(`task "${task}" removed.`);
