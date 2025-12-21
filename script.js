@@ -1796,3 +1796,5 @@ console.log("outside IIFE:", name);
 const validator = (function() {
     function isEmail(email) {
         return email.includes("@");
+    }
+   return { isEmail };
