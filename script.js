@@ -1798,3 +1798,4 @@ const validator = (function() {
         return email.includes("@");
     }
    return { isEmail };
+})();
