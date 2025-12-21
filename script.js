@@ -1817,4 +1817,6 @@ const taskTracker = (function() {
     listTasks() {
         console.log("tasks:", tasks);
         tasks.forEach(t => console.log("- " + t));
-    }
+      }
+    };
+})();
