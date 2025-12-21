@@ -1802,3 +1802,10 @@ const validator = (function() {
 
 console.log(validator.isEmail(""));
 console.log(validator.isEmail("falak@gmail.com"));
+
+const taskTracker = (function() {
+    let tasks = [];
+ return {
+    addTask(task) {
+        tasks.push(task);
+        console.log(`task "${task}" added.`);
