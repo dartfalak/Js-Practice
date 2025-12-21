@@ -1809,3 +1809,6 @@ const taskTracker = (function() {
     addTask(task) {
         tasks.push(task);
         console.log(`task "${task}" added.`);
+    },
+    removeTask(task) {
+        tasks = tasks.filter(t => t !== task);
