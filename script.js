@@ -1822,3 +1822,4 @@ const taskTracker = (function() {
 })();
 
 taskTracker.addTask("buy groceries");
+taskTracker.addTask("walk the dog");
