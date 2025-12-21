@@ -1799,3 +1799,5 @@ const validator = (function() {
     }
    return { isEmail };
 })();
+
+console.log(validator.isEmail(""));
