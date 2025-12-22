@@ -1834,4 +1834,6 @@ taskTracker.listTasks();
         return a + b;
     };
 
-    
+ console.log("sum:", calculate(4, 8));
+
+})();
