@@ -1828,8 +1828,5 @@ taskTracker.listTasks();
 taskTracker.removeTask("walk the dog");
 taskTracker.listTasks();
 
-(function() {
-    console.log("This runs immediately!");
-})();
 
 
