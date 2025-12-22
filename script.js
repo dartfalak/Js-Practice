@@ -1829,4 +1829,9 @@ taskTracker.removeTask("walk the dog");
 taskTracker.listTasks();
 
 
+(function() {
+    let calculate = function(a, b) {
+        return a + b;
+    };
 
+    
