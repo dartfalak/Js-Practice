@@ -1848,3 +1848,4 @@ console.log(typeof calculate);
         reject("Wrong");
     }
     console.log("start");
+    let subject = undefined;
