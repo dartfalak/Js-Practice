@@ -1849,3 +1849,6 @@ console.log(typeof calculate);
     }
     console.log("start");
     let subject = undefined;
+    console.log(subject.name);
+
+
