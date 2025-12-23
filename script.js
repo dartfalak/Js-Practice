@@ -1847,3 +1847,4 @@ console.log(typeof calculate);
     } else {
         reject("Wrong");
     }
+    console.log("start");
