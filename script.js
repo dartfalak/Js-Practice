@@ -1840,15 +1840,3 @@ taskTracker.listTasks();
 
 console.log(typeof calculate);
 
-(function() {
-    let sum = 4 + 4;
-    if (sum == 8) {
-        resolve("success")
-    } else {
-        reject("Wrong");
-    }
-    console.log("start");
-    let subject = undefined;
-    console.log(subject.name);
-
-
