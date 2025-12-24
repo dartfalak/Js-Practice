@@ -1845,5 +1845,7 @@ class Rectangle {
     getDimensions() {
     return { width: this.width, height: this.height };
 
+   }
 }
 
+const rect = new Rectangle();
