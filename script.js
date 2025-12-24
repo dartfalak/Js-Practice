@@ -1851,6 +1851,6 @@ class Rectangle {
 const rect = new Rectangle();
 
 rect.setDimensions(20, 10);
-console.log("Area:", rect.getArea());
-console.log("Perimeter:", rect.getPerimeter());
-console.log("Dimensions:", rect.getDimensions());
+console.log("area:", rect.getArea());
+console.log("perimeter:", rect.getPerimeter());
+console.log("dimensions:", rect.getDimensions());
