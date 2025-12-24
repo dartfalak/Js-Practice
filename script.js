@@ -1849,3 +1849,5 @@ class Rectangle {
 }
 
 const rect = new Rectangle();
+
+rect.setDimensions(20, 10);
