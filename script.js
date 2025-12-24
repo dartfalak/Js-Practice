@@ -1854,10 +1854,3 @@ rect.setDimensions(20, 10);
 console.log("Area:", rect.getArea());
 console.log("Perimeter:", rect.getPerimeter());
 console.log("Dimensions:", rect.getDimensions());
-
-class Circle {
-    constructor(radius) {
-        this.radius = radius;
-    }
-    getArea() {
-        return Math.PI * this.radius * this.radius;
