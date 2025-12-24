@@ -1829,14 +1829,8 @@ taskTracker.removeTask("walk the dog");
 taskTracker.listTasks();
 
 
-(function() {
-    let calculate = function(a, b) {
-        return a + b;
-    };
-
- console.log("sum:", calculate(4, 8));
-
-})();
-
-console.log(typeof calculate);
-
+class Rectangle {
+   setDimensions(width, height) {
+    this.width = width;
+    this.height = height;
+    }
