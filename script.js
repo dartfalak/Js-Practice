@@ -1842,3 +1842,8 @@ class Rectangle {
  getPerimeter() {
     return 2 * (this.width + this.height);
     }
+    getDimensions() {
+    return { width: this.width, height: this.height };
+
+}
+
