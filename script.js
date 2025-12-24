@@ -1852,3 +1852,4 @@ const rect = new Rectangle();
 
 rect.setDimensions(20, 10);
 console.log("Area:", rect.getArea());
+console.log("Perimeter:", rect.getPerimeter());
