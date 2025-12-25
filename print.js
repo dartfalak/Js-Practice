@@ -4,3 +4,4 @@ printName();
 
 
 import {add} from './script.js';
+console.log(add(2, 3));
