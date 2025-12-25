@@ -1859,3 +1859,5 @@ console.log("dimensions:", rect.getDimensions());
 const printName = () => {
     console.log("my name is falak");
 };
+
+printName();
