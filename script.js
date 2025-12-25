@@ -1861,3 +1861,10 @@ console.log("dimensions:", rect.getDimensions());
 };
 
 printName();
+
+export const add = (a, b) => a + b;
+export const multiply = (a, b) => a * b;
+export const subtract = (a, b) => a - b
+
+add(5, 3);
+multiply(4, 2);
