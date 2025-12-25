@@ -1856,7 +1856,7 @@ console.log("perimeter:", rect.getPerimeter());
 console.log("dimensions:", rect.getDimensions());
 
 
-const printName = () => {
+ export const printName = () => {
     console.log("my name is falak");
 };
 
