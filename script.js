@@ -1885,3 +1885,9 @@ class Employee {
         }
         else {
             console.log("invalid salary");
+        }
+    }
+
+    getSalary() {
+        return this.#salary;
+    }
