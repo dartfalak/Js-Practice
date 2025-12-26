@@ -1883,3 +1883,5 @@ class Employee {
         if (typoeof newSalary === "number" && newSalary >= 0) {
             this.#salary = newSalary;
         }
+        else {
+            console.log("invalid salary");
