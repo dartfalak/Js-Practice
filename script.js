@@ -1890,7 +1890,7 @@ class Employee {
 
     getSalary() {
         return {
-            id; this.id,
+            id: this.id,
             name: this.name,
             salary: this.#salary
         };
