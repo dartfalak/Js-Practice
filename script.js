@@ -1871,7 +1871,7 @@ multiply(4, 2);
 
 class Employee {
     #salary;
-}
+
 
     constructor(id, name, salary) {
         this.id = id;
@@ -1880,7 +1880,7 @@ class Employee {
     }
 
     updateSalary(newSalary) {
-        if (typoeof newSalary === "number" && newSalary >= 0) {
+        if (typeof newSalary === "number" && newSalary >= 0) {
             this.#salary = newSalary;
         }
         else {
@@ -1893,7 +1893,7 @@ class Employee {
             id; this.id,
             name: this.name,
             salary: this.#salary
-        }
+        };
     }
 }
 
@@ -1902,3 +1902,4 @@ const emp = new Employee(109, "falak", 60000);
 console.log(emp.getSalary());
 emp.updateSalary(65000);
 console.log(emp.getSalary());
+
