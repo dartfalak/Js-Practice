@@ -1876,3 +1876,9 @@ class Employee {
     constructor(id, name, salary) {
         this.id = id;
         this.name = name;
+        this.#salary = salary;
+    }
+
+    getSalary() {
+        return this.#salary;
+    }
