@@ -1879,6 +1879,7 @@ class Employee {
         this.updateSalary(salary);
     }
 
-    getSalary() {
-        return this.#salary;
-    }
+    updateSalary(newSalary) {
+        if (typoeof newSalary === "number" && newSalary >= 0) {
+            this.#salary = newSalary;
+        }
