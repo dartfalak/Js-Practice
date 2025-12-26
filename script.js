@@ -1868,3 +1868,11 @@ export const subtract = (a, b) => a - b
 
 add(5, 3);
 multiply(4, 2);
+
+class Employee {
+    #salary;
+}
+
+    constructor(id, name, salary) {
+        this.id = id;
+        this.name = name;
