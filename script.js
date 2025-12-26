@@ -1898,3 +1898,6 @@ class Employee {
 }
 
 const emp = new Employee(109, "falak", 60000);
+
+console.log(emp.getSalary());
+emp.updateSalary(65000);
