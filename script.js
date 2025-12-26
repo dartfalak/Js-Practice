@@ -1895,3 +1895,6 @@ class Employee {
             salary: this.#salary
         }
     }
+}
+
+const emp = new Employee(109, "falak", 60000);
