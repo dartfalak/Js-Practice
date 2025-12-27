@@ -1337,541 +1337,540 @@ function asyncFunc() {
 
 
 
-async function run() {
-    let result = await asyncawaitFunc();
-    console.log("result:", result);
-}
+// async function run() {
+//     let result = await asyncawaitFunc();
+//     console.log("result:", result);
+// }
 
 
-run();
+// run();
 
 
-async function asyncawaitFunc() {
-    return ("success");
-}
+// async function asyncawaitFunc() {
+//     return ("success");
+// }
 
 
-async function fetchData() {
-    return { data: "sample data" };
-}
+// async function fetchData() {
+//     return { data: "sample data" };
+// }
 
-async function displayData(data) {
-    console.log("data:", data);
-}
+// async function displayData(data) {
+//     console.log("data:", data);
+// }
 
-async function process() {
-    const data = await fetchData();
-    const processedData = await displayData(data);
-    console.log("processed data:", processedData);
-}
+// async function process() {
+//     const data = await fetchData();
+//     const processedData = await displayData(data);
+//     console.log("processed data:", processedData);
+// }
 
-process();
-
-
-
-function addAfterDelay(a, b, delay) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(a + b);
-        }, delay);
-    });
-}
-
-async function tryThreeTimes(asyncFunc, maxAttempts) {
-    for (let attempt = 1; attempt <= maxAttempts; attempt++) {
-        try {
-         let result = await asyncFunc();
-            console.log("attempt", attempt, "succeeded with result:", result);
-            return result;
-        } catch (error) {
-            console.log("attempt", attempt, "failed:", error);
-            if (attempt === maxAttempts) {
-                throw new Error("all attempts failed")
-            }
-        }
-    }
-}
-
- 
-
-
-function failingFunction() {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            reject("function failed");
-        }, 1000);
-    });
-}
-
-
-function delay(ms) {
-    return new Promise(resolve => setTimeout(resolve, ms));
-}
- 
-
-function execute() {
-    console.log("execution started");
-    delay(2000).then(() => {
-        console.log("execution finished after 2 sec");
-    });
-}
- 
-
-execute();
-
-async function showMessage() {
-    console.log("waiting");
-    await delay(2000);
-    console.log("done after 2 sec!");
-
-}
-
-
-showMessage();
+// process();
 
 
 
-async function runAll() {
-    const result = await Promise.all([task1(), task2()]);
-    console.log(result);
-}
+// function addAfterDelay(a, b, delay) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(a + b);
+//         }, delay);
+//     });
+// }
 
-runAll();
-
-async function numbers() {
-    let oddNumbers = new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve("3,5,7");
-        }, 1000);
-    });
-    let evenNumbers = new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve("2,4,6");
-        }, 1000);
-    });
-    let odd = await oddNumbers;
-    let even = await evenNumbers;
-    console.log("Odd:", odd);
-    console.log("Even:", even);
-}
-
-numbers();
-
-
-let promise = new Promise(function(resolve, reject) {
-    let sum = 4 + 4;
-    if (sum == 8) {
-        resolve("success");
-    } else {
-        reject("Wrong");
-    }
-});
-promise.then((res) => {
-    console.log("Result:", res);
-}).catch((err) => {
-    console.log("Error:", err);
-});
-
-
-
-
-
-function Person(name, age) {
-    this.name = name;
-    this.age = age;
-}
-
-Person.prototype.greet = function() {
-    console.log(`hi, I'm ${this.name} and I'm ${this.age} years old.`);
-};
-
-
-Person.prototype.haveBirthday = function() {
-    this.age++;
-    console.log(`${this.name} is now ${this.age}!`);
-};
-
-
-
-// const user
-// 1 = new Person("alice", 21);
-// const user2 = new Person("john", 22);
-// user1.greet();
-// user2.haveBirthday();
+// async function tryThreeTimes(asyncFunc, maxAttempts) {
+//     for (let attempt = 1; attempt <= maxAttempts; attempt++) {
+//         try {
+//          let result = await asyncFunc();
+//             console.log("attempt", attempt, "succeeded with result:", result);
+//             return result;
+//         } catch (error) {
+//             console.log("attempt", attempt, "failed:", error);
+//             if (attempt === maxAttempts) {
+//                 throw new Error("all attempts failed")
+//             }
+//         }
+//     }
+// }
 
  
-// Array.prototype.last = function() {
-//     return this[this.length - 1];
+
+
+// function failingFunction() {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             reject("function failed");
+//         }, 1000);
+//     });
+// }
+
+
+// function delay(ms) {
+//     return new Promise(resolve => setTimeout(resolve, ms));
+// }
+ 
+
+// function execute() {
+//     console.log("execution started");
+//     delay(2000).then(() => {
+//         console.log("execution finished after 2 sec");
+//     });
+// }
+ 
+
+// execute();
+
+// async function showMessage() {
+//     console.log("waiting");
+//     await delay(2000);
+//     console.log("done after 2 sec!");
+
+// }
+
+
+// showMessage();
+
+
+
+// async function runAll() {
+//     const result = await Promise.all([task1(), task2()]);
+//     console.log(result);
+// }
+
+// runAll();
+
+// async function numbers() {
+//     let oddNumbers = new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve("3,5,7");
+//         }, 1000);
+//     });
+//     let evenNumbers = new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve("2,4,6");
+//         }, 1000);
+//     });
+//     let odd = await oddNumbers;
+//     let even = await evenNumbers;
+//     console.log("Odd:", odd);
+//     console.log("Even:", even);
+// }
+
+// numbers();
+
+
+// let promise = new Promise(function(resolve, reject) {
+//     let sum = 4 + 4;
+//     if (sum == 8) {
+//         resolve("success");
+//     } else {
+//         reject("Wrong");
+//     }
+// });
+// promise.then((res) => {
+//     console.log("Result:", res);
+// }).catch((err) => {
+//     console.log("Error:", err);
+// });
+
+
+
+
+
+// function Person(name, age) {
+//     this.name = name;
+//     this.age = age;
+// }
+
+// Person.prototype.greet = function() {
+//     console.log(`hi, I'm ${this.name} and I'm ${this.age} years old.`);
 // };
 
-// const arr = [10, 20, 30];
-// console.log(arr.last());
 
-
-const vehicle = {
-    drive() {
-        console.log("driving");
-    }
-};
-const car = {
-    brand: "Toyota"
-};
-
-Object.setPrototypeOf(car, vehicle);
-car.drive();
-
-
-function Timer() {
-    this.seconds = 0;
-    setInterval(() => {
-        this.seconds++;
-        console.log(this.seconds);
-    }, 1000);
-}
-
-
-const t = new Timer();
-
-
-function Animal(name) {
-  this.name = name;
-}
-
-Animal.prototype.eat = function () {
-  console.log(this.name + " is eating");
-};
-
-function Dog(name) {
-  Animal.call(this, name); 
-}
-
-Dog.prototype = Object.create(Animal.prototype);
-Dog.prototype.constructor = Dog;
-
-Dog.prototype.bark = function () {
-  console.log(this.name + " says woof");
-};
-
-const d = new Dog("max");
-d.eat();  
-d.bark(); 
+// Person.prototype.haveBirthday = function() {
+//     this.age++;
+//     console.log(`${this.name} is now ${this.age}!`);
+// };
 
 
 
-function User() {}
-User.prototype.role = "guest";
+// // const user
+// // 1 = new Person("alice", 21);
+// // const user2 = new Person("john", 22);
+// // user1.greet();
+// // user2.haveBirthday();
 
-const u = new User();
+ 
+// // Array.prototype.last = function() {
+// //     return this[this.length - 1];
+// // };
 
-u.role = "admin";
-console.log(u.role);
-
-delete u.role;
-console.log(u.role); 
-
-
-function A() {}
-A.prototype.x = 10;
-
-// const obj = new A();
-
-console.log(obj.x);             
-console.log(obj.hasOwnProperty('x')); 
-console.log('x' in obj);
-
-function A() {}
-A.prototype.x = 1;
-
-function B() {}
-B.prototype = new A();
-B.prototype.y = 2;
-
-// const obj = new B();
-
-console.log(obj.x); 
-console.log(obj.y); 
-console.log(obj.z);
+// // const arr = [10, 20, 30];
+// // console.log(arr.last());
 
 
-String.prototype.reverse = function() {
-    return 
-this.split("").reverse().join("");
-};
+// const vehicle = {
+//     drive() {
+//         console.log("driving");
+//     }
+// };
+// const car = {
+//     brand: "Toyota"
+// };
 
-console.log("hello".reverse())
-
-
-Object.prototype.describe = function() {
-    return "this is an object";
-};
-
-const obj = { a: 1, b: 2 };
-console.log(obj.describe());
-
-Array.prototype.first = function() {
-    return this[0];
-};
+// Object.setPrototypeOf(car, vehicle);
+// car.drive();
 
 
-const arr = [5, 10, 15];
-console.log(arr.first());
+// function Timer() {
+//     this.seconds = 0;
+//     setInterval(() => {
+//         this.seconds++;
+//         console.log(this.seconds);
+//     }, 1000);
+// }
 
 
-Array.prototype.sum = function() {
-    return this.reduce((total, num) => total + num, 0);
-};
+// const t = new Timer();
 
 
-const numbers = [1, 2, 3, 4, 5];
-console.log(numbers.sum());
+// function Animal(name) {
+//   this.name = name;
+// }
+
+// Animal.prototype.eat = function () {
+//   console.log(this.name + " is eating");
+// };
+
+// function Dog(name) {
+//   Animal.call(this, name); 
+// }
+
+// Dog.prototype = Object.create(Animal.prototype);
+// Dog.prototype.constructor = Dog;
+
+// Dog.prototype.bark = function () {
+//   console.log(this.name + " says woof");
+// };
+
+// const d = new Dog("max");
+// d.eat();  
+// d.bark(); 
 
 
-Array.prototype.customMap = function(callback) {
-    let result = [];
-    for(let i = 0; i < this.length; i++) {
-        result.push(callback(this[i], i, this));
-    }
-    return result;
-};
+
+// function User() {}
+// User.prototype.role = "guest";
+
+// const u = new User();
+
+// u.role = "admin";
+// console.log(u.role);
+
+// delete u.role;
+// console.log(u.role); 
 
 
-console.log([1,2,3].customMap(num => num * 2)
-);
+// function A() {}
+// A.prototype.x = 10;
+
+// // const obj = new A();
+
+// console.log(obj.x);             
+// console.log(obj.hasOwnProperty('x')); 
+// console.log('x' in obj);
+
+// function A() {}
+// A.prototype.x = 1;
+
+// function B() {}
+// B.prototype = new A();
+// B.prototype.y = 2;
+
+// // const obj = new B();
+
+// console.log(obj.x); 
+// console.log(obj.y); 
+// console.log(obj.z);
 
 
-(function (name, age) {
-    console.log(`name: ${name}, age: ${age}`);
-})("adam", 25);
+// String.prototype.reverse = function() {
+//     return 
+// this.split("").reverse().join("");
+// };
 
-// const counter = (function () {
-//     let count = 0;
+// console.log("hello".reverse())
 
+
+// Object.prototype.describe = function() {
+//     return "this is an object";
+// };
+
+// const obj = { a: 1, b: 2 };
+// console.log(obj.describe());
+
+// Array.prototype.first = function() {
+//     return this[0];
+// };
+
+
+// const arr = [5, 10, 15];
+// console.log(arr.first());
+
+
+// Array.prototype.sum = function() {
+//     return this.reduce((total, num) => total + num, 0);
+// };
+
+
+// const numbers = [1, 2, 3, 4, 5];
+// console.log(numbers.sum());
+
+
+// Array.prototype.customMap = function(callback) {
+//     let result = [];
+//     for(let i = 0; i < this.length; i++) {
+//         result.push(callback(this[i], i, this));
+//     }
+//     return result;
+// };
+
+
+// console.log([1,2,3].customMap(num => num * 2)
+// );
+
+
+// (function (name, age) {
+//     console.log(`name: ${name}, age: ${age}`);
+// })("adam", 25);
+
+// // const counter = (function () {
+// //     let count = 0;
+
+// //     return {
+// //         inc: () => ++count,
+// //         dec: () => --count,
+// //         get: () => count
+// //     };
+// // })();
+
+// console.log(counter.inc());
+// console.log(counter.get());
+// console.log(counter.dec());
+
+
+// const person = (function() {
+//     let name = "default";
 //     return {
-//         inc: () => ++count,
-//         dec: () => --count,
-//         get: () => count
+//         setName: (newName) => { name = newName; },
+//         getName: () => name
 //     };
 // })();
 
-console.log(counter.inc());
-console.log(counter.get());
-console.log(counter.dec());
+
+// person.setName("jack");
+// console.log(person.getName());
 
 
-const person = (function() {
-    let name = "default";
-    return {
-        setName: (newName) => { name = newName; },
-        getName: () => name
-    };
-})();
+// const settings = (function(mode,theme)
+//  {
+//     return {
+//     mode : mode,
+//     theme : theme,
+//     };
+// })("dark","red");
+
+// console.log(settings.mode);
 
 
-person.setName("jack");
-console.log(person.getName());
+// let counter = (function() {
+//     let count = start;
+//     return function() {
+//         count++;
+//         return count;
+//     };
+// })(10);
 
-
-const settings = (function(mode,theme)
- {
-    return {
-    mode : mode,
-    theme : theme,
-    };
-})("dark","red");
-
-console.log(settings.mode);
-
-
-let counter = (function() {
-    let count = start;
-    return function() {
-        count++;
-        return count;
-    };
-})(10);
-
-console.log(counter());
-console.log(counter());
+// console.log(counter());
+// console.log(counter());
 
 
 
-const calculator = (function() {
-    return {
-        add: (a, b) => a + b,
-        subtract: (a, b) => a - b,
-        multiply: (a, b) => a * b,
-        divide: (a, b) => a / b
-    };
-})();
+// const calculator = (function() {
+//     return {
+//         add: (a, b) => a + b,
+//         subtract: (a, b) => a - b,
+//         multiply: (a, b) => a * b,
+//         divide: (a, b) => a / b
+//     };
+// })();
 
-console.log(calculator.add(2, 6));
-console.log(calculator.subtract(10, 4));
-console.log(calculator.multiply(3, 5));
-console.log(calculator.divide(20, 4));
+// console.log(calculator.add(2, 6));
+// console.log(calculator.subtract(10, 4));
+// console.log(calculator.multiply(3, 5));
+// console.log(calculator.divide(20, 4));
 
-const bankAccount = (function() {
-    let balance = 0;
-    return {
-        deposit(amount) {
-            balance += amount;
-            return balance;
-        },
-        getBalance() {
-            return balance;
-        }
-    };
-})();
+// const bankAccount = (function() {
+//     let balance = 0;
+//     return {
+//         deposit(amount) {
+//             balance += amount;
+//             return balance;
+//         },
+//         getBalance() {
+//             return balance;
+//         }
+//     };
+// })();
 
-console.log(bankAccount.deposit(800));
-console.log(bankAccount.getBalance());
-
-
-(async function() {
-    console.log("fetching data");
-await getData(1);
-    console.log("fetching data 2");
-    await getData(2);
-    console.log("all data fetched");
-  }
-)();
+// console.log(bankAccount.deposit(800));
+// console.log(bankAccount.getBalance());
 
 
-(function() {
-    console.log("runs immediately");
-    var y = 13;
-})();
-
-console.log(y);
-
-
-(function() {
-    let name = "private";
-    console.log("inside IIFE:", name);
-})();
-
-console.log("outside IIFE:", name);
+// (async function() {
+//     console.log("fetching data");
+// await getData(1);
+//     console.log("fetching data 2");
+//     await getData(2);
+//     console.log("all data fetched");
+//   }
+// )();
 
 
-const result = (function(marks,total) {
-    const percentage = (marks / total) * 100;
- if (percentage >= 90) { return "grade A"; };
- if (percentage >= 70) { return "grade B"; };
- if (percentage >= 50) { return "grade C"; };
-    return "grade F";
-})(230, 500);
+// (function() {
+//     console.log("runs immediately");
+//     var y = 13;
+// })();
 
-console.log(result);
+// console.log(y);
 
 
-const scoreboard = (function() {
-    let score = 0;
-function addPoints(points) {
-        score += points;
-        return score;
-    }
+// (function() {
+//     let name = "private";
+//     console.log("inside IIFE:", name);
+// })();
 
-    function reset() {
-        score = 0;
-        return score;
-    }
+// console.log("outside IIFE:", name);
+
+
+// const result = (function(marks,total) {
+//     const percentage = (marks / total) * 100;
+//  if (percentage >= 90) { return "grade A"; };
+//  if (percentage >= 70) { return "grade B"; };
+//  if (percentage >= 50) { return "grade C"; };
+//     return "grade F";
+// })(230, 500);
+
+// console.log(result);
+
+
+// const scoreboard = (function() {
+//     let score = 0;
+// function addPoints(points) {
+//         score += points;
+//         return score;
+//     }
+
+//     function reset() {
+//         score = 0;
+//         return score;
+//     }
             
-    return {
-        addPoints,
-        reset
-    };
-})();
+//     return {
+//         addPoints,
+//         reset
+//     };
+// })();
 
-console.log(scoreboard.addPoints(8));
-console.log(scoreboard.addPoints(5));
-console.log(scoreboard.reset());
-
-
-(function() {
-    let name = "IIFE example";
-    console.log("inside IIFE:", name);
-})();
-
-console.log("outside IIFE:", name);
-
-const validator = (function() {
-    function isEmail(email) {
-        return email.includes("@");
-    }
-   return { isEmail };
-})();
-
-console.log(validator.isEmail(""));
-console.log(validator.isEmail("falak@gmail.com"));
-
-const taskTracker = (function() {
-    let tasks = [];
- return {
-    addTask(task) {
-        tasks.push(task);
-        console.log(`task "${task}" added.`);
-    },
-    removeTask(task) {
-        tasks = tasks.filter(t => t !== task);
-        console.log(`task "${task}" removed.`);
-    },
-    listTasks() {
-        console.log("tasks:", tasks);
-        tasks.forEach(t => console.log("- " + t));
-      }
-    };
-})();
-
-taskTracker.addTask("buy groceries");
-taskTracker.addTask("walk the dog");
-taskTracker.addTask("do the laundry");
-taskTracker.listTasks();
-taskTracker.removeTask("walk the dog");
-taskTracker.listTasks();
+// console.log(scoreboard.addPoints(8));
+// console.log(scoreboard.addPoints(5));
+// console.log(scoreboard.reset());
 
 
-class Rectangle {
-   setDimensions(width, height) {
-    this.width = width;
-    this.height = height;
-    }
+// (function() {
+//     let name = "IIFE example";
+//     console.log("inside IIFE:", name);
+// })();
 
-    getArea() {
-    return this.width * this.height;
+// console.log("outside IIFE:", name);
 
-    }
- getPerimeter() {
-    return 2 * (this.width + this.height);
-    }
-    getDimensions() {
-    return { width: this.width, height: this.height };
+// const validator = (function() {
+//     function isEmail(email) {
+//         return email.includes("@");
+//     }
+//    return { isEmail };
+// })();
 
-   }
-}
+// console.log(validator.isEmail(""));
+// console.log(validator.isEmail("falak@gmail.com"));
 
-const rect = new Rectangle();
+// const taskTracker = (function() {
+//     let tasks = [];
+//  return {
+//     addTask(task) {
+//         tasks.push(task);
+//         console.log(`task "${task}" added.`);
+//     },
+//     removeTask(task) {
+//         tasks = tasks.filter(t => t !== task);
+//         console.log(`task "${task}" removed.`);
+//     },
+//     listTasks() {
+//         console.log("tasks:", tasks);
+//         tasks.forEach(t => console.log("- " + t));
+//       }
+//     };
+// })();
 
-rect.setDimensions(20, 10);
-console.log("area:", rect.getArea());
-console.log("perimeter:", rect.getPerimeter());
-console.log("dimensions:", rect.getDimensions());
+// taskTracker.addTask("buy groceries");
+// taskTracker.addTask("walk the dog");
+// taskTracker.addTask("do the laundry");
+// taskTracker.listTasks();
+// taskTracker.removeTask("walk the dog");
+// taskTracker.listTasks();
 
 
- export const printName = () => {
-    console.log("my name is falak");
-};
+// class Rectangle {
+//    setDimensions(width, height) {
+//     this.width = width;
+//     this.height = height;
+//     }
 
-printName();
+//     getArea() {
+//     return this.width * this.height;
 
-export const add = (a, b) => a + b;
-export const multiply = (a, b) => a * b;
-export const subtract = (a, b) => a - b
+//     }
+//  getPerimeter() {
+//     return 2 * (this.width + this.height);
+//     }
+//     getDimensions() {
+//     return { width: this.width, height: this.height };
 
-add(5, 3);
-multiply(4, 2);
+//    }
+// }
+
+// const rect = new Rectangle();
+
+// rect.setDimensions(20, 10);
+// console.log("area:", rect.getArea());
+// console.log("perimeter:", rect.getPerimeter());
+// console.log("dimensions:", rect.getDimensions());
+
+
+//  export const printName = () => {
+//     console.log("my name is falak");
+// };
+
+// printName();
+
+// export const add = (a, b) => a + b;
+// export const multiply = (a, b) => a * b;
+// export const subtract = (a, b) => a - b
+
+// add(5, 3);
+// multiply(4, 2);
 
 class Employee {
     #salary;
-
 
     constructor(id, name, salary) {
         this.id = id;
@@ -1902,4 +1901,11 @@ const emp = new Employee(109, "falak", 60000);
 console.log(emp.getSalary());
 emp.updateSalary(65000);
 console.log(emp.getSalary());
+emp.updateSalary(-5000);
 
+
+const person = {
+    firstName: "emma",
+    lastName: "stone",
+    fullName: function() {
+        return this.firstName + " " + this.lastName;
