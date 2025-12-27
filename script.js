@@ -1913,3 +1913,10 @@ const person = {
 };
 
 console.log(person.fullName());
+
+const person1 = {
+    firstName: "ryan",
+    lastName: "trahan"
+};
+
+console.log(person.fullName.call(person1));
