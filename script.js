@@ -1920,3 +1920,4 @@ const person2 = {
 };
 
 console.log(person.fullName.call(person1));
+console.log(person.fullName.call(person2));
