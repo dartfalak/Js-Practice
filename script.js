@@ -1928,3 +1928,5 @@ const obj = { value: 42 };
 let getValue = function(a,b) {
     return this.value + a + b;
 };
+
+console.log(getValue.apply(obj, [8, 10]));
