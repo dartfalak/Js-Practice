@@ -1904,7 +1904,7 @@ console.log(emp.getSalary());
 emp.updateSalary(-5000);
 
 
-const person = {
+const person1 = {
     firstName: "emma",
     lastName: "stone",
     fullName: function() {
@@ -1914,7 +1914,7 @@ const person = {
 
 console.log(person.fullName());
 
-const person1 = {
+const person2 = {
     firstName: "ryan",
     lastName: "trahan"
 };
