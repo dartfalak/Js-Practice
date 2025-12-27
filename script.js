@@ -1921,3 +1921,10 @@ const person2 = {
 
 console.log(person.fullName.call(person1));
 console.log(person.fullName.call(person2));
+
+
+const obj = { value: 42 };
+
+let getValue = function(a,b) {
+    return this.value + a + b;
+};
