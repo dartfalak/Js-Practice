@@ -1909,3 +1909,7 @@ const person = {
     lastName: "stone",
     fullName: function() {
         return this.firstName + " " + this.lastName;
+    }
+};
+
+console.log(person.fullName());
