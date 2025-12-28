@@ -1941,3 +1941,4 @@ const car = {
 };
 
 const retrieveBrand = car.getBrand.bind(car);
+console.log(retrieveBrand());
