@@ -1939,3 +1939,5 @@ const car = {
         return this.brand;
     }
 };
+
+const retrieveBrand = car.getBrand.bind(car);
