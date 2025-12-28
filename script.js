@@ -1942,3 +1942,9 @@ const car = {
 
 const retrieveBrand = car.getBrand.bind(car);
 console.log(retrieveBrand());
+
+const car2 = {
+    brand: "chevrolet"
+};
+
+const retrieveBrand2 = car.getBrand.bind(car2);
