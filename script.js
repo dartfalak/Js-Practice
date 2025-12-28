@@ -1930,3 +1930,12 @@ let getValue = function(a,b) {
 };
 
 console.log(getValue.apply(obj, [8, 10]));
+
+
+
+const car = {
+    brand: "ford",
+    getBrand: function() {
+        return this.brand;
+    }
+};
