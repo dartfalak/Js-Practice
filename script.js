@@ -1958,5 +1958,13 @@ function calculateArea(length, width) {
     return this.factor * length * width;
 }                    
 
-function store(length, width)
-    {
+function store(length, width) {
+    const key = `${length},${width}`;
+    if (cache[key]) {
+        console.log("cached value:", cache[key]);
+        return cache[key];
+    calculateArea.call(this, length, width);
+
+}
+
+    
