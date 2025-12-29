@@ -1963,8 +1963,9 @@ function store(length, width) {
     if (cache[key]) {
         console.log("cached value:", cache[key]);
         return cache[key];
-    calculateArea.call(this, length, width);
-
+    } else {
+        const area = calculateArea.call(this, length, width);
+        cache[key] = area;
+        return area;
+    }
 }
-
-    
