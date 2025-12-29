@@ -1947,6 +1947,9 @@ function asyncFunc() {
 //     brand: "chevrolet"
 // };
 
+
+let cache = {};
+
 const retrieveBrand2 = car.getBrand.bind(car2);
 console.log(retrieveBrand2());
 
