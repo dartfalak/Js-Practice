@@ -1960,9 +1960,10 @@ function calculateArea(length, width) {
 
 function store(length, width) {
     const key = `${length},${width}`;
-    if (cache[key]) {
-        console.log("cached value:", cache[key]);
-        return cache[key];
+    if (!cache[key]) {
+    let result = calculateArea.call(this, length, width);
+    cache[key] = result;
+    return result;
     } else {
         const area = calculateArea.call(this, length, width);
         cache[key] = area;
