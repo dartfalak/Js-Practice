@@ -1793,159 +1793,159 @@ function asyncFunc() {
 
 // console.log("outside IIFE:", name);
 
-// const validator = (function() {
-//     function isEmail(email) {
-//         return email.includes("@");
+// // const validator = (function() {
+// //     function isEmail(email) {
+// //         return email.includes("@");
+// //     }
+// //    return { isEmail };
+// // })();
+
+// // console.log(validator.isEmail(""));
+// // console.log(validator.isEmail("falak@gmail.com"));
+
+// // const taskTracker = (function() {
+// //     let tasks = [];
+// //  return {
+// //     addTask(task) {
+// //         tasks.push(task);
+// //         console.log(`task "${task}" added.`);
+// //     },
+// //     removeTask(task) {
+// //         tasks = tasks.filter(t => t !== task);
+// //         console.log(`task "${task}" removed.`);
+// //     },
+// //     listTasks() {
+// //         console.log("tasks:", tasks);
+// //         tasks.forEach(t => console.log("- " + t));
+// //       }
+// //     };
+// // })();
+
+// // taskTracker.addTask("buy groceries");
+// // taskTracker.addTask("walk the dog");
+// // taskTracker.addTask("do the laundry");
+// // taskTracker.listTasks();
+// // taskTracker.removeTask("walk the dog");
+// // taskTracker.listTasks();
+
+
+// // class Rectangle {
+// //    setDimensions(width, height) {
+// //     this.width = width;
+// //     this.height = height;
+// //     }
+
+// //     getArea() {
+// //     return this.width * this.height;
+
+// //     }
+// //  getPerimeter() {
+// //     return 2 * (this.width + this.height);
+// //     }
+// //     getDimensions() {
+// //     return { width: this.width, height: this.height };
+
+// //    }
+// // }
+
+// // const rect = new Rectangle();
+
+// // rect.setDimensions(20, 10);
+// // console.log("area:", rect.getArea());
+// // console.log("perimeter:", rect.getPerimeter());
+// // console.log("dimensions:", rect.getDimensions());
+
+
+// //  export const printName = () => {
+// //     console.log("my name is falak");
+// // };
+
+// // printName();
+
+// // export const add = (a, b) => a + b;
+// // export const multiply = (a, b) => a * b;
+// // export const subtract = (a, b) => a - b
+
+// // add(5, 3);
+// // multiply(4, 2);
+
+// class Employee {
+//     #salary;
+
+//     constructor(id, name, salary) {
+//         this.id = id;
+//         this.name = name;
+//         this.updateSalary(salary);
 //     }
-//    return { isEmail };
-// })();
 
-// console.log(validator.isEmail(""));
-// console.log(validator.isEmail("falak@gmail.com"));
-
-// const taskTracker = (function() {
-//     let tasks = [];
-//  return {
-//     addTask(task) {
-//         tasks.push(task);
-//         console.log(`task "${task}" added.`);
-//     },
-//     removeTask(task) {
-//         tasks = tasks.filter(t => t !== task);
-//         console.log(`task "${task}" removed.`);
-//     },
-//     listTasks() {
-//         console.log("tasks:", tasks);
-//         tasks.forEach(t => console.log("- " + t));
-//       }
-//     };
-// })();
-
-// taskTracker.addTask("buy groceries");
-// taskTracker.addTask("walk the dog");
-// taskTracker.addTask("do the laundry");
-// taskTracker.listTasks();
-// taskTracker.removeTask("walk the dog");
-// taskTracker.listTasks();
-
-
-// class Rectangle {
-//    setDimensions(width, height) {
-//     this.width = width;
-//     this.height = height;
+//     updateSalary(newSalary) {
+//         if (typeof newSalary === "number" && newSalary >= 0) {
+//             this.#salary = newSalary;
+//         }
+//         else {
+//             console.log("invalid salary");
+//         }
 //     }
 
-//     getArea() {
-//     return this.width * this.height;
-
+//     getSalary() {
+//         return {
+//             id: this.id,
+//             name: this.name,
+//             salary: this.#salary
+//         };
 //     }
-//  getPerimeter() {
-//     return 2 * (this.width + this.height);
-//     }
-//     getDimensions() {
-//     return { width: this.width, height: this.height };
-
-//    }
 // }
 
-// const rect = new Rectangle();
+// const emp = new Employee(109, "falak", 60000);
 
-// rect.setDimensions(20, 10);
-// console.log("area:", rect.getArea());
-// console.log("perimeter:", rect.getPerimeter());
-// console.log("dimensions:", rect.getDimensions());
+// console.log(emp.getSalary());
+// emp.updateSalary(65000);
+// console.log(emp.getSalary());
+// emp.updateSalary(-5000);
 
 
-//  export const printName = () => {
-//     console.log("my name is falak");
+// const person1 = {
+//     firstName: "emma",
+//     lastName: "stone",
+//     fullName: function() {
+//         return this.firstName + " " + this.lastName;
+//     }
 // };
 
-// printName();
+// console.log(person.fullName());
 
-// export const add = (a, b) => a + b;
-// export const multiply = (a, b) => a * b;
-// export const subtract = (a, b) => a - b
+// const person2 = {
+//     firstName: "ryan",
+//     lastName: "trahan"
+// };
 
-// add(5, 3);
-// multiply(4, 2);
-
-class Employee {
-    #salary;
-
-    constructor(id, name, salary) {
-        this.id = id;
-        this.name = name;
-        this.updateSalary(salary);
-    }
-
-    updateSalary(newSalary) {
-        if (typeof newSalary === "number" && newSalary >= 0) {
-            this.#salary = newSalary;
-        }
-        else {
-            console.log("invalid salary");
-        }
-    }
-
-    getSalary() {
-        return {
-            id: this.id,
-            name: this.name,
-            salary: this.#salary
-        };
-    }
-}
-
-const emp = new Employee(109, "falak", 60000);
-
-console.log(emp.getSalary());
-emp.updateSalary(65000);
-console.log(emp.getSalary());
-emp.updateSalary(-5000);
+// console.log(person.fullName.call(person1));
+// console.log(person.fullName.call(person2));
 
 
-const person1 = {
-    firstName: "emma",
-    lastName: "stone",
-    fullName: function() {
-        return this.firstName + " " + this.lastName;
-    }
-};
+// const obj = { value: 42 };
 
-console.log(person.fullName());
+// let getValue = function(a,b) {
+//     return this.value + a + b;
+// };
 
-const person2 = {
-    firstName: "ryan",
-    lastName: "trahan"
-};
-
-console.log(person.fullName.call(person1));
-console.log(person.fullName.call(person2));
-
-
-const obj = { value: 42 };
-
-let getValue = function(a,b) {
-    return this.value + a + b;
-};
-
-console.log(getValue.apply(obj, [8, 10]));
+// console.log(getValue.apply(obj, [8, 10]));
 
 
 
-const car1 = {
-    brand: "ford",
-    getBrand: function() {
-        return this.brand;
-    }
-};
+// const car1 = {
+//     brand: "ford",
+//     getBrand: function() {
+//         return this.brand;
+//     }
+// };
 
-const retrieveBrand1 = car.getBrand.bind(car);
-console.log(retrieveBrand());
+// const retrieveBrand1 = car.getBrand.bind(car);
+// console.log(retrieveBrand());
 
-const car2 = {
-    brand: "chevrolet"
-};
+// const car2 = {
+//     brand: "chevrolet"
+// };
 
 const retrieveBrand2 = car.getBrand.bind(car2);
 console.log(retrieveBrand2());
@@ -1954,3 +1954,6 @@ function calculateArea(length, width) {
     console.log(this.factor * length * width);
     return this.factor * length * width;
 }                    
+
+function store(length, width)
+    {
