@@ -1933,14 +1933,14 @@ console.log(getValue.apply(obj, [8, 10]));
 
 
 
-const car = {
+const car1 = {
     brand: "ford",
     getBrand: function() {
         return this.brand;
     }
 };
 
-const retrieveBrand = car.getBrand.bind(car);
+const retrieveBrand1 = car.getBrand.bind(car);
 console.log(retrieveBrand());
 
 const car2 = {
@@ -1949,3 +1949,8 @@ const car2 = {
 
 const retrieveBrand2 = car.getBrand.bind(car2);
 console.log(retrieveBrand2());
+
+function calculateArea(length, width) {
+    console.log(this.factor * length * width);
+    return this.factor * length * width;
+}                    
