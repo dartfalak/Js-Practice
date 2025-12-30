@@ -1977,3 +1977,4 @@ function AreaCalculator(factor) {
 }
 
 const calculator = new AreaCalculator(2);
+console.log(calculator.getArea(5, 10));
