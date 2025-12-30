@@ -1970,3 +1970,7 @@ function store(length, width) {
         return area;
     }
 }
+
+function AreaCalculator(factor) {
+    this.factor = factor;
+    this.getArea = store;
