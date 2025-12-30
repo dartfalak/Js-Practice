@@ -1974,3 +1974,6 @@ function store(length, width) {
 function AreaCalculator(factor) {
     this.factor = factor;
     this.getArea = store;
+}
+
+const calculator = new AreaCalculator(2);
