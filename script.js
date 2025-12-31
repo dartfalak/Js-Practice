@@ -1972,4 +1972,7 @@ function asyncFunc() {
 // }
 
 
-console.log( 1 ?? 0 );
+console.log( 1 ?? 0 ); 
+
+let username = "";
+console.log( username ?? "guest" );
