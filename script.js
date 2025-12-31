@@ -1981,3 +1981,6 @@ let score = 0;
 
 console.log( score || 10 );
 console.log( score ?? 10 );
+
+let input = null;
+let value = ( input ?? "default" );
