@@ -1984,3 +1984,4 @@ console.log( score ?? 10 );
 
 let input = null;
 let value = ( input ?? "default" );
+console.log(value);
