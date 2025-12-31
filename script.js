@@ -1975,4 +1975,6 @@ function asyncFunc() {
 console.log( 1 ?? 0 ); 
 
 let username = "";
-console.log( username ?? "guest" );
+let displayName = ( username ?? "guest" );
+
+console.log( null ?? "default" );
