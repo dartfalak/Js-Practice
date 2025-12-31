@@ -1977,4 +1977,7 @@ console.log( 1 ?? 0 );
 let username = "";
 let displayName = ( username ?? "guest" );
 
-console.log( null ?? "default" );
+let score = 0;
+
+console.log( score || 10 );
+console.log( score ?? 10 );
