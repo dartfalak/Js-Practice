@@ -1915,58 +1915,61 @@ function asyncFunc() {
 // console.log(person.fullName());
 
 // const person2 = {
-//     firstName: "ryan",
-//     lastName: "trahan"
-// };
+// //     firstName: "ryan",
+// //     lastName: "trahan"
+// // };
 
-// console.log(person.fullName.call(person1));
-// console.log(person.fullName.call(person2));
-
-
-// const obj = { value: 42 };
-
-// let getValue = function(a,b) {
-//     return this.value + a + b;
-// };
-
-// console.log(getValue.apply(obj, [8, 10]));
+// // console.log(person.fullName.call(person1));
+// // console.log(person.fullName.call(person2));
 
 
+// // const obj = { value: 42 };
 
-// const car1 = {
-//     brand: "ford",
-//     getBrand: function() {
-//         return this.brand;
+// // let getValue = function(a,b) {
+// //     return this.value + a + b;
+// // };
+
+// // console.log(getValue.apply(obj, [8, 10]));
+
+
+
+// // const car1 = {
+// //     brand: "ford",
+// //     getBrand: function() {
+// //         return this.brand;
+// //     }
+// // };
+
+// // const retrieveBrand1 = car.getBrand.bind(car);
+// // console.log(retrieveBrand());
+
+// // const car2 = {
+// //     brand: "chevrolet"
+// // };
+
+
+// let cache = {};
+
+// const retrieveBrand2 = car.getBrand.bind(car2);
+// console.log(retrieveBrand2());
+
+// function calculateArea(length, width) {
+//     console.log(this.factor * length * width);
+//     return this.factor * length * width;
+// }                    
+
+// function store(length, width) {
+//     const key = `${length},${width}`;
+//     if (!cache[key]) {
+//     let result = calculateArea.call(this, length, width);
+//     cache[key] = result;
+//     return result;
+//     } else {
+//         const area = calculateArea.call(this, length, width);
+//         cache[key] = area;
+//         return area;
 //     }
-// };
-
-// const retrieveBrand1 = car.getBrand.bind(car);
-// console.log(retrieveBrand());
-
-// const car2 = {
-//     brand: "chevrolet"
-// };
+// }
 
 
-let cache = {};
-
-const retrieveBrand2 = car.getBrand.bind(car2);
-console.log(retrieveBrand2());
-
-function calculateArea(length, width) {
-    console.log(this.factor * length * width);
-    return this.factor * length * width;
-}                    
-
-function store(length, width) {
-    const key = `${length},${width}`;
-    if (!cache[key]) {
-    let result = calculateArea.call(this, length, width);
-    cache[key] = result;
-    return result;
-    } else {
-        const area = calculateArea.call(this, length, width);
-        cache[key] = area;
-        return area;
-    }
-}
+console.log( 1 ?? 0 );
