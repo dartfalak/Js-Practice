@@ -1999,3 +1999,5 @@ let data = {
         }
     }
 };
+
+console.log(data.info?.details?.age);
