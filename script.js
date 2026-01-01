@@ -1985,3 +1985,9 @@ console.log( score ?? 10 );
 let input = null;
 let value = ( input ?? "default" );
 console.log(value);
+
+const user = {
+    name: "sebastian"
+};
+
+console.log(user.address?.city);
