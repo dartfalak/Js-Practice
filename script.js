@@ -1991,3 +1991,11 @@ const user = {
 };
 
 console.log(user.address?.city);
+
+let data = {
+    info: {
+        details: {
+            age: 30
+        }
+    }
+};
