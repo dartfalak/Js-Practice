@@ -2001,3 +2001,6 @@ let data = {
 };
 
 console.log(data.info?.details?.age);
+
+const users = [];
+console.log(users[0]?.name);
