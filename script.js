@@ -2016,6 +2016,11 @@ const search = (query) => {
     return [];
 };
 
+
+searchwithDebounce = debounce(search, 300);
+
+
+
 search('j');
 search("ja");
 search("jav");
