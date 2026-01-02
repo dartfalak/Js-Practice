@@ -2010,3 +2010,8 @@ const search = (query) => {
     console.log("searching for", query);
     return [];
 };
+
+search('j');
+search("ja");
+search("jav");
+search("java");
