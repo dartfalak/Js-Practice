@@ -2015,3 +2015,4 @@ search('j');
 search("ja");
 search("jav");
 search("java");
+search("javasc");
