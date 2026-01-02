@@ -2005,6 +2005,11 @@ console.log(data.info?.details?.age);
 const users = [];
 console.log(users[0]?.name);
 
+ 
+
+function debounce(func, delay) {
+ 
+}
 
 const search = (query) => {
     console.log("searching for", query);
