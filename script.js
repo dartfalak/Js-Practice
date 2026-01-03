@@ -2045,4 +2045,5 @@ const profile = {
     }
 };
 
-const saveProfile = debounce
+const saveProfile = debounce(profile.save,300);
+saveProfile.call(profile);
