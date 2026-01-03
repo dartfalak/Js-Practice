@@ -2046,4 +2046,4 @@ const profile = {
 };
 
 const saveProfile = debounce(profile.save,300);
-saveProfile.call(profile);
+saveProfile();
