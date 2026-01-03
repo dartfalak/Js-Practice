@@ -2025,3 +2025,14 @@ search("ja");
 search("jav");
 search("java");
 search("javasc");
+
+
+const counter = {
+    count: 0,
+    increase() {
+        this.count++;
+        console.log(this.count);
+    }
+};
+
+counter.increase() = debounce(counter.increase,500);
