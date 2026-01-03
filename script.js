@@ -1944,87 +1944,87 @@ function asyncFunc() {
 // // console.log(retrieveBrand());
 
 // // const car2 = {
-// //     brand: "chevrolet"
-// // };
+// // //     brand: "chevrolet"
+// // // };
 
 
-// let cache = {};
+// // let cache = {};
 
-// const retrieveBrand2 = car.getBrand.bind(car2);
-// console.log(retrieveBrand2());
+// // const retrieveBrand2 = car.getBrand.bind(car2);
+// // console.log(retrieveBrand2());
 
-// function calculateArea(length, width) {
-//     console.log(this.factor * length * width);
-//     return this.factor * length * width;
-// }                    
+// // function calculateArea(length, width) {
+// //     console.log(this.factor * length * width);
+// //     return this.factor * length * width;
+// // }                    
 
-// function store(length, width) {
-//     const key = `${length},${width}`;
-//     if (!cache[key]) {
-//     let result = calculateArea.call(this, length, width);
-//     cache[key] = result;
-//     return result;
-//     } else {
-//         const area = calculateArea.call(this, length, width);
-//         cache[key] = area;
-//         return area;
+// // function store(length, width) {
+// //     const key = `${length},${width}`;
+// //     if (!cache[key]) {
+// //     let result = calculateArea.call(this, length, width);
+// //     cache[key] = result;
+// //     return result;
+// //     } else {
+// //         const area = calculateArea.call(this, length, width);
+// //         cache[key] = area;
+// //         return area;
+// //     }
+// // }
+
+
+// console.log( 1 ?? 0 ); 
+
+// let username = "";
+// let displayName = ( username ?? "guest" );
+
+// let score = 0;
+
+// console.log( score || 10 );
+// console.log( score ?? 10 );
+
+// let input = null;
+// let value = ( input ?? "default" );
+// console.log(value);
+
+// const user = {
+//     name: "sebastian"
+// };
+
+// console.log(user.address?.city);
+
+// let data = {
+//     info: {
+//         details: {
+//             age: 30
+//         }
 //     }
+// };
+
+// console.log(data.info?.details?.age);
+
+// const users = [];
+// console.log(users[0]?.name);
+
+ 
+
+// function debounce(func, delay) {
+ 
 // }
 
-
-console.log( 1 ?? 0 ); 
-
-let username = "";
-let displayName = ( username ?? "guest" );
-
-let score = 0;
-
-console.log( score || 10 );
-console.log( score ?? 10 );
-
-let input = null;
-let value = ( input ?? "default" );
-console.log(value);
-
-const user = {
-    name: "sebastian"
-};
-
-console.log(user.address?.city);
-
-let data = {
-    info: {
-        details: {
-            age: 30
-        }
-    }
-};
-
-console.log(data.info?.details?.age);
-
-const users = [];
-console.log(users[0]?.name);
-
- 
-
-function debounce(func, delay) {
- 
-}
-
-const search = (query) => {
-    console.log("searching for", query);
-    return [];
-};
+// const search = (query) => {
+//     console.log("searching for", query);
+//     return [];
+// };
 
 
-searchwithDebounce = debounce(search, 300);
+// searchwithDebounce = debounce(search, 300);
 
 
-search('j');
-search("ja");
-search("jav");
-search("java");
-search("javasc");
+// search('j');
+// search("ja");
+// search("jav");
+// search("java");
+// search("javasc");
 
 
 const counter = {
@@ -2036,7 +2036,6 @@ const counter = {
 };
 
 counter.increase() = debounce(counter.increase,500);
-counter.increase();
 
 const profile = {
     name: "falak",
@@ -2046,4 +2045,4 @@ const profile = {
 };
 
 const saveProfile = debounce(profile.save,300);
-saveProfile();
+saveProfile.call(profile);
