@@ -2037,3 +2037,12 @@ const counter = {
 
 counter.increase() = debounce(counter.increase,500);
 counter.increase();
+
+const profile = {
+    name: "falak",
+    save() {
+        console.log("saving profile for", this.name);
+    }
+};
+
+const saveProfile = debounce
