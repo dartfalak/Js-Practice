@@ -2036,3 +2036,4 @@ const counter = {
 };
 
 counter.increase() = debounce(counter.increase,500);
+counter.increase();
