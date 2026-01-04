@@ -2057,4 +2057,10 @@ function throttle(func, delay) {
  return function () {
     if (locked) return;
 
-    
+    func();
+    locked = true;
+    setTimeout(() => {
+        locked = false;
+    }, delay);
+ };
+}
