@@ -2064,3 +2064,7 @@ function throttle(func, delay) {
     }, delay);
  };
 }
+
+    const log = throttle(() => {
+        console.log("hey!");
+    }, 1000);
