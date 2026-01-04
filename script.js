@@ -2007,24 +2007,28 @@ function asyncFunc() {
 
  
 
-// function debounce(func, delay) {
- 
-// }
+function debounce(func, delay) {
+    let timeoutId;
+    return function (...args) {
+        clearTimeout(timeoutId);
+        timeoutId = setTimeout(() => func.apply(this, args), delay);
+    };
+}
 
-// const search = (query) => {
-//     console.log("searching for", query);
-//     return [];
-// };
+const search = (query) => {
+    console.log("searching for", query);
+    return [];
+};
 
 
-// searchwithDebounce = debounce(search, 300);
+ searchwithDebounce = debounce(search, 300);
 
 
-// search('j');
-// search("ja");
-// search("jav");
-// search("java");
-// search("javasc");
+ search('j');
+ search("ja");
+ search("jav");
+search("java");
+ search("javasc");
 
 
 const counter = {
@@ -2046,3 +2050,5 @@ const profile = {
 
 const saveProfile = debounce(profile.save,300);
 saveProfile.call(profile);
+
+ 
