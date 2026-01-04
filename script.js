@@ -2051,4 +2051,10 @@ const profile = {
 const saveProfile = debounce(profile.save,300);
 saveProfile.call(profile);
 
- 
+
+function throttle(func, delay) {
+    let locked = false;
+ return function () {
+    if (locked) return;
+
+    
