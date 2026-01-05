@@ -2082,3 +2082,8 @@ function throttle(func, delay) {
         }, delay);
     };
 }
+
+
+const logMove = throttle(() => {
+    console.log("mouse moved");
+}, 500);
