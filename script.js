@@ -2068,3 +2068,13 @@ function throttle(func, delay) {
     const log = throttle(() => {
         console.log("hey!");
     }, 1000);
+
+
+function throttle(func, delay) {
+    let timeout = null;
+
+    return function () {
+        if (timeout) return;
+
+        func();
+        timeout = setTimeout(() => {
