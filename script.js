@@ -2080,3 +2080,5 @@ function throttle(func, delay) {
         timeout = setTimeout(() => {
             timeout = null;
         }, delay);
+    };
+}
