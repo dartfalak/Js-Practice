@@ -2094,4 +2094,8 @@ const logMove = throttle(() => {
 function  add(a) {
     return function (b) {
         return a + b;
+ 
+    };
 }
+
+const add5 = add(5);
