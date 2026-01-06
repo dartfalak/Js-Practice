@@ -2099,4 +2099,4 @@ function  add(a) {
 }
 
 const add5 = add(5);
-console.log(add5(3));
+console.log(add5(2));
