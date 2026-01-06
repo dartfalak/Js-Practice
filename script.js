@@ -2109,3 +2109,5 @@ function multiply(a) {
         };
     };
 }
+
+const result = multiply(2)(3)(4);
