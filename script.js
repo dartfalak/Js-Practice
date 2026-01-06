@@ -2100,3 +2100,4 @@ function  add(a) {
 
 const add5 = add(5);
 console.log(add5(2));
+console.log(add(10)(15));
