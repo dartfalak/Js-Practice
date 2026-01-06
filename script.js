@@ -2055,6 +2055,8 @@ saveProfile.call(profile);
 function throttle(func, delay) {
     let locked = false;
  return function () {
+
+
     if (locked) return;
 
     func();
@@ -2087,3 +2089,9 @@ function throttle(func, delay) {
 const logMove = throttle(() => {
     console.log("mouse moved");
 }, 500);
+
+
+function  add(a) {
+    return function (b) {
+        return a + b;
+}
