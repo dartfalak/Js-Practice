@@ -2112,3 +2112,9 @@ function multiply(a) {
 
 const result = multiply(2)(3)(4);
 console.log(result);
+
+
+
+const greet = name => message => {
+    console.log(message + ", " + name);
+}
