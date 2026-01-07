@@ -2118,3 +2118,5 @@ console.log(result);
 const greet = name => message => {
     console.log(message + ", " + name);
 }
+
+greet("falak")("hello");
