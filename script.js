@@ -2120,3 +2120,7 @@ const greet = name => message => {
 }
 
 greet("falak")("hello");
+
+const volume = length => width => height => {
+    return length * width * height;
+};
