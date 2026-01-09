@@ -2142,3 +2142,4 @@ function chainMultiply(a) {
 }
 
 console.log(chainMultiply(2)(3)(4));
+console.log(chainMultiply(5)(6)(7));
