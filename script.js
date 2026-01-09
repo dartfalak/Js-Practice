@@ -2131,3 +2131,9 @@ function add(a) {
 }
 
 console.log(add(2)(3)(4));
+
+function chainMultiply(a) {
+    return function (b) {
+        return function (c) {
+            return a * b * c;
+            
