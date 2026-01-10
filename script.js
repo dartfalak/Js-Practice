@@ -2154,3 +2154,4 @@ function chainDivide (a) {
     };
 }
 
+console.log(chainDivide(100)(2)(5));
