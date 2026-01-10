@@ -2141,4 +2141,16 @@ function chainMultiply(a) {
     };
 }
 
+
+
 console.log(chainMultiply(2)(3)(4));
+
+
+function chainDivide (a) {
+    return function (b) {
+        return function (c) {
+            return a / b / c;
+        };
+    };
+}
+
