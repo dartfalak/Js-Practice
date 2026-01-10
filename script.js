@@ -2155,3 +2155,7 @@ function chainDivide (a) {
 }
 
 console.log(chainDivide(100)(2)(5));
+
+function callSomeone(callback) {
+    console.log("Calling...");
+    callback();
