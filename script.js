@@ -2169,6 +2169,7 @@ function composeTwoFunctions(f, g) {
     return function (x, y) {
         return g(f(x, y), 4);
     };
+}
 
 
 const calculate = add(5,9);
