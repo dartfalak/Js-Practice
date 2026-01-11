@@ -2156,3 +2156,14 @@ function chainDivide (a) {
 
 console.log(chainDivide(100)(2)(5));
 
+
+function add(a,b) {
+    return a + b;
+}
+
+function subtract(a,b) {
+    return a - b;
+}
+
+const calculate = add(5,9);
+console.log(subtract(calculate,4));
