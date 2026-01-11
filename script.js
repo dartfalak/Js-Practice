@@ -2165,9 +2165,10 @@ function subtract(a,b) {
     return a - b;
 }
 
-function addAndSubtract(a,b,c) {
-    return subtract(add(a,b), c);
-}
+function composeTwoFunctions(f, g) {
+    return function (x, y) {
+        return g(f(x, y), 4);
+    };
 
 
 const calculate = add(5,9);
