@@ -2165,5 +2165,11 @@ function subtract(a,b) {
     return a - b;
 }
 
+function addAndSubtract(a,b,c) {
+    return subtract(add(a,b), c);
+}
+
+
 const calculate = add(5,9);
 console.log(subtract(calculate,4));
+
