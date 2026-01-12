@@ -2179,3 +2179,7 @@ console.log(subtract(calculate,4));
 function shout(text) {
     return text + "!";
 }
+
+function smile(text) {
+    return text + " :)";
+}
