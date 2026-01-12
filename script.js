@@ -2175,3 +2175,7 @@ function composeTwoFunctions(f, g) {
 const calculate = add(5,9);
 console.log(subtract(calculate,4));
 
+
+function shout(text) {
+    return text + "!";
+}
