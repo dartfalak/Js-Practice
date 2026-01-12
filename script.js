@@ -2183,3 +2183,5 @@ function shout(text) {
 function smile(text) {
     return text + " :)";
 }
+
+smile(shout("hello"));
