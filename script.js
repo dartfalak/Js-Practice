@@ -2110,8 +2110,8 @@ function multiply(a) {
     };
 }
 
-const result = multiply(2)(3)(4);
-console.log(result);
+// const result = multiply(2)(3)(4);
+// console.log(result);
 
 
 
