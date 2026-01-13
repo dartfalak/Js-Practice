@@ -2191,3 +2191,7 @@ smile(shout("hello"));
 function add3(a) {
     return a + 3;
 }
+
+function multiply2(b) {
+    return b * 2;
+}
