@@ -2206,3 +2206,7 @@ console.log(a);
 function plusOne(x) {
     return x + 1;
 }
+
+function timesThree(x) {
+    return x * 3;
+}
