@@ -2201,3 +2201,4 @@ let result = multiply2(add3(5));
 console.log(result);
 
 let a = multiply4(add3(5));
+console.log(a);
