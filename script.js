@@ -2196,4 +2196,6 @@ function multiply2(b) {
     return b * 2;
 }
 
+
 let result = multiply2(add3(5));
+console.log(result);
