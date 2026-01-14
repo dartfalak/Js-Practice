@@ -2210,3 +2210,5 @@ function plusOne(x) {
 function timesThree(x) {
     return x * 3;
 }
+
+let output = plusOne(timesThree(4));
