@@ -2202,3 +2202,7 @@ console.log(result);
 
 let a = multiply4(add3(5));
 console.log(a);
+
+function plusOne(x) {
+    return x + 1;
+}
