@@ -2212,3 +2212,9 @@ function timesThree(x) {
 }
 
 let output = plusOne(timesThree(4));
+
+console.log(output);
+
+function addTwo(x) {
+    return x + 2;
+}
