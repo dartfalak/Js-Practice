@@ -2222,3 +2222,5 @@ function addTwo(x) {
 function double(x) {
     return x * 2;
 }
+
+let result = double(addTwo(6));
