@@ -2218,3 +2218,7 @@ console.log(output);
 function addTwo(x) {
     return x + 2;
 }
+
+function double(x) {
+    return x * 2;
+}
