@@ -2224,3 +2224,11 @@ function double(x) {
 }
 
 let result = double(addTwo(6));
+
+
+function compose (...functions) {
+    return function (input) {
+        return functions.reduceRight((acc, fn) => fn (acc), input);
+    };
+
+}
