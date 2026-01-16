@@ -2228,7 +2228,9 @@ let result = double(addTwo(6));
 
 function compose (...functions) {
     return function (input) {
-        return functions.reduceRight((acc, fn) => fn (acc), input);
+        return functions.reduceRight((acc, fn) => {
+            return fn (acc);
+        }, input);
     };
 
 }
