@@ -2234,3 +2234,13 @@ function compose (...functions) {
     };
 
 }
+
+function trim(str) {
+    return str.trim();
+}
+
+function trim(str) {
+    return str.trim();
+}
+ 
+
