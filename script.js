@@ -2239,8 +2239,11 @@ function trim(str) {
     return str.trim();
 }
 
+function toLowerCase(str) {
+    return str.toLowerCase();
+}
+ 
 function trim(str) {
     return str.trim();
 }
  
-
