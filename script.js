@@ -2247,3 +2247,7 @@ function wrapInDiv(str) {
     return `<div>${str}</div>`;
 }
  
+
+const transform = compose(trim, toLowerCase, wrapInDiv);
+console.log(transform("   hello world!   "));
+
