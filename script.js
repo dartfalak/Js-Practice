@@ -2264,3 +2264,4 @@ class Person {
         this.age++;
         console.log(`${this.name} is now ${this.age}!`);
     }
+}
