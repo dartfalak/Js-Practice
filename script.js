@@ -2259,3 +2259,5 @@ class Person {
     }
     greet() {
         console.log(`hi, I'm ${this.name} and I'm ${this.age} years old.`);
+    }
+    haveBirthday() {
