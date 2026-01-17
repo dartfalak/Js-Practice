@@ -2261,3 +2261,6 @@ class Person {
         console.log(`hi, I'm ${this.name} and I'm ${this.age} years old.`);
     }
     haveBirthday() {
+        this.age++;
+        console.log(`${this.name} is now ${this.age}!`);
+    }
