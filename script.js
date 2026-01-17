@@ -2251,3 +2251,11 @@ function wrapInDiv(str) {
 const transform = compose(trim, toLowerCase, wrapInDiv);
 console.log(transform("   hello world!   "));
 
+
+class Person {
+    constructor(name, age) {
+        this.name = name;
+        this.age = age;
+    }
+    greet() {
+        console.log(`hi, I'm ${this.name} and I'm ${this.age} years old.`);
