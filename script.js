@@ -2266,3 +2266,6 @@ class Person {
     }
 }
 
+const user = new Person("falak", 21);
+console.log(user.greet());
+
