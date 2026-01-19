@@ -2273,3 +2273,4 @@ console.log(user.greet());
 
 const add2 = x => x + 2;
 const multiply3 = x => x * 3;
+const minus4 = x => x - 4;
