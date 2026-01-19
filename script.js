@@ -2270,3 +2270,6 @@ class Person {
 const user = new Person("falak", 21);
 console.log(user.greet());
 
+
+const add2 = x => x + 2;
+const multiply3 = x => x * 3;
