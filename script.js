@@ -2276,3 +2276,4 @@ const multiply3 = x => x * 3;
 const minus4 = x => x - 4;
 
 const result2 = minus4(multiply3(add2(5)));
+console.log(result2);
