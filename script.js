@@ -2277,3 +2277,6 @@ const minus4 = x => x - 4;
 
 const result2 = minus4(multiply3(add2(5)));
 console.log(result2);
+
+
+const transform2 = compose(minus4, multiply3, add2);
