@@ -2280,3 +2280,4 @@ console.log(result2);
 
 
 const transform2 = compose(minus4, multiply3, add2);
+console.log(transform2(5));
