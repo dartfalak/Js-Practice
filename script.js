@@ -2288,4 +2288,7 @@ function chainAdd(a) {
             return a + b + c;
         };
     };
-    
+
+}
+
+console.log(chainAdd(2)(3)(4));
