@@ -2281,3 +2281,11 @@ console.log(result2);
 
 const transform2 = compose(minus4, multiply3, add2);
 console.log(transform2(5));
+
+function chainAdd(a) {
+    return function (b) {
+        return function (c) {
+            return a + b + c;
+        };
+    };
+    
