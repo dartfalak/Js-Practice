@@ -2299,10 +2299,10 @@ const greetMessage = greet => {
     return name => {
         console.log(greet + ", " + name);
     };
+};
 const age = "i'm 25 years old"
 function ageMessage(age) {
     return name => {
         console.log(age + ", " + name);
     };
-}
 }
