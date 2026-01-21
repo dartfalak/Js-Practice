@@ -2306,3 +2306,6 @@ function ageMessage(age) {
         console.log(age + ", " + name);
     };
 }
+
+const resultGreet = greetMessage(greet);
+resultGreet("falak");
