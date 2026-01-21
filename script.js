@@ -2309,3 +2309,4 @@ function ageMessage(age) {
 
 const resultGreet = greetMessage(greet);
 resultGreet("falak");
+const resultAge = ageMessage(age);
