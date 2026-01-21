@@ -2294,11 +2294,15 @@ function chainAdd(a) {
 console.log(chainAdd(2)(3)(4));
 
 
-const greet = "hi"
-const greetMessage = greet => name => {
-    console.log(greet + ", " + name);
-}
+const greet = "hi my name is ";
+const greetMessage = greet => {
+    return name => {
+        console.log(greet + ", " + name);
+    };
 const age = "i'm 25 years old"
-const ageMessage = age => name => {
-    console.log(age + ", " + name);
+function ageMessage(age) {
+    return name => {
+        console.log(age + ", " + name);
+    };
+}
 }
