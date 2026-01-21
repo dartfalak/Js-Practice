@@ -2298,3 +2298,7 @@ const greet = "hi"
 const greetMessage = greet => name => {
     console.log(greet + ", " + name);
 }
+const age = "i'm 25 years old"
+const ageMessage = age => name => {
+    console.log(age + ", " + name);
+}
