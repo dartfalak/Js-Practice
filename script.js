@@ -2292,3 +2292,9 @@ function chainAdd(a) {
 }
 
 console.log(chainAdd(2)(3)(4));
+
+
+const greet = "hi"
+const greetMessage = greet => name => {
+    console.log(greet + ", " + name);
+}
