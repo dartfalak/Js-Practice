@@ -2315,3 +2315,6 @@ const resultAge = ageMessage(age);
 const square = x => x * x;
 const cube = x => x * x * x;
 const double = x => x * 2;
+
+
+const calculate2 = compose(double, cube, square);
