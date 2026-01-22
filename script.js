@@ -2318,4 +2318,4 @@ const double = x => x * 2;
 
 
 const calculate2 = compose(double, cube, square);
-console.log(calculate2(3
+console.log(calculate2(3));
