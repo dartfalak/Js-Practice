@@ -2327,3 +2327,5 @@ const result = nums
     .filter(num => num % 2 === 0)
     .map(num => num * num)
     .reduce((acc, num) => acc + num, 0);
+
+console.log(result);
