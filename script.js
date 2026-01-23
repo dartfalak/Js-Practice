@@ -2319,3 +2319,10 @@ const double = x => x * 2;
 
 const calculate2 = compose(double, cube, square);
 console.log(calculate2(3));
+
+
+const nums = [1, 2, 3, 4, 5, 6];
+
+const result = nums
+    .filter(num => num % 2 === 0)
+    .map(num => num * num)
