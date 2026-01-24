@@ -2329,3 +2329,7 @@ const result = nums
     .reduce((acc, num) => acc + num, 0);
 
 console.log(result);
+
+
+const evenNumbers = [2, 4, 6, 8, 10]
+    .filter(num => num % 4 === 0)
