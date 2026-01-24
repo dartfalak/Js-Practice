@@ -2333,3 +2333,5 @@ console.log(result);
 
 const evenNumbers = [2, 4, 6, 8, 10]
     .filter(num => num % 4 === 0)
+    .map(num => num + 1);
+console.log(evenNumbers);
