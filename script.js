@@ -2341,3 +2341,7 @@ const oddNumbers = [1, 3, 5, 7, 9]
     .map(num => num * 2);
 console.log(oddNumbers);
 
+const squaredSum = [1, 2, 3, 4, 5]
+    .map(num => num * num)
+    .reduce((acc, num) => acc + num, 0);
+console.log(squaredSum);
