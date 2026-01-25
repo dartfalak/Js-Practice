@@ -2345,3 +2345,5 @@ const squaredSum = [1, 2, 3, 4, 5]
     .map(num => num * num)
     .reduce((acc, num) => acc + num, 0);
 console.log(squaredSum);
+
+const calculateNumbers = [10, 15, 20, 25, 30]
