@@ -2358,3 +2358,6 @@ const makeUpper = name =>
 
 const addExclamation = name =>
     name + "!";
+
+const shoutName = name =>
+    addExclamation(makeUpper(name));
