@@ -2361,3 +2361,9 @@ const addExclamation = name =>
 
 const shoutName = name =>
     addExclamation(makeUpper(name));
+
+const names = ["alice", "bob", "charlie"];
+
+const resultNames = names
+    .map(shoutName);
+    .filter(name => name.length <= 6);
