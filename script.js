@@ -2351,3 +2351,10 @@ const calculateNumbers = [10, 15, 20, 25, 30]
     .map(num => num / 5)
     .reduce((acc, num) => acc + num, 0);
 console.log(calculateNumbers);
+
+
+const makeUpper = name => 
+    name.toUpperCase();
+
+const addExclamation = name =>
+    name + "!";
