@@ -2366,5 +2366,7 @@ const names = ["alice", "bob", "charlie"];
 
 const resultNames = names
     .map(shoutName)
-    .filter(name => name.length <= 6);
+    .filter(name => name.length <= 6)
     .join(", ");
+
+console.log(resultNames);
