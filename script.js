@@ -2384,3 +2384,8 @@ const longWords = words
     .filter(word => word.length > 3)
     .map(word => word.toUpperCase());
 console.log(longWords);
+
+const resultSum = [5, 10, 15, 20]
+    .filter(num => num >= 10)
+    .map(num => num / 5)
+    
