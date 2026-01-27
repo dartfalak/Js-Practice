@@ -2378,3 +2378,9 @@ const processed = numbers
     .map(n => n * n)
     .reduce((sum, n) => sum + n, 0);
 console.log(processed);
+
+const words = ["hello", "world", "javascript", "is", "fun"];
+const longWords = words
+    .filter(word => word.length > 3)
+    .map(word => word.toUpperCase());
+console.log(longWords);
