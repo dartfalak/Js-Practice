@@ -2390,3 +2390,4 @@ const names = ["adam", "eve", "john", "jane", "bob"];
 
 const shortNames = names
     .map(name => name.trim())
+    .map(name => name.toLowerCase())
