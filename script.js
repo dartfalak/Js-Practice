@@ -2393,3 +2393,8 @@ const shortNames = names
     .map(name => name.toLowerCase());
 
 console.log(shortNames);
+
+const scores = [85, 92, 78, 90, 88];
+
+let newScores = scores
+ .map(score => score + 5)
