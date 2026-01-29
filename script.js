@@ -2398,3 +2398,4 @@ const scores = [85, 92, 78, 90, 88];
 
 let newScores = scores
  .map(score => score + 5)
+ .filter(score => score >= 90);
