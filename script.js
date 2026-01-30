@@ -2401,3 +2401,9 @@ let newScores = scores
  .filter(score => score >= 90);
 
 console.log(newScores);
+
+let scores = [45, 67, 89, 23, 90, 56];
+
+let result = scores
+    .filter(score => score >= 50)
+    .map(score => score + 10);
