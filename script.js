@@ -2410,3 +2410,10 @@ let result = scores
     .reduce((sum, score) => sum + score, 0);
 
 console.log(result);
+
+
+const num = [1, 2, 3, 4, 5, 6]
+
+const outputNum = num
+    .filter(n => n % 2 !== 0)
+    .map(n => n * n)
