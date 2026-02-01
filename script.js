@@ -2419,3 +2419,10 @@ const outputNum = num
     .map(n => n * n)
     .reduce((acc, n) => acc + n, 0);
 console.log(outputNum);
+
+
+const squareNum = [2, 4, 6, 8, 10];
+
+const resultNum = squareNum
+    .map(n => n * n)
+    .filter(n => n > 20);
