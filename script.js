@@ -2437,3 +2437,4 @@ const outputNames = ["alice", "bob", "charlie", "david"];
 const finalNames = outputNames
     .map(name => name.charAt(0).toUpperCase() + name.slice(1))
     .filter(name => name.length <= 4);
+console.log(finalNames);
