@@ -2404,6 +2404,9 @@ console.log(newScores);
 
 let scores = [45, 67, 89, 23, 90, 56];
 
+
+
+
 let result = scores
     .filter(score => score >= 50)
     .map(score => score + 10)
@@ -2427,3 +2430,10 @@ const resultNum = squareNum
     .map(n => n * n)
     .filter(n => n > 20);
 console.log(resultNum);
+
+
+const outputNames = ["alice", "bob", "charlie", "david"];
+
+const finalNames = outputNames
+    .map(name => name.charAt(0).toUpperCase() + name.slice(1))
+    .filter(name => name.length <= 4);
