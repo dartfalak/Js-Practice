@@ -2433,5 +2433,6 @@ console.log(resultNum);
 
 
 const scale = score => score * 2;
-
 const bonus = score => score + 10;
+
+const finalScore = score => bonus(scale(score));
