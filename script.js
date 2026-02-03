@@ -2432,3 +2432,6 @@ const resultNum = squareNum
 console.log(resultNum);
 
 
+const scale = score => score * 2;
+
+const bonus = score => score + 10;
