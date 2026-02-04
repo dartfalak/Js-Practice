@@ -2445,3 +2445,4 @@ const square = [1, 2, 3, 4, 5]
 const add2 = n => n + 2;
 const multiply3 = n => n * 3;
 
+const finalResult = n => multiply3(add2(n));
