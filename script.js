@@ -2438,3 +2438,10 @@ const bonus = score => score + 10;
 const finalScore = score => bonus(scale(score));
 
 console.log(finalScore(50));
+
+
+
+const square = [1, 2, 3, 4, 5]
+const add2 = n => n + 2;
+const multiply3 = n => n * 3;
+
