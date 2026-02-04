@@ -2446,3 +2446,5 @@ const add2 = n => n + 2;
 const multiply3 = n => n * 3;
 
 const finalResult = n => multiply3(add2(n));
+
+console.log(finalResult(
