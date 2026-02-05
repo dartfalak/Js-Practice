@@ -2453,4 +2453,6 @@ const numbers = [1,2,3,4,5]
 
 const processedNumbers = numbers 
    .map(n => n + 1)
-    .filter(n => n % 2 === 0)
+   .filter(n => n % 2 === 0);
+
+console.log(processedNumbers);
