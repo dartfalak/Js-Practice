@@ -2447,4 +2447,9 @@ const multiply3 = n => n * 3;
 
 const finalResult = n => multiply3(add2(n));
 
-console.log(finalResult(
+console.log(finalResult(50));
+
+const numbers = [1,2,3,4,5]
+
+const processedNumbers = numbers 
+   .map(n => n + 1)
