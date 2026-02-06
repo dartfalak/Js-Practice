@@ -2456,3 +2456,4 @@ const processedNumbers = numbers
    .filter(n => n % 2 === 0);
 
 console.log(processedNumbers);
+
