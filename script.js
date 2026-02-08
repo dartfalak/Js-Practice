@@ -2457,4 +2457,5 @@ const processedNumbers = numbers
 
 console.log(processedNumbers);
 
+const words = ["  hello ", " world ", " javascript ", " is ", " fun "];
 
