@@ -2458,8 +2458,3 @@ const processedNumbers = numbers
 console.log(processedNumbers);
 
 
-const greet = name => message => {
-    console.log(message + ", " + name);
-}
-
-greet("falak")("hello");
