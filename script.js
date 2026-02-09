@@ -2451,15 +2451,15 @@ console.log(finalResult(50));
 
 const numbers = [1,2,3,4,5]
 
-const processedNumbers = numbers 
-   .map(n => n + 1)
-   .filter(n => n % 2 === 0);
+// const processedNumbers = numbers 
+//    .map(n => n + 1)
+//    .filter(n => n % 2 === 0);
 
-console.log(processedNumbers);
+// console.log(processedNumbers);
 
-const score = [10, 20, 30, 40, 50]
+// const score = [10, 20, 30, 40, 50]
 
-const finalScore = score
-    .map(s => s * 2)
-    .filter(s => s >= 60);
-console.log(finalScore);
+// const finalScore = score
+//     .map(s => s * 2)
+//     .filter(s => s >= 60);
+// console.log(finalScore);
