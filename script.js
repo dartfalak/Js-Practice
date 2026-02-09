@@ -2457,5 +2457,6 @@ const processedNumbers = numbers
 
 console.log(processedNumbers);
 
+const score = [10, 20, 30, 40, 50]
 
-
+const finalScore = score
