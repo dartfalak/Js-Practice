@@ -2460,3 +2460,5 @@ console.log(processedNumbers);
 const score = [10, 20, 30, 40, 50]
 
 const finalScore = score
+    .map(s => s * 2)
+    .filter(s => s >= 60);
