@@ -2463,3 +2463,14 @@ const numbers = [1,2,3,4,5]
 //     .map(s => s * 2)
 //     .filter(s => s >= 60);
 // console.log(finalScore);
+
+
+function first()
+   console.log("first");
+
+function second() {
+    console.log("second");
+}
+
+function third() {
+    console.log("third");
