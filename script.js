@@ -2474,3 +2474,6 @@ function second() {
 
 function third() {
     console.log("third");
+}
+
+first();
