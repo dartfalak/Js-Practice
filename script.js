@@ -2477,3 +2477,6 @@ function third() {
 }
 
 first();
+second();
+third();
+
