@@ -2480,3 +2480,6 @@ first();
 second();
 third();
 
+function showResult() {
+    calculateTotal();
+
