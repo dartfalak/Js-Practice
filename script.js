@@ -2487,3 +2487,9 @@ function showResult() {
 function calculateTotal() {
    addScores();
 }
+
+function addScores() {
+    console.log("100 + 240");
+}
+
+showResult();
