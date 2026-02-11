@@ -2482,4 +2482,8 @@ third();
 
 function showResult() {
     calculateTotal();
+}
 
+function calculateTotal() {
+   addScores();
+}
