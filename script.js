@@ -2493,3 +2493,6 @@ function addScores() {
 }
 
 showResult();
+
+
+function add()
