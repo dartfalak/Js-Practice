@@ -2495,4 +2495,10 @@ function addScores() {
 showResult();
 
 
-function add()
+function add() {
+    return 5 + 3;
+}
+
+function multiply() {
+    return 4 * 2;
+}
