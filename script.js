@@ -2502,3 +2502,5 @@ function add() {
 function multiply() {
     return 4 * 2;
 }
+
+console.log(add());
