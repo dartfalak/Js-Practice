@@ -2500,3 +2500,7 @@ function add() {
 }
 
 add();
+
+function multiply() {
+    console.log(4 * 5);
+}
