@@ -2506,3 +2506,9 @@ function multiply() {
 }
 
 multiply();
+
+function divide() {
+    console.log(20 / 4);
+}
+
+divide();
