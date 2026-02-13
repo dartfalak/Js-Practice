@@ -2495,20 +2495,3 @@ function addScores() {
 showResult();
 
 
-function add() {
-    console.log(2 + 3);
-}
-
-add();
-
-function multiply() {
-    console.log(4 * 5);
-}
-
-multiply();
-
-function divide() {
-    console.log(20 / 4);
-}
-
-divide();
