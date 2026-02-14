@@ -2499,3 +2499,4 @@ function outer() {
         console.log("inner function");
     }
     inner();
+}
