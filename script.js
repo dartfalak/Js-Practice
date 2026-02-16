@@ -2496,4 +2496,5 @@ showResult();
 
 function outer() {
     function inner() {
-        console.log
+        console.log("inner");
+    }
