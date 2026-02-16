@@ -2499,4 +2499,6 @@ function outer() {
         console.log("inner");
     }
     inner();
-    
+}
+
+outer();
