@@ -2500,3 +2500,5 @@ function outer() {
     }
     inner();
 }
+
+outer();
