@@ -2494,3 +2494,11 @@ function addScores() {
 
 showResult();
 
+function outer() {
+    function inner() {
+        console.log("inner");
+    }
+    inner();
+}
+
+outer();
