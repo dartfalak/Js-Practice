@@ -2502,3 +2502,8 @@ function outer() {
 }
 
 outer();
+
+function greet(name) {
+    function getMessage() {
+        console.log("hello, " + name);
+    }
