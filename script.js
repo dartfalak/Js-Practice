@@ -1883,625 +1883,625 @@ function asyncFunc() {
 //             this.#salary = newSalary;
 //         }
 //         else {
-//             console.log("invalid salary");
-//         }
-//     }
-
-//     getSalary() {
-//         return {
-//             id: this.id,
-//             name: this.name,
-//             salary: this.#salary
-//         };
-//     }
-// }
-
-// const emp = new Employee(109, "falak", 60000);
-
-// console.log(emp.getSalary());
-// emp.updateSalary(65000);
-// console.log(emp.getSalary());
-// emp.updateSalary(-5000);
-
-
-// const person1 = {
-//     firstName: "emma",
-//     lastName: "stone",
-//     fullName: function() {
-//         return this.firstName + " " + this.lastName;
-//     }
-// };
-
-// console.log(person.fullName());
-
-// const person2 = {
-// //     firstName: "ryan",
-// //     lastName: "trahan"
-// // };
-
-// // console.log(person.fullName.call(person1));
-// // console.log(person.fullName.call(person2));
-
-
-// // const obj = { value: 42 };
-
-// // let getValue = function(a,b) {
-// //     return this.value + a + b;
-// // };
-
-// // console.log(getValue.apply(obj, [8, 10]));
-
-
-
-// // const car1 = {
-// //     brand: "ford",
-// //     getBrand: function() {
-// //         return this.brand;
+// //             console.log("invalid salary");
+// //         }
 // //     }
-// // };
 
-// // const retrieveBrand1 = car.getBrand.bind(car);
-// // console.log(retrieveBrand());
-
-// // const car2 = {
-// // //     brand: "chevrolet"
-// // // };
-
-
-// // let cache = {};
-
-// // const retrieveBrand2 = car.getBrand.bind(car2);
-// // console.log(retrieveBrand2());
-
-// // function calculateArea(length, width) {
-// //     console.log(this.factor * length * width);
-// //     return this.factor * length * width;
-// // }                    
-
-// // function store(length, width) {
-// //     const key = `${length},${width}`;
-// //     if (!cache[key]) {
-// //     let result = calculateArea.call(this, length, width);
-// //     cache[key] = result;
-// //     return result;
-// //     } else {
-// //         const area = calculateArea.call(this, length, width);
-// //         cache[key] = area;
-// //         return area;
+// //     getSalary() {
+// //         return {
+// //             id: this.id,
+// //             name: this.name,
+// //             salary: this.#salary
+// //         };
 // //     }
 // // }
 
+// // const emp = new Employee(109, "falak", 60000);
 
-// console.log( 1 ?? 0 ); 
+// // console.log(emp.getSalary());
+// // emp.updateSalary(65000);
+// // console.log(emp.getSalary());
+// // emp.updateSalary(-5000);
 
-// let username = "";
-// let displayName = ( username ?? "guest" );
 
-// let score = 0;
+// // const person1 = {
+// //     firstName: "emma",
+// //     lastName: "stone",
+// //     fullName: function() {
+// //         return this.firstName + " " + this.lastName;
+// //     }
+// // };
 
-// console.log( score || 10 );
-// console.log( score ?? 10 );
+// // console.log(person.fullName());
 
-// let input = null;
-// let value = ( input ?? "default" );
-// console.log(value);
+// // const person2 = {
+// // //     firstName: "ryan",
+// // //     lastName: "trahan"
+// // // };
 
-// const user = {
-//     name: "sebastian"
+// // // console.log(person.fullName.call(person1));
+// // // console.log(person.fullName.call(person2));
+
+
+// // // const obj = { value: 42 };
+
+// // // let getValue = function(a,b) {
+// // //     return this.value + a + b;
+// // // };
+
+// // // console.log(getValue.apply(obj, [8, 10]));
+
+
+
+// // // const car1 = {
+// // //     brand: "ford",
+// // //     getBrand: function() {
+// // //         return this.brand;
+// // //     }
+// // // };
+
+// // // const retrieveBrand1 = car.getBrand.bind(car);
+// // // console.log(retrieveBrand());
+
+// // // const car2 = {
+// // // //     brand: "chevrolet"
+// // // // };
+
+
+// // // let cache = {};
+
+// // // const retrieveBrand2 = car.getBrand.bind(car2);
+// // // console.log(retrieveBrand2());
+
+// // // function calculateArea(length, width) {
+// // //     console.log(this.factor * length * width);
+// // //     return this.factor * length * width;
+// // // }                    
+
+// // // function store(length, width) {
+// // //     const key = `${length},${width}`;
+// // //     if (!cache[key]) {
+// // //     let result = calculateArea.call(this, length, width);
+// // //     cache[key] = result;
+// // //     return result;
+// // //     } else {
+// // //         const area = calculateArea.call(this, length, width);
+// // //         cache[key] = area;
+// // //         return area;
+// // //     }
+// // // }
+
+
+// // console.log( 1 ?? 0 ); 
+
+// // let username = "";
+// // let displayName = ( username ?? "guest" );
+
+// // let score = 0;
+
+// // console.log( score || 10 );
+// // console.log( score ?? 10 );
+
+// // let input = null;
+// // let value = ( input ?? "default" );
+// // console.log(value);
+
+// // const user = {
+// //     name: "sebastian"
+// // };
+
+// // console.log(user.address?.city);
+
+// // let data = {
+// //     info: {
+// //         details: {
+// //             age: 30
+// //         }
+// //     }
+// // };
+
+// // console.log(data.info?.details?.age);
+
+// // const users = [];
+// // console.log(users[0]?.name);
+
+ 
+
+// function debounce(func, delay) {
+//     let timeoutId;
+//     return function (...args) {
+//         clearTimeout(timeoutId);
+//         timeoutId = setTimeout(() => func.apply(this, args), delay);
+//     };
+// }
+
+// const search = (query) => {
+//     console.log("searching for", query);
+//     return [];
 // };
 
-// console.log(user.address?.city);
 
-// let data = {
-//     info: {
-//         details: {
-//             age: 30
-//         }
+//  searchwithDebounce = debounce(search, 300);
+
+
+//  search('j');
+//  search("ja");
+//  search("jav");
+// search("java");
+//  search("javasc");
+
+
+// const counter = {
+//     count: 0,
+//     increase() {
+//         this.count++;
+//         console.log(this.count);
 //     }
 // };
 
-// console.log(data.info?.details?.age);
+// counter.increase() = debounce(counter.increase,500);
 
-// const users = [];
-// console.log(users[0]?.name);
+// const profile = {
+//     name: "falak",
+//     save() {
+//         console.log("saving profile for", this.name);
+//     }
+// };
 
+// const saveProfile = debounce(profile.save,300);
+// saveProfile.call(profile);
+
+
+// function throttle(func, delay) {
+//     let locked = false;
+//  return function () {
+
+
+//     if (locked) return;
+
+//     func();
+//     locked = true;
+//     setTimeout(() => {
+//         locked = false;
+//     }, delay);
+//  };
+// }
+
+//     const log = throttle(() => {
+//         console.log("hey!");
+//     }, 1000);
+
+
+// function throttle(func, delay) {
+//     let timeout = null;
+
+//     return function () {
+//         if (timeout) return;
+
+//         func();
+//         timeout = setTimeout(() => {
+//             timeout = null;
+//         }, delay);
+//     };
+// }
+
+
+// const logMove = throttle(() => {
+//     console.log("mouse moved");
+// }, 500);
+
+
+// function  add(a) {
+//     return function (b) {
+//         return a + b;
+ 
+//     };
+// }
+
+// const add5 = add(5);
+// console.log(add5(2));
+// console.log(add(10)(15));
+
+// function multiply(a) {
+//     return function (b) {
+//         return function (c) {
+//             return a * b * c;
+//         };
+//     };
+// }
+
+// // const result = multiply(2)(3)(4);
+// // console.log(result);
+
+
+
+// const greet = name => message => {
+//     console.log(message + ", " + name);
+// }
+
+// greet("falak")("hello");
+
+
+// function add(a) {
+//     return function (b) {
+//      return function (c) {
+//         return a + b + c;
+//         };
+//     };
+// }
+
+// console.log(add(2)(3)(4));
+
+// function chainMultiply(a) {
+//     return function (b) {
+//         return function (c) {
+//             return a * b * c;
+
+//         };
+//     };
+// }
+
+
+
+// console.log(chainMultiply(2)(3)(4));
+
+
+// function chainDivide (a) {
+//     return function (b) {
+//         return function (c) {
+//             return a / b / c;
+//         };
+//     };
+// }
+
+// console.log(chainDivide(100)(2)(5));
+
+
+// function add(a,b) {
+//     return a + b;
+// }
+
+// function subtract(a,b) {
+//     return a - b;
+// }
+
+// function composeTwoFunctions(f, g) {
+//     return function (x, y) {
+//         return g(f(x, y), 4);
+//     };
+// }
+
+
+// const calculate = add(5,9);
+// console.log(subtract(calculate,4));
+
+
+// function shout(text) {
+//     return text + "!";
+// }
+
+// function smile(text) {
+//     return text + " :)";
+// }
+
+// smile(shout("hello"));
+
+
+
+// function add3(a) {
+//     return a + 3;
+// }
+
+// function multiply2(b) {
+//     return b * 2;
+// }
+
+
+// // let result = multiply2(add3(5));
+// // console.log(result);
+
+// let a = multiply4(add3(5));
+// console.log(a);
+
+// function plusOne(x) {
+//     return x + 1;
+// }
+
+// function timesThree(x) {
+//     return x * 3;
+// }
+
+// let output = plusOne(timesThree(4));
+
+// console.log(output);
+
+// function addTwo(x) {
+//     return x + 2;
+// }
+
+// function double(x) {
+//     return x * 2;
+// }
+
+// let result = double(addTwo(6));
+
+
+// function compose (...functions) {
+//     return function (input) {
+//         return functions.reduceRight((acc, fn) => {
+//             return fn (acc);
+//         }, input);
+//     };
+
+// }
+
+// function trim(str) {
+//     return str.trim();
+// }
+
+// function toLowerCase(str) {
+//     return str.toLowerCase();
+// }
+ 
+// function wrapInDiv(str) {
+//     return `<div>${str}</div>`;
+// }
  
 
-function debounce(func, delay) {
-    let timeoutId;
-    return function (...args) {
-        clearTimeout(timeoutId);
-        timeoutId = setTimeout(() => func.apply(this, args), delay);
-    };
-}
-
-const search = (query) => {
-    console.log("searching for", query);
-    return [];
-};
+// const transform = compose(trim, toLowerCase, wrapInDiv);
+// console.log(transform("   hello world!   "));
 
 
- searchwithDebounce = debounce(search, 300);
+// class Person {
+//     constructor(name, age) {
+//         this.name = name;
+//         this.age = age;
+//     }
+//     greet() {
+//         console.log(`hi, I'm ${this.name} and I'm ${this.age} years old.`);
+//     }
+//     haveBirthday() {
+//         this.age++;
+//         console.log(`${this.name} is now ${this.age}!`);
+//     }
+
+// }
+
+// const user = new Person("falak", 21);
+// console.log(user.greet());
 
 
- search('j');
- search("ja");
- search("jav");
-search("java");
- search("javasc");
+// const add2 = x => x + 2;
+// const multiply3 = x => x * 3;
+// const minus4 = x => x - 4;
+
+// const result2 = minus4(multiply3(add2(5)));
+// console.log(result2);
 
 
-const counter = {
-    count: 0,
-    increase() {
-        this.count++;
-        console.log(this.count);
-    }
-};
+// const transform2 = compose(minus4, multiply3, add2);
+// console.log(transform2(5));
 
-counter.increase() = debounce(counter.increase,500);
+// function chainAdd(a) {
+//     return function (b) {
+//         return function (c) {
+//             return a + b + c;
+//         };
+//     };
 
-const profile = {
-    name: "falak",
-    save() {
-        console.log("saving profile for", this.name);
-    }
-};
+// }
 
-const saveProfile = debounce(profile.save,300);
-saveProfile.call(profile);
+// console.log(chainAdd(2)(3)(4));
 
 
-function throttle(func, delay) {
-    let locked = false;
- return function () {
+// const greet = "hi my name is ";
+// const greetMessage = greet => {
+//     return name => {
+//         console.log(greet + ", " + name);
+//     };
+// };
+// const age = "i'm 25 years old"
+// function ageMessage(age) {
+//     return name => {
+//         console.log(age + ", " + name);
+//     };
+// }
+
+// const resultGreet = greetMessage(greet);
+// resultGreet("falak");
+// const resultAge = ageMessage(age);
 
 
-    if (locked) return;
-
-    func();
-    locked = true;
-    setTimeout(() => {
-        locked = false;
-    }, delay);
- };
-}
-
-    const log = throttle(() => {
-        console.log("hey!");
-    }, 1000);
+// const square = x => x * x;
+// const cube = x => x * x * x;
+// const double = x => x * 2;
 
 
-function throttle(func, delay) {
-    let timeout = null;
-
-    return function () {
-        if (timeout) return;
-
-        func();
-        timeout = setTimeout(() => {
-            timeout = null;
-        }, delay);
-    };
-}
+// const calculate2 = compose(double, cube, square);
+// console.log(calculate2(3));
 
 
-const logMove = throttle(() => {
-    console.log("mouse moved");
-}, 500);
+// const nums = [1, 2, 3, 4, 5, 6];
 
+// const result = nums
+//     .filter(num => num % 2 === 0)
+//     .map(num => num * num)
+//     .reduce((acc, num) => acc + num, 0);
 
-function  add(a) {
-    return function (b) {
-        return a + b;
- 
-    };
-}
-
-const add5 = add(5);
-console.log(add5(2));
-console.log(add(10)(15));
-
-function multiply(a) {
-    return function (b) {
-        return function (c) {
-            return a * b * c;
-        };
-    };
-}
-
-// const result = multiply(2)(3)(4);
 // console.log(result);
 
 
+// const evenNumbers = [2, 4, 6, 8, 10]
+//     .filter(num => num % 4 === 0)
+//     .map(num => num + 1);
+// console.log(evenNumbers);
 
-const greet = name => message => {
-    console.log(message + ", " + name);
-}
+// const oddNumbers = [1, 3, 5, 7, 9]
+//     .filter(num => num % 3 === 0)
+//     .map(num => num * 2);
+// console.log(oddNumbers);
 
-greet("falak")("hello");
+// const squaredSum = [1, 2, 3, 4, 5]
+//     .map(num => num * num)
+//     .reduce((acc, num) => acc + num, 0);
+// console.log(squaredSum);
 
-
-function add(a) {
-    return function (b) {
-     return function (c) {
-        return a + b + c;
-        };
-    };
-}
-
-console.log(add(2)(3)(4));
-
-function chainMultiply(a) {
-    return function (b) {
-        return function (c) {
-            return a * b * c;
-
-        };
-    };
-}
+// const calculateNumbers = [10, 15, 20, 25, 30]
+//     .filter(num => num > 15)
+//     .map(num => num / 5)
+//     .reduce((acc, num) => acc + num, 0);
+// console.log(calculateNumbers);
 
 
+// const makeUpper = name => 
+//     name.toUpperCase();
 
-console.log(chainMultiply(2)(3)(4));
+// const addExclamation = name =>
+//     name + "!";
 
+// const shoutName = name =>
+//     addExclamation(makeUpper(name));
 
-function chainDivide (a) {
-    return function (b) {
-        return function (c) {
-            return a / b / c;
-        };
-    };
-}
+// const names = ["alice", "bob", "charlie"];
 
-console.log(chainDivide(100)(2)(5));
+// const resultNames = names
+//     .map(shoutName)
+//     .filter(name => name.length <= 6)
+//     .join(", ");
 
-
-function add(a,b) {
-    return a + b;
-}
-
-function subtract(a,b) {
-    return a - b;
-}
-
-function composeTwoFunctions(f, g) {
-    return function (x, y) {
-        return g(f(x, y), 4);
-    };
-}
+// console.log(resultNames);
 
 
-const calculate = add(5,9);
-console.log(subtract(calculate,4));
+// // const numbers = [1, 2, 3, 4, 5, 6];
+// // const processed = numbers
+// //     .filter(n => n % 2 === 0)
+// //     .map(n => n * n)
+// //     .reduce((sum, n) => sum + n, 0);
+// // console.log(processed);
+
+// // const words = ["hello", "world", "javascript", "is", "fun"];
+// // const longWords = words
+// //     .filter(word => word.length > 3)
+// //     .map(word => word.toUpperCase());
+// // console.log(longWords);
+
+ 
+// const names = ["adam", "eve", "john", "jane", "bob"];
+
+// const shortNames = names
+//     .map(name => name.trim())
+//     .map(name => name.toLowerCase());
+
+// console.log(shortNames);
+
+// const scores = [85, 92, 78, 90, 88];
+
+// let newScores = scores
+//  .map(score => score + 5)
+//  .filter(score => score >= 90);
+
+// console.log(newScores);
+
+// let scores = [45, 67, 89, 23, 90, 56];
 
 
-function shout(text) {
-    return text + "!";
-}
-
-function smile(text) {
-    return text + " :)";
-}
-
-smile(shout("hello"));
 
 
+// let result = scores
+//     .filter(score => score >= 50)
+//     .map(score => score + 10)
+//     .reduce((sum, score) => sum + score, 0);
 
-function add3(a) {
-    return a + 3;
-}
-
-function multiply2(b) {
-    return b * 2;
-}
-
-
-// let result = multiply2(add3(5));
 // console.log(result);
 
-let a = multiply4(add3(5));
-console.log(a);
 
-function plusOne(x) {
-    return x + 1;
-}
+// const num = [1, 2, 3, 4, 5, 6]
 
-function timesThree(x) {
-    return x * 3;
-}
-
-let output = plusOne(timesThree(4));
-
-console.log(output);
-
-function addTwo(x) {
-    return x + 2;
-}
-
-function double(x) {
-    return x * 2;
-}
-
-let result = double(addTwo(6));
-
-
-function compose (...functions) {
-    return function (input) {
-        return functions.reduceRight((acc, fn) => {
-            return fn (acc);
-        }, input);
-    };
-
-}
-
-function trim(str) {
-    return str.trim();
-}
-
-function toLowerCase(str) {
-    return str.toLowerCase();
-}
- 
-function wrapInDiv(str) {
-    return `<div>${str}</div>`;
-}
- 
-
-const transform = compose(trim, toLowerCase, wrapInDiv);
-console.log(transform("   hello world!   "));
-
-
-class Person {
-    constructor(name, age) {
-        this.name = name;
-        this.age = age;
-    }
-    greet() {
-        console.log(`hi, I'm ${this.name} and I'm ${this.age} years old.`);
-    }
-    haveBirthday() {
-        this.age++;
-        console.log(`${this.name} is now ${this.age}!`);
-    }
-
-}
-
-const user = new Person("falak", 21);
-console.log(user.greet());
-
-
-const add2 = x => x + 2;
-const multiply3 = x => x * 3;
-const minus4 = x => x - 4;
-
-const result2 = minus4(multiply3(add2(5)));
-console.log(result2);
-
-
-const transform2 = compose(minus4, multiply3, add2);
-console.log(transform2(5));
-
-function chainAdd(a) {
-    return function (b) {
-        return function (c) {
-            return a + b + c;
-        };
-    };
-
-}
-
-console.log(chainAdd(2)(3)(4));
-
-
-const greet = "hi my name is ";
-const greetMessage = greet => {
-    return name => {
-        console.log(greet + ", " + name);
-    };
-};
-const age = "i'm 25 years old"
-function ageMessage(age) {
-    return name => {
-        console.log(age + ", " + name);
-    };
-}
-
-const resultGreet = greetMessage(greet);
-resultGreet("falak");
-const resultAge = ageMessage(age);
-
-
-const square = x => x * x;
-const cube = x => x * x * x;
-const double = x => x * 2;
-
-
-const calculate2 = compose(double, cube, square);
-console.log(calculate2(3));
-
-
-const nums = [1, 2, 3, 4, 5, 6];
-
-const result = nums
-    .filter(num => num % 2 === 0)
-    .map(num => num * num)
-    .reduce((acc, num) => acc + num, 0);
-
-console.log(result);
-
-
-const evenNumbers = [2, 4, 6, 8, 10]
-    .filter(num => num % 4 === 0)
-    .map(num => num + 1);
-console.log(evenNumbers);
-
-const oddNumbers = [1, 3, 5, 7, 9]
-    .filter(num => num % 3 === 0)
-    .map(num => num * 2);
-console.log(oddNumbers);
-
-const squaredSum = [1, 2, 3, 4, 5]
-    .map(num => num * num)
-    .reduce((acc, num) => acc + num, 0);
-console.log(squaredSum);
-
-const calculateNumbers = [10, 15, 20, 25, 30]
-    .filter(num => num > 15)
-    .map(num => num / 5)
-    .reduce((acc, num) => acc + num, 0);
-console.log(calculateNumbers);
-
-
-const makeUpper = name => 
-    name.toUpperCase();
-
-const addExclamation = name =>
-    name + "!";
-
-const shoutName = name =>
-    addExclamation(makeUpper(name));
-
-const names = ["alice", "bob", "charlie"];
-
-const resultNames = names
-    .map(shoutName)
-    .filter(name => name.length <= 6)
-    .join(", ");
-
-console.log(resultNames);
-
-
-// const numbers = [1, 2, 3, 4, 5, 6];
-// const processed = numbers
-//     .filter(n => n % 2 === 0)
+// const outputNum = num
+//     .filter(n => n % 2 !== 0)
 //     .map(n => n * n)
-//     .reduce((sum, n) => sum + n, 0);
-// console.log(processed);
+//     .reduce((acc, n) => acc + n, 0);
+// console.log(outputNum);
 
-// const words = ["hello", "world", "javascript", "is", "fun"];
-// const longWords = words
-//     .filter(word => word.length > 3)
-//     .map(word => word.toUpperCase());
-// console.log(longWords);
 
- 
-const names = ["adam", "eve", "john", "jane", "bob"];
+// const squareNum = [2, 4, 6, 8, 10];
 
-const shortNames = names
-    .map(name => name.trim())
-    .map(name => name.toLowerCase());
+// const resultNum = squareNum
+//     .map(n => n * n)
+//     .filter(n => n > 20);
+// console.log(resultNum);
 
-console.log(shortNames);
 
-const scores = [85, 92, 78, 90, 88];
+// const scale = score => score * 2;
+// const bonus = score => score + 10;
 
-let newScores = scores
- .map(score => score + 5)
- .filter(score => score >= 90);
+// const finalScore = score => bonus(scale(score));
 
-console.log(newScores);
-
-let scores = [45, 67, 89, 23, 90, 56];
+// console.log(finalScore(50));
 
 
 
+// const square = [1, 2, 3, 4, 5]
+// const add2 = n => n + 2;
+// const multiply3 = n => n * 3;
 
-let result = scores
-    .filter(score => score >= 50)
-    .map(score => score + 10)
-    .reduce((sum, score) => sum + score, 0);
+// const finalResult = n => multiply3(add2(n));
 
-console.log(result);
+// console.log(finalResult(50));
 
+// const numbers = [1,2,3,4,5]
 
-const num = [1, 2, 3, 4, 5, 6]
+// // const processedNumbers = numbers 
+// //    .map(n => n + 1)
+// //    .filter(n => n % 2 === 0);
 
-const outputNum = num
-    .filter(n => n % 2 !== 0)
-    .map(n => n * n)
-    .reduce((acc, n) => acc + n, 0);
-console.log(outputNum);
+// // console.log(processedNumbers);
 
+// // const score = [10, 20, 30, 40, 50]
 
-const squareNum = [2, 4, 6, 8, 10];
-
-const resultNum = squareNum
-    .map(n => n * n)
-    .filter(n => n > 20);
-console.log(resultNum);
+// // const finalScore = score
+// //     .map(s => s * 2)
+// //     .filter(s => s >= 60);
+// // console.log(finalScore);
 
 
-const scale = score => score * 2;
-const bonus = score => score + 10;
+// function first()
+//    console.log("first");
 
-const finalScore = score => bonus(scale(score));
+// function second() {
+//     console.log("second");
+// }
 
-console.log(finalScore(50));
+// function third() {
+//     console.log("third");
+// }
 
+// // first();
+// // second();
+// // third();
 
+// // // function showResult() {
+// //     calculateTotal();
+// // }
 
-const square = [1, 2, 3, 4, 5]
-const add2 = n => n + 2;
-const multiply3 = n => n * 3;
+// // function calculateTotal() {
+//    addScores();
+// }
 
-const finalResult = n => multiply3(add2(n));
+// function addScores() {
+//     console.log("100 + 240");
+// }
 
-console.log(finalResult(50));
+// showResult();
 
-const numbers = [1,2,3,4,5]
+// function outer() {
+//     function inner() {
+//         console.log("inner");
+//     }
+//     inner();
+// }
 
-// const processedNumbers = numbers 
-//    .map(n => n + 1)
-//    .filter(n => n % 2 === 0);
-
-// console.log(processedNumbers);
-
-// const score = [10, 20, 30, 40, 50]
-
-// const finalScore = score
-//     .map(s => s * 2)
-//     .filter(s => s >= 60);
-// console.log(finalScore);
-
-
-function first()
-   console.log("first");
-
-function second() {
-    console.log("second");
-}
-
-function third() {
-    console.log("third");
-}
-
-first();
-second();
-third();
-
-function showResult() {
-    calculateTotal();
-}
-
-function calculateTotal() {
-   addScores();
-}
-
-function addScores() {
-    console.log("100 + 240");
-}
-
-showResult();
-
-function outer() {
-    function inner() {
-        console.log("inner");
-    }
-    inner();
-}
-
-outer();
+// outer();
 
 function greet(name) {
     function getMessage() {
