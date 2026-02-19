@@ -2509,3 +2509,5 @@ function greet(name) {
     }
     getMessage();
 }
+
+greet("falak");
