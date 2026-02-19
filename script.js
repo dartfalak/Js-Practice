@@ -2507,3 +2507,5 @@ function greet(name) {
     function getMessage() {
         console.log("hello, " + name);
     }
+    getMessage();
+}
