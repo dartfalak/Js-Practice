@@ -2511,3 +2511,10 @@ function greet(name) {
 }
 
 greet("falak");
+
+
+function counter() {
+    let count = 0;
+    function increment() {
+        count++;
+    
