@@ -2518,3 +2518,6 @@ function counter() {
     function increment() {
         count++;
     }
+    function getCount() {
+        return count;
+    }
