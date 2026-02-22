@@ -2520,3 +2520,7 @@ function squareAndDouble(num) {
     function double() {
         return num * 2;
     }
+    return {
+        squared: square(),
+        doubled: double()
+    };
