@@ -2513,3 +2513,7 @@ function greet(name) {
 greet("falak");
 
 
+function squareAndDouble(num) {
+    function square() {
+        return num * num;
+    }
