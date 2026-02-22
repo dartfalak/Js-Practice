@@ -2525,3 +2525,5 @@ function squareAndDouble(num) {
         doubled: double()
     };
 }
+
+const result = squareAndDouble(5);
