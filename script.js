@@ -2524,3 +2524,4 @@ function squareAndDouble(num) {
         squared: square(),
         doubled: double()
     };
+}
