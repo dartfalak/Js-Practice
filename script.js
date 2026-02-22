@@ -2517,3 +2517,6 @@ function squareAndDouble(num) {
     function square() {
         return num * num;
     }
+    function double() {
+        return num * 2;
+    }
