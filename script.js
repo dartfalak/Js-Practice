@@ -2527,3 +2527,8 @@ function squareAndDouble(num) {
 }
 
 const result = squareAndDouble(5);
+
+function multiplier(x) {
+    return function(y) {
+        return x * y;
+    };
