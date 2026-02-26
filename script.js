@@ -2536,3 +2536,10 @@ function multiplier(x) {
 
 const double = multiplier(2);
 console.log(double(5));
+
+
+function square(x) {
+    return function (y) {
+        return x * y;
+    }
+}
