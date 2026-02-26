@@ -2543,3 +2543,5 @@ function square(x) {
         return x * y;
     }
 }
+
+const squareOf3 = square(3);
