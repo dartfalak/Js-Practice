@@ -2559,3 +2559,7 @@ function studentResult(name,score) {
 
 let gradeResult = grade();
 console.log(name + " scored " + score + " and got grade " + gradeResult);
+
+}
+
+studentResult("adam", 85);
