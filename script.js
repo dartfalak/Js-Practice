@@ -2545,3 +2545,12 @@ function square(x) {
 }
 
 const squareOf3 = square(3);
+
+
+function studentResult(name,score) {
+
+    function grade() {
+        if (score >= 90) return "A";
+        if (score >= 80) return "B";
+
+}
