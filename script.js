@@ -2556,3 +2556,6 @@ function studentResult(name,score) {
        else return "F";
 
 }
+
+let gradeResult = grade();
+console.log(name + " scored " + score + " and got grade " + gradeResult);
