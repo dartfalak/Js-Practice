@@ -2573,3 +2573,7 @@ class BankAccount {
         return_balance;
 
     };
+
+    this.deposit = function(amount) {
+        if (amount > 0) {
+            _balance += amount;
