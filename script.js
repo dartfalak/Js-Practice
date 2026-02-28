@@ -2563,3 +2563,13 @@ console.log(name + " scored " + score + " and got grade " + gradeResult);
 }
 
 studentResult("adam", 85);
+
+
+class BankAccount {
+    constructor(balance) {
+        let_balance = balance;
+
+    this.getBalance = function() {
+        return_balance;
+
+    };
