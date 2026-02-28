@@ -2584,3 +2584,5 @@ class BankAccount {
 
 let account = new BankAccount(2000);
 account.deposit(500);
+
+console.log(account.getBalance());
