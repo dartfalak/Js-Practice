@@ -2576,4 +2576,8 @@ class BankAccount {
 
     this.deposit = function(amount) {
         if (amount > 0) {
-            _balance += amount;
+            _balance += amount
+        }
+    };
+  }  
+}
