@@ -2581,3 +2581,5 @@ class BankAccount {
     };
   }  
 }
+
+let account = new BankAccount(2000);
