@@ -2594,5 +2594,6 @@ class Car {
     let _speed = speed;
 } 
  this.increasedSpeed = function() {
+    _speed += 20;
     
  }
