@@ -2601,5 +2601,9 @@ class Car {
   this.showSpeed = function() {
    console.log("speed:", _speed);
 
-    };
+     };
+  }
 }
+
+
+let myCar = new Car(30);
