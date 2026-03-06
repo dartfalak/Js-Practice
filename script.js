@@ -2593,3 +2593,6 @@ class Car {
    constructor(speed) {
     let _speed = speed;
 } 
+ this.increasedSpeed = function() {
+    
+ }
