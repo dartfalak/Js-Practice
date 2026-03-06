@@ -2592,7 +2592,6 @@ console.log(account.getBalance());
 class Car {
    constructor(speed) {
     let _speed = speed;
-} 
 
   this.increasedSpeed = function() {
     _speed += 20;  
