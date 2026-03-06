@@ -2594,6 +2594,8 @@ class Car {
     let _speed = speed;
 } 
  this.increasedSpeed = function() {
-    _speed += 20;
-    
- }
+    _speed += 20;  
+ };
+
+  thia.showSpeed = function() {
+   console.log("speed:", _speed);
