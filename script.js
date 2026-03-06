@@ -2607,3 +2607,5 @@ class Car {
 
 
 let myCar = new Car(30);
+
+myCar.increasedSpeed();
