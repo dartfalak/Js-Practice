@@ -2616,3 +2616,5 @@ function showData(name,age) {
 
 const person1 = { name: "jennifer", age: 10 };
 showData.call(person1);
+showInfo.apply(person, [25]);
+
