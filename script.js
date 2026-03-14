@@ -2614,5 +2614,5 @@ function showData(name,age) {
     console.log(this.name + " is " + this.age + " years old.")
 }
 
-const person1 = { name: "jennifer", age: 0 };
+const person1 = { name: "jennifer", age: 10 };
 showData.call(person1);
