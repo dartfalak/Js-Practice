@@ -2609,3 +2609,6 @@ let myCar = new Car(30);
 
 myCar.increasedSpeed();
 myCar.showSpeed();
+
+function showData(name,age) {
+    console.log(this.name + " is " + this.age + " years old.")
