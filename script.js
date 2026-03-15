@@ -2627,3 +2627,4 @@ const player = { name : "michael" };
 
 function showScore(score1, score2) {
     console.log(this.name + " scored " + (score1 + score2));
+}
