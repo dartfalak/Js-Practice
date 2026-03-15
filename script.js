@@ -2621,3 +2621,8 @@ showInfo.apply(person, [25]);
 const newFunction = showInfo.bind(person, 25);
 
 newFunction();
+
+
+const player = { name : "michael" };
+
+function showScore(score1, score2) {
