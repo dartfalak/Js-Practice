@@ -2639,4 +2639,6 @@ class Person {
         this.getAge = function() {
             return age;
         };
-    }
+    this.setAge = function(newAge) {
+        age = newAge;
+    };
