@@ -2630,3 +2630,10 @@ function showScore(score1, score2) {
 }
 
 showScore.apply(player, [10, 15]);
+
+
+class Person {
+    constructor(name) { 
+        this.name = name;
+        let age = 20;
+        this.getAge = function() {
