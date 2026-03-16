@@ -2648,3 +2648,4 @@ class Person {
 const person = new Person("falak");
 person.setAge(15);
   
+console.log(person.getAge());
