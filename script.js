@@ -2637,3 +2637,4 @@ class Person {
         this.name = name;
         let age = 20;
         this.getAge = function() {
+            return age;
