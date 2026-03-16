@@ -2642,3 +2642,8 @@ class Person {
     this.setAge = function(newAge) {
         age = newAge;
     };
+    }
+}
+
+const person = new Person("falak");
+  
