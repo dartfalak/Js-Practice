@@ -2660,3 +2660,5 @@ function BankAccount() {
         return balance;
     };
 }
+
+const acc = new BankAccount();
