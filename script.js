@@ -2662,3 +2662,5 @@ function BankAccount() {
 }
 
 const acc = new BankAccount();
+
+acc.deposit(1000);
