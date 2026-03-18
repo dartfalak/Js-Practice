@@ -2658,3 +2658,5 @@ function BankAccount() {
 
     this.getBalance = function() {
         return balance;
+    };
+}
