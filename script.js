@@ -2655,3 +2655,6 @@ function BankAccount() {
     this.deposit = function(amount) {
         balance += amount;
     };
+
+    this.getBalance = function() {
+        return balance;
