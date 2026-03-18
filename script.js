@@ -2649,3 +2649,9 @@ const person = new Person("falak");
 person.setAge(16);
 
 console.log(person.getAge());
+
+function BankAccount() {
+    let balance = 0;
+    this.deposit = function(amount) {
+        balance += amount;
+    };
