@@ -2668,4 +2668,11 @@ console.log(acc.getBalance());
 
 function Student() {
     let marks = 0;
+
+    return {
+        setMarks: function(m) {
+            marks = m;
+ }
+    },
 }
+ 
