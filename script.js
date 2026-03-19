@@ -2678,7 +2678,7 @@ function Student() {
 
 getMarks : function() {
     return marks;
-    }
+ }
     };
-
+}
  
