@@ -2665,3 +2665,7 @@ const acc = new BankAccount();
 
 acc.deposit(1000);
 console.log(acc.getBalance());
+
+function Student() {
+    let marks = 0;
+}
