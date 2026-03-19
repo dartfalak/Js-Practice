@@ -2682,3 +2682,5 @@ getMarks : function() {
     };
 }
  
+
+const student = Student();
