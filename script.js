@@ -2671,8 +2671,11 @@ function Student() {
 
     return {
         setMarks: function(m) {
+            if (m >= 0 && m <= 100) {
             marks = m;
- }
+  }
     },
-}
+
+getMarks : function() {
+    return marks;
  
