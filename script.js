@@ -2684,3 +2684,4 @@ getMarks : function() {
  
 
 const student = Student();
+student.setMarks(85);
