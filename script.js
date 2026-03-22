@@ -2665,24 +2665,3 @@ const acc = new BankAccount();
 
 acc.deposit(1000);
 console.log(acc.getBalance());
-
-function Student() {
-    let marks = 0;
-
-    return {
-        setMarks: function(m) {
-            if (m >= 0 && m <= 100) {
-            marks = m;
-      }
-    },
-
-getMarks : function() {
-    return marks;
- }
-    };
-}
- 
-
-const student = Student();
-student.setMarks(85);
-console.log(student.getMarks());
