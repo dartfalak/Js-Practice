@@ -2683,3 +2683,7 @@ getMarks : function() {
     };
  }
  
+
+const student = Student();
+student.setMarks(85);
+console.log(student.getMarks());
