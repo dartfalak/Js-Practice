@@ -2676,3 +2676,15 @@ function Student() {
             marks = m;
       }
     },
+
+    
+getMarks : function() {
+    return marks;
+ }
+    };
+ }
+ 
+
+const student = Student();
+student.setMarks(85);
+console.log(student.getMarks());
