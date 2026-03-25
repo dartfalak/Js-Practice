@@ -2696,3 +2696,5 @@ function user() {
  
 return {
     checkPassword: function(input) {
+        return input === password;
+    }
