@@ -2698,3 +2698,4 @@ return {
     checkPassword: function(input) {
         return input === password;
     }
+};
