@@ -2693,3 +2693,6 @@ console.log(student.getMarks());
 function user() {
     let password = "0000";
 }
+ 
+return {
+    checkPassword: function(input) {
