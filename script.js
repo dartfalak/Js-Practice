@@ -2700,4 +2700,5 @@ return {
     }
 };
 
-let u = user
+let u = user();
+console.log(u.checkPassword("0000"));
