@@ -2689,3 +2689,16 @@ const student = Student();
 student.setMarks(85);
 console.log(student.getMarks());
 
+
+function user() {
+    let password = "0000";
+}
+ 
+return {
+    checkPassword: function(input) {
+        return input === password;
+    }
+};
+
+let u = user();
+console.log(u.checkPassword("0000s"));
