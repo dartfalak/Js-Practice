@@ -2701,4 +2701,4 @@ return {
 };
 
 let u = user();
-console.log(u.checkPassword("0000"));
+console.log(u.checkPassword("0000s"));
