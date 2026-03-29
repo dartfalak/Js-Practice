@@ -2705,3 +2705,4 @@ console.log(u.checkPassword("0000s"));
 
 function reverseString(str) {
     let reversed = "";
+    for (let i = str.length - 1; i >= 0; i--) {
