@@ -2709,3 +2709,4 @@ function reverseString(str) {
         reversed += str[i];
     }
     return reversed;
+}
