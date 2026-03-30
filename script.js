@@ -2721,3 +2721,12 @@ function createLoginSystem(maxAttempts) {
  return function login(password) {
     const correctPass = "00000";
  }
+  
+ if(attemptsLeft <= 0) {
+    console.log("account locked");
+     return;
+
+ }
+
+ if (password === correctPass) {
+    console.log("login successful");
