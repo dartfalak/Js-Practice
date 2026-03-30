@@ -2743,3 +2743,4 @@ const login = createLoginSystem(3);
 
 login("11111");
 login("23456");
+login("00000");
