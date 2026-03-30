@@ -2716,12 +2716,12 @@ console.log(reverseString("steven"));
 
 function createLoginSystem(maxAttempts) {
     let attemptsLeft = maxAttempts;
-}
+
 
  return function login(password) {
     const correctPass = "00000";
- }
-  
+
+   
  if(attemptsLeft <= 0) {
     console.log("account locked");
      return;
@@ -2734,4 +2734,7 @@ function createLoginSystem(maxAttempts) {
     } else {
     attemptsLeft--;
     console.log("wrong password, attempts left:", attemptsLeft);
-    
+    }
+
+    };
+}
