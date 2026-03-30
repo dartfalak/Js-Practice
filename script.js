@@ -2717,3 +2717,7 @@ console.log(reverseString("steven"));
 function createLoginSystem(maxAttempts) {
     let attemptsLeft = maxAttempts;
 }
+
+ return function login(password) {
+    const correctPass = "00000";
+ }
