@@ -2732,3 +2732,6 @@ function createLoginSystem(maxAttempts) {
     console.log("login successful");
     attemptsLeft = maxAttempts;
     } else {
+    attemptsLeft--;
+    console.log("wrong password, attempts left:", attemptsLeft);
+    
