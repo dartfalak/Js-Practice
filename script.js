@@ -2712,3 +2712,8 @@ function reverseString(str) {
 }
 
 console.log(reverseString("steven"));
+
+
+function createLoginSystem(maxAttempts) {
+    let attemptsLeft = maxAttempts;
+}
