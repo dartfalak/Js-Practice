@@ -2738,3 +2738,5 @@ function createLoginSystem(maxAttempts) {
 
     };
 }
+
+const login = createLoginSystem(3);
