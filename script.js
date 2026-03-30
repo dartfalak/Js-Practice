@@ -2730,3 +2730,5 @@ function createLoginSystem(maxAttempts) {
 
  if (password === correctPass) {
     console.log("login successful");
+    attemptsLeft = maxAttempts;
+    } else {
