@@ -2740,3 +2740,4 @@ function createLoginSystem(maxAttempts) {
 }
 
 const login = createLoginSystem(3);
+login("12345");
