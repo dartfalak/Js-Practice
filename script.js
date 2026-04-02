@@ -2756,3 +2756,5 @@ function loadPlayer() {
 function startLevel() {
     console.log("level started");
 }
+
+startGame();
