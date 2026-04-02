@@ -2747,3 +2747,6 @@ login("00000");
 function startGame() {
     loadPlayer();
 }
+
+function loadPlayer() {
+    console.log("player loaded");
