@@ -2745,3 +2745,5 @@ login("54321");
 login("00000");
 
 function startGame() {
+    loadPlayer();
+}
