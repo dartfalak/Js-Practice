@@ -2752,3 +2752,9 @@ function loadPlayer() {
     console.log("player loaded");
     startLevel();
 }
+
+
+function startLevel() {
+    console.log("level started");
+}
+
