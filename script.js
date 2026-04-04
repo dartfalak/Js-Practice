@@ -2753,9 +2753,3 @@ function loadPlayer() {
     startLevel();
 }
 
-
-function startLevel() {
-    console.log("level started");
-}
-
-startGame();
