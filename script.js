@@ -2758,3 +2758,5 @@ function startLevel() {
     console.log("level started");
 }
 
+
+startGame();
