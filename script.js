@@ -2770,3 +2770,6 @@ function outer() {
     }
     return inner;
 }
+
+const counter = outer();
+counter();
