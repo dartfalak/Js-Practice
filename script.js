@@ -2773,3 +2773,4 @@ function outer() {
 }
 
 
+const counter = outer();
