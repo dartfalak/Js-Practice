@@ -2773,4 +2773,4 @@ function outer() {
 }
 
 
-cnst ocounter = outer();
+const ocounter = outer();
