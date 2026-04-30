@@ -23,4 +23,3 @@ while (i <= 10) {
     i++;
 }
 
-console.log(sum);
