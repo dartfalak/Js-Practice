@@ -15,3 +15,5 @@ while (i >= 1) {
     i--;
 }
 
+let i = 1;
+let sum = 0;
