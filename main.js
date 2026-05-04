@@ -29,3 +29,4 @@ console.log(sum);
 const button = document.getElementById('btn');
 
 button.disabled = true;
+button.disabled = false;
